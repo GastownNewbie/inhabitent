@@ -44,7 +44,4 @@
 </div><!-- #site-navigation -->
 			</header><!-- #masthead -->
 
-			<div id="content" class="site-content">
-			<div class="main-homepage-logo">
-            <a href="#"></a><img src="wp-content/themes/redstarter/images/logos/inhabitent-logo-full.svg" alt="Inhabitent logo">
-        </div>
+		
