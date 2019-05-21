@@ -698,3 +698,51 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+header {
+  background-color: aquamarine; }
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+.footer-container {
+  display: grid;
+  grid-template-columns: 25% 25% 50%;
+  background-image: repeat;
+  background: url(wp-content/themes/redstarter/images/dark-wood@2x.png); }
+
+.business-hours {
+  background-color: aqua; }
+
+p {
+  color: blue; }
+
+.main-homepage-logo {
+  text-align: center; }
+
+.tent-logo {
+  width: 50px; }
+
+.masthead-tent-logo {
+  padding-left: 80px;
+  border-bottom: 0px; }
+
+#masthead {
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.menu-main-navigation-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+#site-navigation {
+  display: none; }
+
+/*--------------------------------------------------------------
+# Side-bar page template
+--------------------------------------------------------------*/
+.side-bar-page-container {
+  display: grid;
+  grid-template-columns: 33% 66%; }

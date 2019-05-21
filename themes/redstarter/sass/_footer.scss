@@ -1,0 +1,16 @@
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+.footer-container {
+    display: grid;
+    grid-template-columns: 25% 25% 50%;
+    background-image: repeat;
+    background: url(wp-content/themes/redstarter/images/dark-wood@2x.png);
+}
+
+.business-hours {
+    background-color: aqua;
+}
+p {
+    color: blue;
+}

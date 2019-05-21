@@ -1,8 +1,7 @@
 /*--------------------------------------------------------------
-# Page Templates
+# Side-bar page template
 --------------------------------------------------------------*/
-
-/* Front page */
-header {
-background-color: aquamarine;
+.side-bar-page-container {
+    display: grid;
+    grid-template-columns: 33% 66%;
 }

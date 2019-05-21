@@ -24,12 +24,27 @@
 				<div class="site-branding">
 					<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 					<p class="site-description"><?php bloginfo( 'description' ); ?></p>
+				
+				<div class="masthead-tent-logo">
+            <a href="#"></a><img class= "tent-logo" src="wp-content/themes/redstarter/images/logos/inhabitent-logo-tent-white.svg" alt="Inhabitent logo">
+        </div>
+			
 				</div><!-- .site-branding -->
+				
+				<div class="menu-main-navigation-content">
 
 				<nav id="site-navigation" class="main-navigation" role="navigation">
 					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php echo esc_html( 'Primary Menu' ); ?></button>
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
-				</nav><!-- #site-navigation -->
+				</nav>
+				
+</div>
+<div class="search-menu">
+
+</div><!-- #site-navigation -->
 			</header><!-- #masthead -->
 
 			<div id="content" class="site-content">
+			<div class="main-homepage-logo">
+            <a href="#"></a><img src="wp-content/themes/redstarter/images/logos/inhabitent-logo-full.svg" alt="Inhabitent logo">
+        </div>
