@@ -3,6 +3,31 @@
 --------------------------------------------------------------*/
 
 /* Front page */
-header {
-background-color: aquamarine;
+.landing-page-container{
+    background-image: url(../../images/home-hero.jpg);
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    
+
+}
+.main-navigation-content{
+    justify-content: right;
+}
+.site-description {
+    display: hide;
+}
+
+.main-homepage-banner {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+.main-homepage-logo {
+    text-align: center;
+ 
+
 }

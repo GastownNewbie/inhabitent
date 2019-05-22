@@ -698,26 +698,98 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
-header {
-  background-color: aquamarine; }
+.landing-page-container {
+  background-image: url(../../images/home-hero.jpg);
+  height: 100vh;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.main-navigation-content {
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right; }
+
+.site-description {
+  display: hide; }
+
+.main-homepage-banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center; }
+
+.main-homepage-logo {
+  text-align: center; }
 
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
-.footer-container {
-  display: grid;
-  grid-template-columns: 25% 25% 50%;
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   background-image: repeat;
-  background: url(wp-content/themes/redstarter/images/dark-wood@2x.png); }
+  background: url(../../images/dark-wood@2x.png);
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
 
-.business-hours {
-  background-color: aqua; }
+.biz-contact-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 55px; }
+
+h3 {
+  color: #d99054; }
 
 p {
-  color: blue; }
+  color: white; }
 
-.main-homepage-logo {
+.biz-contact-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.copyright-info {
   text-align: center; }
+
+.menu-main-navigation-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: right;
+  display: fixed; }
+
+.main-homepage-logo img {
+  height: auto;
+  max-width: 100%;
+  position: relative;
+  top: 50%;
+  left: 34em; }
 
 .tent-logo {
   width: 50px; }
@@ -726,19 +798,23 @@ p {
   padding-left: 80px;
   border-bottom: 0px; }
 
-#masthead {
+.site-header {
   height: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  position: fixed; }
 
 .menu-main-navigation-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right; }
 
-#site-navigation {
-  display: none; }
+h1.entry-title {
+  display: hide; }
+
+#site-branding {
+  display: hide; }
 
 /*--------------------------------------------------------------
 # Side-bar page template

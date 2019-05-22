@@ -1,16 +1,36 @@
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
-.footer-container {
-    display: grid;
-    grid-template-columns: 25% 25% 50%;
+footer {
+    display: flex;
+    flex-direction: column;
     background-image: repeat;
-    background: url(wp-content/themes/redstarter/images/dark-wood@2x.png);
-}
+    background: url(../../images/dark-wood@2x.png);
+    width: 100%;
+    justify-content: space-between;
+   
 
-.business-hours {
-    background-color: aqua;
+}
+.biz-contact-container {
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 55px;
+}
+h3 {
+    color: #d99054;
 }
 p {
-    color: blue;
+    color: white;
+}
+.biz-contact-container {
+    display: flex;
+}
+
+.copyright-info {
+    
+    text-align: center;
+
 }

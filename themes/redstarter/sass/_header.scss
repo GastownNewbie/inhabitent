@@ -1,7 +1,17 @@
-.main-homepage-logo {
-    text-align: center;
-    
+.menu-main-navigation-content {
+    display: flex;
+    text-align: right;
+    display: fixed;
 }
+
+
+.main-homepage-logo img {
+        height: auto;
+        max-width: 100%;
+        position: relative;
+        top: 50%;
+        left: 34em;
+    }
 
 .tent-logo {
     width: 50px;
@@ -11,18 +21,29 @@
     padding-left: 80px;
     border-bottom: 0px;
 }
-#masthead {
+.site-header {
     height: 50px;
     display: flex;
+    position: fixed;
 }
+
 
 .menu-main-navigation-content {
-    display: flex;
+
+    justify-content: right;
 }
 
-#site-navigation {
-    display: none;
+h1.entry-title {
+    display: hide;
 }
+
+#site-branding {
+    display: hide;
+}
+
+// #site-navigation {
+//     display: none;
+// }
 
 
 
