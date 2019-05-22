@@ -26,7 +26,7 @@ get_header(); ?>
 			</div>
 			<section class="fp-journal">
 				<div class="fp-journal-title">
-					<h2>Inhabitent Journal</h2>
+					<h1>Inhabitent Journal</h1>
 				</div>
 				<?php
 				$args = array('post_type' => 'post', 'posts_per_page' => '3', 'order' => 'ASC');

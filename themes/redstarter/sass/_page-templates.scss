@@ -3,7 +3,16 @@
 --------------------------------------------------------------*/
 
 /* Front page */
+.home h1 {
 
+    color: $color_h2_fp;
+    font-family: $font__main;
+    text-transform: uppercase;
+    font-size: 2.2em;
+    letter-spacing: 2px;
+    font-weight: 400;
+
+}
 .landing-page-container{
     background-image: url(../../images/home-hero.jpg);
     height: 100vh;
@@ -51,10 +60,12 @@
     display: flex;
 
 }
-.fp-journal-list img{
-    height: 25vw;
-    width: 30vw;
+.fp-journal-list img {
+    height: 15vw;
+    width: 26vw;
 }
+
+
 /* Blog page */
 
 .blog {
@@ -85,25 +96,22 @@
 
         img {
             width: 70%;
+       } 
+    }// end of blog
 
-        }
-        .widget_archives {
-            display: none;
-        }
 
-        .widget_area {
-            display: flex;
-            flex-direction: column;
-            width: 30%;
-        }
-        .widget-custom_html {
-             display: flex;
-            flex-direction: column;
-            width: 30%;
-                    }
 
-        .widget_archives {
-            display: none;
-        }
+.site-content {
+    display: flex;
 
-} // end of blog
+            .content-area {
+                width: 75%;
+            }
+            .widget-area {
+                width: 25%;
+            }
+            .widget-archives{
+                display: none;
+            }
+
+}

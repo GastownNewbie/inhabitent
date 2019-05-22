@@ -698,6 +698,14 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+.home h1 {
+  color: #2f1339;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  font-size: 2.2em;
+  letter-spacing: 2px;
+  font-weight: 400; }
+
 .landing-page-container {
   background-image: url(../../images/home-hero.jpg);
   height: 100vh;
@@ -751,8 +759,8 @@ object {
   display: flex; }
 
 .fp-journal-list img {
-  height: 25vw;
-  width: 30vw; }
+  height: 15vw;
+  width: 26vw; }
 
 /* Blog page */
 .blog {
@@ -792,31 +800,16 @@ object {
 .blog img {
   width: 70%; }
 
-.blog .widget_archives {
-  display: none; }
-
-.blog .widget_area {
+.site-content {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 30%; }
-
-.blog .widget-custom_html {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 30%; }
-
-.blog .widget_archives {
-  display: none; }
+  display: flex; }
+  .site-content .content-area {
+    width: 75%; }
+  .site-content .widget-area {
+    width: 25%; }
+  .site-content .widget-archives {
+    display: none; }
 
 /*--------------------------------------------------------------
 # Footer
