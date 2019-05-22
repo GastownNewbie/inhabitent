@@ -38,9 +38,11 @@ h1.entry-title {
 }
 
 #site-branding {
-    display: hide;
+    display: none;
 }
-
+.site-description p {
+    display: none;
+}
 // #site-navigation {
 //     display: none;
 // }

@@ -731,6 +731,93 @@ object {
 .main-homepage-logo {
   text-align: center; }
 
+.fp-journal {
+  display: block; }
+
+.fp-journal-title {
+  text-align: center; }
+
+.fp-journal-list ul {
+  list-style: none; }
+
+.fp-journal-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.fp-journal-thumbnails {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.fp-journal-list img {
+  height: 25vw;
+  width: 30vw; }
+
+/* Blog page */
+.blog {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100vh; }
+
+.blog .entry-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 70%;
+  margin-left: 8em; }
+
+.blog h2 {
+  text-transform: uppercase;
+  background: #248A83; }
+
+.blog .entry-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  max-width: 75%;
+  margin: 35px 0px 25px;
+  padding: 12px 24px; }
+
+.blog img {
+  width: 70%; }
+
+.blog .widget_archives {
+  display: none; }
+
+.blog .widget_area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 30%; }
+
+.blog .widget-custom_html {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 30%; }
+
+.blog .widget_archives {
+  display: none; }
+
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
@@ -814,7 +901,10 @@ h1.entry-title {
   display: hide; }
 
 #site-branding {
-  display: hide; }
+  display: none; }
+
+.site-description p {
+  display: none; }
 
 /*--------------------------------------------------------------
 # Side-bar page template
