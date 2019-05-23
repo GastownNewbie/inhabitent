@@ -694,11 +694,7 @@ object {
 .gallery-caption {
   display: block; }
 
-/*--------------------------------------------------------------
-# Page Templates
---------------------------------------------------------------*/
-/* Front page */
-.home h1 {
+.fp-h2 {
   color: #2f1339;
   font-family: sans-serif;
   text-transform: uppercase;
@@ -714,27 +710,13 @@ object {
   display: -ms-flexbox;
   display: flex; }
 
-.main-navigation-content {
-  -webkit-box-pack: right;
-      -ms-flex-pack: right;
-          justify-content: right; }
+.site-header {
+  width: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
 
 .site-description {
   display: hide; }
-
-.main-homepage-banner {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center; }
 
 .main-homepage-logo {
   text-align: center; }
@@ -742,7 +724,7 @@ object {
 .fp-journal {
   display: block; }
 
-.fp-journal-title {
+.fp-h2 {
   text-align: center; }
 
 .fp-journal-list ul {
@@ -762,7 +744,21 @@ object {
   height: 15vw;
   width: 26vw; }
 
-/* Blog page */
+.product-terms {
+  list-style: none; }
+
+.product-terms {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center; }
+
+.fp-products-return img {
+  width: 70px; }
+
+.product-term p {
+  color: #404040; }
+
 .blog {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -800,15 +796,15 @@ object {
 .blog img {
   width: 70%; }
 
-.site-content {
+.blog .site-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
-  .site-content .content-area {
+  .blog .site-content .content-area {
     width: 75%; }
-  .site-content .widget-area {
+  .blog .site-content .widget-area {
     width: 25%; }
-  .site-content .widget-archives {
+  .blog .site-content .widget-archives {
     display: none; }
 
 /*--------------------------------------------------------------
@@ -857,22 +853,34 @@ p {
 .copyright-info {
   text-align: center; }
 
+.main-navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end; }
+
 .menu-main-navigation-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  text-align: right;
   display: fixed; }
+
+.main-navigation li {
+  padding-right: 40px; }
 
 .main-homepage-logo img {
   height: auto;
   max-width: 100%;
   position: relative;
-  top: 50%;
-  left: 34em; }
+  top: 10em;
+  left: 36em;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, 0.2));
+  background: linear-gradient(0.2 0 0 0.8); }
 
 .tent-logo {
-  width: 50px; }
+  width: 80px; }
 
 .masthead-tent-logo {
   padding-left: 80px;
@@ -886,6 +894,7 @@ p {
   position: fixed; }
 
 .menu-main-navigation-content {
+  width: 100%;
   -webkit-box-pack: right;
       -ms-flex-pack: right;
           justify-content: right; }
@@ -896,8 +905,14 @@ h1.entry-title {
 #site-branding {
   display: none; }
 
-.site-description p {
+.site-description {
   display: none; }
+
+#site-navigation {
+  text-align: right; }
+
+p, .product-term {
+  color: #404040; }
 
 /*--------------------------------------------------------------
 # Side-bar page template

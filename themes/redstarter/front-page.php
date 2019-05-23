@@ -10,23 +10,68 @@ get_header(); ?>
 <div id="primary" class="content-area">
 	<main id="main" class="site-main" role="main">
 		<div id="content" class="site-content">
+			<!--- your banner html --->
 			<div class="landing-page-container">
 				<div class="main-homepage-banner">
-					<a class="main-homepage-logo" href="#"><img src="<?php echo get_template_directory_uri() ?>/images/logos/inhabitent-logo-full.svg" alt="logo front page"></a>
-
-
-
-
-
-
-
-
-
+					<a class="main-homepage-logo" href=#><img src="<?php echo get_template_directory_uri() ?>/images/logos/inhabitent-logo-full.svg" alt="logo front page"></a>
 				</div>
 			</div>
+
+			<!-- product terms and icons ---->
+			<section class="fp-products">
+				<div class="fp-products-h2">
+					<h2 class="fp-h2">Shop Stuff</h2>
+				</div>
+
+				<div class="fp-products-return">
+					<?php
+					$terms = get_terms(
+						array(
+							'taxonomy' => 'product-type',
+							'hide_empty' => 0
+
+						)
+
+					);
+					?>
+					<ul class="product-terms">
+						<?php
+						foreach ($terms as $term) :
+							?>
+							<li class="product-term">
+								<img src="<?php echo get_template_directory_uri() .
+												'/images/product-type-icons/' .
+												$term->slug . '.svg'
+											?>" />
+
+								<p><?php echo $term->description; ?></p>
+								<p><a href="<?php echo get_term_link($term); ?>">
+										<?php echo $term->name; ?> Stuff
+									</a>
+
+							</li>
+						<?php
+					endforeach;
+					?>
+					</ul>
+				</div>
+			</section>
+			<!-- .product-terms --->
+
+
+
+
+
+
+
+
+
+
+
+			<!-- // Journal display section -->
 			<section class="fp-journal">
 				<div class="fp-journal-title">
-					<h1>Inhabitent Journal</h1>
+					<h2 class="fp-h2">Inhabitent Journal</h2>
 				</div>
 				<?php
 				$args = array('post_type' => 'post', 'posts_per_page' => '3', 'order' => 'ASC');
@@ -58,7 +103,7 @@ get_header(); ?>
 					<?php endforeach;
 				wp_reset_postdata(); ?>
 
-			</section>
+			</section> <!-- end of Journal section--->
 		</div> <!-- #content -->
 
 	</main><!-- #main -->

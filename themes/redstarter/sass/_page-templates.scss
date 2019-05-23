@@ -1,9 +1,9 @@
-/*--------------------------------------------------------------
-# Page Templates
---------------------------------------------------------------*/
+// /*--------------------------------------------------------------
+// # Page Templates
+// --------------------------------------------------------------*/
 
-/* Front page */
-.home h1 {
+// /* Front page */
+.fp-h2 {
 
     color: $color_h2_fp;
     font-family: $font__main;
@@ -21,31 +21,36 @@
     
 
 }
-.main-navigation-content{
-    justify-content: right;
+.site-header {
+    width: 100%;
+    justify-content: space-around;
 }
+// .main-navigation-content{
+//     justify-content: right;
+// }
 .site-description {
     display: hide;
 }
 
-.main-homepage-banner {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    text-align: center;
+// .main-homepage-banner {
+//     display: flex;
+//     justify-content: center;
+//     align-content: center;
+//     align-items: center;
+//     text-align: center;
     
-}
+// }
 .main-homepage-logo {
     text-align: center;
  
 
 }
+//journal posts display front page
 .fp-journal{
     display:block;
 
 }
-.fp-journal-title{
+.fp-h2 {
     text-align: center;
 }
 .fp-journal-list ul {
@@ -65,8 +70,31 @@
     width: 26vw;
 }
 
+// Product display front page
+.product-terms {
+    list-style: none;
+}
 
-/* Blog page */
+// .fp-products-h2 {
+//     display: block;
+// }
+// .fp-products {
+//     margin: auto;
+// }
+.product-terms {
+    display:flex; 
+    text-align: center; 
+
+}
+.fp-products-return img{
+
+    width: 70px;
+}
+.product-term p {
+    color: $color__text-main;
+}
+
+// /* Blog page */
 
 .blog {
         display: flex;
@@ -100,7 +128,7 @@
     }// end of blog
 
 
-
+.blog {
 .site-content {
     display: flex;
 
@@ -114,4 +142,5 @@
                 display: none;
             }
 
+}
 }

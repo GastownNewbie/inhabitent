@@ -1,7 +1,16 @@
+.main-navigation {
+    display: flex;
+    justify-content: flex-end;
+}
+
+
 .menu-main-navigation-content {
     display: flex;
-    text-align: right;
+    // text-align: right;
     display: fixed;
+}
+.main-navigation li {
+    padding-right: 40px;
 }
 
 
@@ -9,12 +18,13 @@
         height: auto;
         max-width: 100%;
         position: relative;
-        top: 50%;
-        left: 34em;
+        top: 10em;
+        left: 36em;
+        background: linear-gradient(.2 0 0 .8);
     }
 
 .tent-logo {
-    width: 50px;
+    width: 80px;
 }
 
 .masthead-tent-logo{
@@ -25,11 +35,13 @@
     height: 50px;
     display: flex;
     position: fixed;
+   
 }
 
 
 .menu-main-navigation-content {
 
+    width: 100%;
     justify-content: right;
 }
 
@@ -40,12 +52,16 @@ h1.entry-title {
 #site-branding {
     display: none;
 }
-.site-description p {
+.site-description {
     display: none;
 }
-// #site-navigation {
-//     display: none;
-// }
+#site-navigation {
+    text-align: right;
+}
+
+p, .product-term {
+    color: $color__text-main;
+}
 
 
 

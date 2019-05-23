@@ -27,7 +27,7 @@
 				<p class="site-description"><?php bloginfo('description'); ?></p>
 
 				<div class="masthead-tent-logo">
-					<a href="#"></a><img class="tent-logo" src="wp-content/themes/redstarter/images/logos/inhabitent-logo-tent-white.svg" alt="Inhabitent logo">
+					<a href="<?php echo get_home_url(); ?>"><img class="tent-logo" src="<?php echo get_template_directory_uri() ?>/images/logos/inhabitent-logo-tent-white.svg" alt="small tent logo"></a>
 				</div>
 
 			</div><!-- .site-branding -->
@@ -37,6 +37,10 @@
 				<nav id="site-navigation" class="main-navigation" role="navigation">
 					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php echo esc_html('Primary Menu'); ?></button>
 					<?php wp_nav_menu(array('theme_location' => 'primary', 'menu_id' => 'primary-menu')); ?>
+					<div class="header-search">
+						<?php get_search_form(); ?>
+
+					</div>
 				</nav>
 
 			</div>
