@@ -328,7 +328,7 @@ html {
           box-sizing: inherit; }
 
 body {
-  background: #fff;
+  background: #ffff;
   /* Fallback for when there is no custom background color defined. */ }
 
 blockquote,
@@ -694,7 +694,7 @@ object {
 .gallery-caption {
   display: block; }
 
-.fp-h2 {
+.home .fp-h2 {
   color: #2f1339;
   font-family: sans-serif;
   text-transform: uppercase;
@@ -702,64 +702,149 @@ object {
   letter-spacing: 2px;
   font-weight: 400; }
 
-.landing-page-container {
+.home .landing-page-container {
   background-image: url(../../images/home-hero.jpg);
   height: 100vh;
   background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
 
-.site-header {
-  width: 100%;
-  -ms-flex-pack: distribute;
-      justify-content: space-around; }
-
-.site-description {
+.home .site-description {
   display: hide; }
 
-.main-homepage-logo {
+.home .wrap-container-home {
+  padding-left: 60px;
+  padding-right: 60px; }
+
+.home .main-homepage-logo {
+  position: relative; }
+
+.home .fp-products {
+  margin-left: auto;
+  margin-right: auto;
   text-align: center; }
 
-.fp-journal {
+.home .fp-journal {
   display: block; }
 
-.fp-h2 {
+.home .fp-h2 {
   text-align: center; }
 
-.fp-journal-list ul {
+.home .fp-journal-list {
   list-style: none; }
 
-.fp-journal-list {
+.home .fp-journal-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
 
-.fp-journal-thumbnails {
+.home .fp-journal-thumbnails {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
 
-.fp-journal-list img {
+.home .fp-journal-list img {
   height: 15vw;
   width: 26vw; }
 
-.product-terms {
-  list-style: none; }
-
-.product-terms {
+.home .product-terms {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  text-align: center; }
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  text-align: center;
+  width: 100%;
+  list-style: none;
+  margin: auto; }
 
-.fp-products-return img {
+.home .fp-products-return img {
   width: 70px; }
 
-.product-term p {
+.home .product-term p {
   color: #404040; }
 
-.blog {
+.home .product-term {
+  border: solid 1px #e1e1e1;
+  border-top: solid 5px #e1e1e1;
+  max-width: 300px;
+  height: 350px; }
+
+.home .product-term a {
+  background: #248A83;
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
+  text-transform: uppercase;
+  padding: .4em;
+  color: white; }
+
+.home .latest-adventure h2 {
+  text-align: center; }
+
+.home .latest-adventure {
+  padding-bottom: 20px; }
+
+.home .adventure-title {
+  display: block;
+  text-align: center; }
+
+.home .fp-adventure-h2 {
+  color: #2f1339;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  font-size: 2.2em;
+  letter-spacing: 2px;
+  font-weight: 400; }
+
+.home .adventure-ul {
+  display: grid;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: auto;
+  grid-gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 200px 200px;
+  grid-template-areas: "canoe canoe lake lake" "canoe canoe mountain sky"; }
+
+.home .left-side-lake {
+  grid-area: canoe;
+  background-image: url(../../images/adventure-photos/canoe-girl.jpg);
+  height: 420px;
+  background-size: cover; }
+
+.home .beach {
+  grid-area: lake;
+  background-image: url(../../images/adventure-photos/beach-bonfire.jpg);
+  background-size: cover;
+  height: 200px;
+  background-position: center; }
+
+.home .mountain {
+  grid-area: mountain;
+  background-image: url(../../images/adventure-photos/mountain-hikers.jpg);
+  background-size: cover;
+  height: 200px; }
+
+.home .sky {
+  grid-area: sky;
+  background-image: url(../../images/adventure-photos/night-sky.jpg);
+  background-size: cover;
+  height: 200px; }
+
+.blog * {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px dashed #eee; }
+
+.blog .site {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -769,6 +854,21 @@ object {
           flex-direction: column;
   min-height: 100vh; }
 
+.blog .site-content {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 50px; }
+
+.blog .content-area {
+  width: 70%; }
+
+.blog .widget-area {
+  width: 30%; }
+
 .blog .entry-header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -777,7 +877,7 @@ object {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 70%;
+  width: 100%;
   margin-left: 8em; }
 
 .blog h2 {
@@ -794,18 +894,7 @@ object {
   padding: 12px 24px; }
 
 .blog img {
-  width: 70%; }
-
-.blog .site-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
-  .blog .site-content .content-area {
-    width: 75%; }
-  .blog .site-content .widget-area {
-    width: 25%; }
-  .blog .site-content .widget-archives {
-    display: none; }
+  width: 75%; }
 
 /*--------------------------------------------------------------
 # Footer
@@ -853,7 +942,19 @@ p {
 .copyright-info {
   text-align: center; }
 
-.main-navigation {
+body {
+  font-family: 'Merriweather-light';
+  font-size: 1 rem; }
+
+.site-header {
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  width: 100%; }
+
+.site-header .main-navigation {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -861,16 +962,16 @@ p {
       -ms-flex-pack: end;
           justify-content: flex-end; }
 
-.menu-main-navigation-content {
+.site-header .menu-main-navigation-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   display: fixed; }
 
-.main-navigation li {
+.site-header .main-navigation li {
   padding-right: 40px; }
 
-.main-homepage-logo img {
+.site-header .main-homepage-logo img {
   height: auto;
   max-width: 100%;
   position: relative;
@@ -879,40 +980,30 @@ p {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0, 0.2));
   background: linear-gradient(0.2 0 0 0.8); }
 
-.tent-logo {
+.site-header .tent-logo {
   width: 80px; }
 
-.masthead-tent-logo {
+.site-header .masthead-tent-logo {
   padding-left: 80px;
   border-bottom: 0px; }
 
-.site-header {
-  height: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: fixed; }
-
-.menu-main-navigation-content {
+.site-header .menu-main-navigation-content {
   width: 100%;
   -webkit-box-pack: right;
       -ms-flex-pack: right;
           justify-content: right; }
 
-h1.entry-title {
+.site-header h1.entry-title {
   display: hide; }
 
-#site-branding {
+.site-header #site-branding {
   display: none; }
 
-.site-description {
+.site-header .site-description {
   display: none; }
 
-#site-navigation {
+.site-header #site-navigation {
   text-align: right; }
-
-p, .product-term {
-  color: #404040; }
 
 /*--------------------------------------------------------------
 # Side-bar page template

@@ -1,67 +1,73 @@
-.main-navigation {
-    display: flex;
-    justify-content: flex-end;
-}
+body {
+    font-family: 'Merriweather-light';
+    font-size: 1 rem;
 
-
-.menu-main-navigation-content {
-    display: flex;
-    // text-align: right;
-    display: fixed;
-}
-.main-navigation li {
-    padding-right: 40px;
-}
-
-
-.main-homepage-logo img {
-        height: auto;
-        max-width: 100%;
-        position: relative;
-        top: 10em;
-        left: 36em;
-        background: linear-gradient(.2 0 0 .8);
-    }
-
-.tent-logo {
-    width: 80px;
-}
-
-.masthead-tent-logo{
-    padding-left: 80px;
-    border-bottom: 0px;
 }
 .site-header {
     height: 50px;
     display: flex;
     position: fixed;
+    width: 100%;
    
 }
+.site-header{
+                .main-navigation {
+                    display: flex;
+                    justify-content: flex-end;
+                }
+                
+                .menu-main-navigation-content {
+                    display: flex;
+                    display: fixed;
+                }
+                .main-navigation li {
+                    padding-right: 40px;
+                }
+                
+                .main-homepage-logo img {
+                        height: auto;
+                        max-width: 100%;
+                        position: relative;
+                        top: 10em;
+                        left: 36em;
+                        background: linear-gradient(.2 0 0 .8);
+                    }
+                
+                .tent-logo {
+                    width: 80px;
+                }
+                
+                .masthead-tent-logo{
+                    padding-left: 80px;
+                    border-bottom: 0px;
+                }
+                
+                
+                .menu-main-navigation-content {
+                
+                    width: 100%;
+                    justify-content: right;
+                }
+                
+                h1.entry-title {
+                    display: hide;
+                }
+                
+                #site-branding {
+                    display: none;
+                }
+                .site-description {
+                    display: none;
+                }
+                #site-navigation {
+                    text-align: right;
+                }   
 
 
-.menu-main-navigation-content {
-
-    width: 100%;
-    justify-content: right;
 }
 
-h1.entry-title {
-    display: hide;
-}
 
-#site-branding {
-    display: none;
-}
-.site-description {
-    display: none;
-}
-#site-navigation {
-    text-align: right;
-}
 
-p, .product-term {
-    color: $color__text-main;
-}
 
 
 

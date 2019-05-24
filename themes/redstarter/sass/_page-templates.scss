@@ -3,109 +3,216 @@
 // --------------------------------------------------------------*/
 
 // /* Front page */
-.fp-h2 {
+.home {
+        .fp-h2 {
 
-    color: $color_h2_fp;
-    font-family: $font__main;
-    text-transform: uppercase;
-    font-size: 2.2em;
-    letter-spacing: 2px;
-    font-weight: 400;
+            color: $color_purple_brand;
+            font-family: $font__main;
+            text-transform: uppercase;
+            font-size: 2.2em;
+            letter-spacing: 2px;
+            font-weight: 400;
 
-}
-.landing-page-container{
-    background-image: url(../../images/home-hero.jpg);
-    height: 100vh;
-    background-size: cover;
-    display: flex;
+        }
+        .landing-page-container{
+            background-image: url(../../images/home-hero.jpg);
+            height: 100vh;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+
+        }
+
+        .site-description {
+            display: hide;
+        }
+        .wrap-container-home {
+            padding-left: 60px;
+            padding-right: 60px;
+        }
+
+        .main-homepage-logo {
+            position: relative;
+            
+        }
+        //journal posts display front page
+
+        .fp-products{
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            
+        }
+        .fp-journal{
+            display:block;
+        
+
+        }
+        .fp-h2 {
+            text-align: center;
+        }
+        .fp-journal-list {
+
+            list-style: none;
+        }
+        .fp-journal-list {
+            display: flex;
+            
+        }
+        .fp-journal-thumbnails {
+            display: flex;
+
+        }
+        .fp-journal-list img {
+            height: 15vw;
+            width: 26vw;
+        }
     
 
-}
-.site-header {
-    width: 100%;
-    justify-content: space-around;
-}
-// .main-navigation-content{
-//     justify-content: right;
-// }
-.site-description {
-    display: hide;
-}
+        // Product display front page
+      
+        .product-terms {
+            display:flex; 
+            justify-content: space-around;
+            text-align: center; 
+            width: 100%;
+            list-style: none;
+            margin:auto;
+           
 
-// .main-homepage-banner {
-//     display: flex;
-//     justify-content: center;
-//     align-content: center;
-//     align-items: center;
-//     text-align: center;
+        }
+        .fp-products-return img{
+
+            width: 70px;
+        }
+        .product-term p {
+            color: $color__text-main;
+        }
+        .product-term {
+            border: solid 1px $color_solid_border;
+            border-top: solid 5px $color_solid_border;
+            max-width: 300px;
+            height: 350px;
+
+        }
+        .product-term a{
+            background: $color_green_brand;
+            text-decoration-line: none;
+            text-transform: uppercase;
+            padding: .4em;
+            color: white;
+        }
+        // Adventure section
+
+        .latest-adventure{
+            h2{
+
+                text-align: center;
+            }
+        }
+        .latest-adventure{
+            padding-bottom: 20px;
+        }
+        
+        .adventure-title{
+                    display: block;
+                    text-align: center;
+                    
+                }
+        .fp-adventure-h2{
+                        color: $color_purple_brand;
+                        font-family: $font__main;
+                        text-transform: uppercase;
+                        font-size: 2.2em;
+                        letter-spacing: 2px;
+                        font-weight: 400;
+                    
+                    }
     
-// }
-.main-homepage-logo {
-    text-align: center;
- 
-
-}
-//journal posts display front page
-.fp-journal{
-    display:block;
-
-}
-.fp-h2 {
-    text-align: center;
-}
-.fp-journal-list ul {
-
-    list-style: none;
-}
-.fp-journal-list {
-    display: flex;
+       
+        .adventure-ul {
+            display: grid;
+            list-style: none;
+            padding: 0;
+            margin:0;
+            width: auto;
+            grid-gap: 20px;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 200px 200px;
+            grid-template-areas:
+            "canoe canoe lake lake"
+            "canoe canoe mountain sky";
+              
+        }
+       
+        .left-side-lake{
+            grid-area: canoe;
+            background-image: url(../../images/adventure-photos/canoe-girl.jpg);
+            height: 420px;
+            background-size: cover;
+            
     
-}
-.fp-journal-thumbnails {
-    display: flex;
+        }
+		.beach{
+            grid-area:lake;
+            background-image: url(../../images/adventure-photos/beach-bonfire.jpg);
+            background-size: cover;
+            height:200px;
+            background-position: center;
+        }
+		.mountain{
+            grid-area: mountain;
+            background-image: url(../../images/adventure-photos/mountain-hikers.jpg);
+            background-size: cover;
+            height:200px;
+        }
+		.sky{
+            grid-area: sky;
+            background-image: url(../../images/adventure-photos/night-sky.jpg);
+            background-size: cover;
+            height:200px;
+        }
+        
 
-}
-.fp-journal-list img {
-    height: 15vw;
-    width: 26vw;
-}
+} // end of front page
 
-// Product display front page
-.product-terms {
-    list-style: none;
-}
-
-// .fp-products-h2 {
-//     display: block;
-// }
-// .fp-products {
-//     margin: auto;
-// }
-.product-terms {
-    display:flex; 
-    text-align: center; 
-
-}
-.fp-products-return img{
-
-    width: 70px;
-}
-.product-term p {
-    color: $color__text-main;
-}
 
 // /* Blog page */
 
 .blog {
-        display: flex;
-        flex-direction: column;
-        min-height: 100vh;
+            * {
+                box-sizing: border-box;
+                border: 1px dashed #eee;
+            }
+            
+            .site {
+                display: flex;
+                flex-direction: column;
+                min-height: 100vh;
+            }
+            
+            .site-content {
+                flex-grow: 1;
+                display: flex;
+                padding-top: 50px;
+            }
+            
+            .content-area {
+                width: 70%;
+            }
+            
+            .widget-area {
+                width: 30%;
+            }
+      
     }
 .blog {
         .entry-header {
                         display: flex;
                         flex-direction: column;
-                        width: 70%;
+                        width: 100%;
                         margin-left: 8em;
 
                     }
@@ -123,24 +230,8 @@
         }
 
         img {
-            width: 70%;
+            width: 75%;
        } 
-    }// end of blog
+    }  
 
-
-.blog {
-.site-content {
-    display: flex;
-
-            .content-area {
-                width: 75%;
-            }
-            .widget-area {
-                width: 25%;
-            }
-            .widget-archives{
-                display: none;
-            }
-
-}
-}
+    // end of blog

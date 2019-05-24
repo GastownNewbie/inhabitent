@@ -7,12 +7,13 @@
 
 // Register Product Post Type
 
-function inhabitent_post_type() {
+function inhabitent_post_type()
+{
 
 	$labels = array(
 		'name'                  => 'Products',
 		'singular_name'         => 'Product',
-		'menu_name'             => 'Products',
+		'menu_name'             => 'Product',
 		'name_admin_bar'        => 'Product',
 		'archives'              => 'Product Archives',
 		'attributes'            => 'Product Attributes',
@@ -42,7 +43,7 @@ function inhabitent_post_type() {
 		'label'                 => 'Product',
 		'description'           => 'A product post type for hipster camping',
 		'labels'                => $labels,
-		'supports'              => array( 'title', 'editor', 'thumbnail', 'revisions' ),
+		'supports'              => array('title', 'editor', 'thumbnail', 'revisions'),
 		'hierarchical'          => false,
 		'public'                => true,
 		'show_ui'               => true,
@@ -52,19 +53,18 @@ function inhabitent_post_type() {
 		'show_in_admin_bar'     => true,
 		'show_in_nav_menus'     => true,
 		'can_export'            => true,
-		'has_archive'           => true,
+		'has_archive'           => 'product',
 		'exclude_from_search'   => false,
 		'publicly_queryable'    => true,
 		'capability_type'       => 'post',
-        'show_in_rest'          => true,
-        'template_lock'         => 'all',
-        'template'              => array(
-            array('core/paragraph', array(
-                'placeholder' => 'Add the product description here.'
-            ) )
-        )
+		'show_in_rest'          => true,
+		'template_lock'         => 'all',
+		'template'              => array(
+			array('core/paragraph', array(
+				'placeholder' => 'Add the product description here.'
+			))
+		)
 	);
-	register_post_type( 'product', $args );
-
+	register_post_type('product', $args);
 }
-add_action( 'init', 'inhabitent_post_type', 0 );
+add_action('init', 'inhabitent_post_type', 0);

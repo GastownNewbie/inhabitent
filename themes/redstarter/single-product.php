@@ -7,57 +7,60 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+<div id="primary" class="content-area">
+    <main id="main" class="site-main" role="main">
 
-		<?php if ( have_posts() ) : ?>
+        <?php if (have_posts()) : ?>
 
-			<?php if ( is_home() && ! is_front_page() ) : ?>
-				<header>
-					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
-				</header>
-			<?php endif; ?>
+            <?php if (is_home() && !is_front_page()) : ?>
+                <header>
+                    <h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
+                </header>
+            <?php endif; ?>
 
-			<?php /* Start the Loop */ ?>
-            <?php while ( have_posts() ) : the_post(); ?>
-         
-            <?php echo CFS()->get( 'product_price' ); ?>
-           
+            <?php /* Start the Loop */ ?>
+            <?php while (have_posts()) : the_post(); ?>
+
+
+
                 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-                <header class="entry-header">
-                    <?php if ( has_post_thumbnail() ) : ?>
-                        <?php the_post_thumbnail( 'large' ); ?>
-                    <?php endif; ?>
+                    <header class="entry-header">
+                        <?php if (has_post_thumbnail()) : ?>
+                            <?php the_post_thumbnail('large'); ?>
+                        <?php endif; ?>
 
-                    <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+                        <?php the_title('<h1 class="entry-title">', '</h1>'); ?>
+                        <?php echo CFS()->get('product_price'); ?>
+                        <div class="entry-meta">
 
-                    <div class="entry-meta">
-                        <?php red_starter_posted_on(); ?> / <?php red_starter_comment_count(); ?> / <?php red_starter_posted_by(); ?>
-                    </div><!-- .entry-meta -->
-                </header><!-- .entry-header -->
+                        </div><!-- .entry-meta -->
+                    </header><!-- .entry-header -->
 
-                <div class="entry-content">
-                    <?php the_content(); ?>
-                    <?php
-                        wp_link_pages( array(
-                            'before' => '<div class="page-links">' . esc_html( 'Pages:' ),
+                    <div class="entry-content">
+                        <?php the_content(); ?>
+                        <?php
+                        wp_link_pages(array(
+                            'before' => '<div class="page-links">' . esc_html('Pages:'),
                             'after'  => '</div>',
-                        ) );
-                    ?>
-                </div><!-- .entry-content -->
+                        ));
+                        ?>
+                    </div>
+                    <!-- .entry-content -->
+                    <div class="entry-content">
+                        <?php the_excerpt(); ?>
+                    </div>
+                    <!-- .entry-content -->
 
-			<?php endwhile; ?>
+                <?php endwhile; ?>
 
-			<?php the_posts_navigation(); ?>
+                <?php the_posts_navigation(); ?>
 
-		<?php else : ?>
+            <?php else : ?>
 
-			<?php get_template_part( 'template-parts/content', 'none' ); ?>
+                <?php get_template_part('template-parts/content', 'none'); ?>
 
-		<?php endif; ?>
+            <?php endif; ?>
 
-		</main><!-- #main -->
-	</div><!-- #primary -->
-
-<?php get_sidebar(); ?>
+    </main><!-- #main -->
+</div><!-- #primary -->
 <?php get_footer(); ?>
