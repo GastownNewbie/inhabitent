@@ -896,6 +896,43 @@ object {
 .blog img {
   width: 75%; }
 
+body .archive p {
+  color: #404040; }
+
+body p, .product-template-default p {
+  color: #404040; }
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px dashed #eee; }
+
+.product-template-default .site {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100vh; }
+
+.product-template-default .type-product {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 50px; }
+
+.product-template-default .wp-post-image {
+  width: 50%; }
+
+.product-template-default .entry-header {
+  width: 50%;
+  height: 400px; }
+
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/

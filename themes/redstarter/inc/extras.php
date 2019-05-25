@@ -55,3 +55,15 @@ function inhabitent_body_class_for_pages($classes)
 	return $classes;
 }
 add_filter('body_class', 'inhabitent_body_class_for_pages');
+
+/*  archive-product.php number of posts to show */
+
+function number_of_product_per_page($query)
+{
+	if (is_post_type_archive('product')) {
+		$query->set('posts_per_page', 16);
+		return;
+	}
+}
+
+add_action('pre_get_posts', 'number_of_product_per_page');
