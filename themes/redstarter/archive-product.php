@@ -5,6 +5,7 @@
  * @package RED_Starter_Theme
  */
 
+
 get_header(); ?>
 
 <div id="primary" class="content-area">
@@ -19,22 +20,38 @@ get_header(); ?>
                 ?>
             </header><!-- .page-header -->
 
+            <!-- Products Categories --->
+            <div class="fp-products-return">
+                <?php
+                $terms = get_terms(
+                    array(
+                        'taxonomy' => 'product-type',
+                        'hide_empty' => 0
+                    )
+                );
+                ?>
+                <ul class="product-terms">
+                    <?php
+                    foreach ($terms as $term) :
+                        ?>
+                        <p class="term-descript-prod-type"><?php echo $term->description; ?></p>
+                        <p><a href="<?php echo get_term_link($term); ?>">
+                                <?php echo $term->name; ?>
+                            </a>
+                            </li>
+                        <?php
+                    endforeach;
+                    ?>
+                </ul>
+            </div>
+            <!-- End of products categories -->
+
             <?php /* Start the Loop */ ?>
             <?php while (have_posts()) : the_post();
-
-
                 ?>
-                }
 
                 <?php
-                /**
-                 * Template part for displaying posts.
-                 *
-                 * @package RED_Starter_Theme
-                 */
-
                 ?>
-
                 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
                     <header class="entry-header">
                         <?php if (has_post_thumbnail()) : ?>
@@ -47,11 +64,11 @@ get_header(); ?>
 
                         <?php if ('post' === get_post_type()) : ?>
 
-                            <div class="entry-meta">
+                            <!-- <div class="entry-meta">
 
-                                <?php red_starter_posted_on(); ?> / <?php comments_number('0 Comments', '1 Comment', '% Comments'); ?> / <?php red_starter_posted_by(); ?>
+                                                       
 
-                            </div><!-- .entry-meta -->
+                                                </div>.entry-meta -->
                         <?php endif; ?>
                     </header><!-- .entry-header -->
 
@@ -72,35 +89,7 @@ get_header(); ?>
 
         <?php endif; ?>
 
-        <div class="fp-products-return">
-            <?php
-            $terms = get_terms(
-                array(
-                    'taxonomy' => 'product-type',
-                    'hide_empty' => 0
 
-                )
-
-            );
-            ?>
-            <ul class="product-terms">
-                <?php
-                foreach ($terms as $term) :
-                    ?>
-
-
-                    <p><?php echo $term->description; ?></p>
-                    <p><a href="<?php echo get_term_link($term); ?>">
-                            <?php echo $term->name; ?>
-                        </a>
-
-
-                        </li>
-                    <?php
-                endforeach;
-                ?>
-            </ul>
-        </div>
 
     </main><!-- #main -->
 </div><!-- #primary -->
