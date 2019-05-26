@@ -9,16 +9,22 @@ get_header(); ?>
 	<main id="main" class="site-main" role="main">
 		<div id="content-about" class="about-content">
 			<!--- your banner html --->
-			<div class="about-page-container">
+			<div class="about-page-banner-container">
+				<h1 class="about-pg-h1">About</h1>
 
+			</div>
+			<div class="about-page-story-team-section">
 
-				<?php while (have_posts()) : the_post(); ?>
+				<h2>our story</h2>
 
-					<?php get_template_part('template-parts/content', 'page'); ?>
+				<p>Inhabitent Camping Supply Co. has been Vancouver camping supply icon for more than two whole months! Customers often comment on the bustle of activity they see in store…that’s where the magic happens every day.</p>
 
-				<?php endwhile; 
-			?>
+				<h2>our team</h2>
 
+				<p>We want to bridge the gap between the comfort of city life and the lovely Instagram-worthiness of the great outdoors that surround us. We sell gear that’s fun and functional. So much fun, in fact, that you’ll want to pitch a tent inside your one-bedroom apartment so you can use it every day.</p>
+
+			</div>
+		</div>
 	</main><!-- #main -->
 </div><!-- #primary -->
 

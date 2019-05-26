@@ -1,7 +1,14 @@
 // /*--------------------------------------------------------------
 // # Page Templates
 // --------------------------------------------------------------*/
-
+h1, h2{
+    text-transform: uppercase;
+    font-family: Novecento Sans Web,sans-serif;
+    letter-spacing: 2px;
+}
+h1{
+    font-size: 3rem;
+}
 // /* Front page */
 .home {
         .fp-h2 {
@@ -15,15 +22,28 @@
 
         }
         .landing-page-container{
-            background-image: url(../../images/home-hero.jpg);
+            background-image: url(../../images/home-hero.jpg), linear-gradient(
+                to bottom,
+                black,
+                rgba(46, 44, 44, 0.6)
+              );
             height: 100vh;
             background-size: cover;
             display: flex;
             align-items: center;
             justify-content: center;
             
-
         }
+        // &:before {
+        //     content: '';
+        //     position: absolute;
+        //     top: 0;
+        //     right: 0;
+        //     bottom: 0;
+        //     left: 0;
+        //     background-image: linear-gradient(to bottom right,#515455,#161515);
+        //     opacity: .4; 
+        // }
 
         .site-description {
             display: hide;
@@ -37,7 +57,7 @@
             position: relative;
             
         }
-        //journal posts display front page
+        //...journal posts display Front Page
 
         .fp-products{
             margin-left: auto;
@@ -71,7 +91,7 @@
         }
     
 
-        // Product display front page
+        // ....Product display Front Page
       
         .product-terms {
             display:flex; 
@@ -104,7 +124,7 @@
             padding: .4em;
             color: white;
         }
-        // Adventure section
+        // ....Adventure section Front Page
 
         .latest-adventure{
             h2{
@@ -176,7 +196,7 @@
         }
         
 
-} // end of front page
+} // end of Front Page
 
 
 // /* Blog page */
@@ -236,14 +256,14 @@
 
     // end of blog
 
-    // shop page
+    // Shop Archive Pages
     body .archive{
         p {
             color: $color__text-main;
         }
     }
 
-    // single product page
+    // Single Product Page Archive
 
     body, .product-template-default{
         p {
@@ -256,7 +276,8 @@
         box-sizing: border-box;
         border: 1px dashed #eee;
       }
-      // Shop page, product archives
+      // Shop Page, Product Archive
+
     .post-type-archive-product{
 
                 .shop-stuff-header{
@@ -290,7 +311,7 @@
                    
 
                 }
-                // product display area
+                // product display area on Shop Page
                 .entry-content {
                     justify-content: center;
                     align-items: center;
@@ -328,8 +349,9 @@
                 }
                
 
-}
-// Do Eat Sleep Wear Product Pages
+} // End of Shop Page
+
+// Do Eat Sleep Wear Product Pages Archive
 
 .tax-product-type{
 
@@ -374,8 +396,9 @@
                 }
 
 
-}
-// Individual product page
+} //End of Do Sleep Eat Wear page
+
+// Individual Product Page Archive
      
       .product-template-default{      
         
@@ -402,4 +425,29 @@
                     }
 
                 }
+
+// About Page
+
+.page-id-5{
+
+            .about-page-banner-container{
+                    background-image: url(../../images/about-hero.jpg),linear-gradient(
+                        to bottom,
+                        black,
+                        rgba(46, 44, 44, 0.6)
+                      );
+                    height: 100vh;
+                    background-size: cover;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: auto;
+                    background-position: bottom;
+            
+                }
+             
+
+
+}
+    
       

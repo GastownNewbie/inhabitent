@@ -694,6 +694,14 @@ object {
 .gallery-caption {
   display: block; }
 
+h1, h2 {
+  text-transform: uppercase;
+  font-family: Novecento Sans Web,sans-serif;
+  letter-spacing: 2px; }
+
+h1 {
+  font-size: 3rem; }
+
 .home .fp-h2 {
   color: #2f1339;
   font-family: sans-serif;
@@ -703,7 +711,8 @@ object {
   font-weight: 400; }
 
 .home .landing-page-container {
-  background-image: url(../../images/home-hero.jpg);
+  background-image: url(../../images/home-hero.jpg), -webkit-gradient(linear, left top, left bottom, from(black), to(rgba(46, 44, 44, 0.6)));
+  background-image: url(../../images/home-hero.jpg), linear-gradient(to bottom, black, rgba(46, 44, 44, 0.6));
   height: 100vh;
   background-size: cover;
   display: -webkit-box;
@@ -1046,6 +1055,23 @@ body p, .product-template-default p {
 .product-template-default .entry-header {
   width: 50%;
   height: 400px; }
+
+.page-id-5 .about-page-banner-container {
+  background-image: url(../../images/about-hero.jpg), -webkit-gradient(linear, left top, left bottom, from(black), to(rgba(46, 44, 44, 0.6)));
+  background-image: url(../../images/about-hero.jpg), linear-gradient(to bottom, black, rgba(46, 44, 44, 0.6));
+  height: 100vh;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: auto;
+  background-position: bottom; }
 
 /*--------------------------------------------------------------
 # Footer
