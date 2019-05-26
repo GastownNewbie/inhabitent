@@ -256,10 +256,66 @@
         box-sizing: border-box;
         border: 1px dashed #eee;
       }
+      // Shop page, product archives
+    .post-type-archive-product{
 
+                .shop-stuff-header{
+                    font-family: Novecento Sans Web,sans-serif;
+                    letter-spacing: 2px;
+                    text-transform: uppercase;
+                    text-align: center;
+                    margin-bottom: 0;
+                    margin-top: 100px;
+                }
 
-      .product-template-default{
-                    
+                .fp-products-return{
+
+                    display: flex;
+                }
+
+                .product-terms {
+                        flex-direction: row;
+                        display: flex;
+                        width: 100%;
+                        margin-left: 0;
+                        padding-left: 0; 
+                        justify-content: center;
+                    }
+                .term-descript-prod-type {
+                    padding: 50px;
+                   
+
+                }
+                .entry-content {
+                    justify-content: center;
+                    align-items: center;
+                    display: grid;
+                    // margin-left: 90px;
+                    grid-gap: 20px;
+                    grid-template-columns: repeat(4, 350px);
+                    grid-template-rows: repeat(4,450px);
+                    grid-template-areas:
+                    "a b c d"
+                    "e f g h"
+                    "i j k l"
+                    "m n o p";
+                    padding-bottom: 100px;
+                }
+                .wp-post-image{
+                    display:flex;
+                    height: 360px;
+                    width: 100%;
+                
+
+                }
+                .entry-title{
+                    margin-top: 0;
+                }
+
+}
+// Individual product page
+     
+      .product-template-default{      
         
            .site{
             display: flex;

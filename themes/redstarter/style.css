@@ -907,6 +907,61 @@ body p, .product-template-default p {
           box-sizing: border-box;
   border: 1px dashed #eee; }
 
+.post-type-archive-product .shop-stuff-header {
+  font-family: Novecento Sans Web,sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 0;
+  margin-top: 100px; }
+
+.post-type-archive-product .fp-products-return {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.post-type-archive-product .product-terms {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin-left: 0;
+  padding-left: 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.post-type-archive-product .term-descript-prod-type {
+  padding: 50px; }
+
+.post-type-archive-product .entry-content {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(4, 350px);
+  grid-template-rows: repeat(4, 450px);
+  grid-template-areas: "a b c d" "e f g h" "i j k l" "m n o p";
+  padding-bottom: 100px; }
+
+.post-type-archive-product .wp-post-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 360px;
+  width: 100%; }
+
+.post-type-archive-product .entry-title {
+  margin-top: 0; }
+
 .product-template-default .site {
   display: -webkit-box;
   display: -ms-flexbox;

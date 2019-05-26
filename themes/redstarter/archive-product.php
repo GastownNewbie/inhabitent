@@ -13,82 +13,69 @@ get_header(); ?>
 
         <?php if (have_posts()) : ?>
 
-            <header class="page-header">
-                <?php
-                the_archive_title('<h1 class="page-title">', '</h1>');
-                the_archive_description('<div class="taxonomy-description">', '</div>');
-                ?>
-            </header><!-- .page-header -->
-
             <!-- Products Categories --->
-            <div class="fp-products-return">
-                <?php
-                $terms = get_terms(
-                    array(
-                        'taxonomy' => 'product-type',
-                        'hide_empty' => 0
-                    )
-                );
-                ?>
-                <ul class="product-terms">
+            <header class="entry-header">
+                <h1 class="shop-stuff-header">Shop Stuff</h1>
+
+
+                <div class="fp-products-return">
+
+
                     <?php
-                    foreach ($terms as $term) :
-                        ?>
-                        <p class="term-descript-prod-type"><?php echo $term->description; ?></p>
-                        <p><a href="<?php echo get_term_link($term); ?>">
+                    $terms = get_terms(
+                        array(
+                            'taxonomy' => 'product-type',
+                            'hide_empty' => 0
+                        )
+                    );
+                    ?>
+                    <ul class="product-terms">
+                        <?php
+                        foreach ($terms as $term) :
+                            ?>
+
+                            <a class="term-descript-prod-type" href="<?php echo get_term_link($term); ?>">
                                 <?php echo $term->name; ?>
                             </a>
                             </li>
                         <?php
                     endforeach;
                     ?>
-                </ul>
-            </div>
+                    </ul>
+                </div>
+
+            </header><!-- .entry-header -->
+
             <!-- End of products categories -->
 
-            <?php /* Start the Loop */ ?>
-            <?php while (have_posts()) : the_post();
-                ?>
 
-                <?php
-                ?>
-                <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-                    <header class="entry-header">
-                        <?php if (has_post_thumbnail()) : ?>
-                            <?php the_post_thumbnail('large'); ?>
-                        <?php endif; ?>
+            <div class="grid-articles">
+                <div class="entry-content">
 
-                        <?php the_title(sprintf('<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url(get_permalink())), '</a></h2>'); ?>
+                    <?php /* Start the Loop */ ?> <?php while (have_posts()) : the_post(); ?> <?php
+                                                                                                    ?> <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-                        <?php echo CFS()->get('product_price'); ?>
+                            <?php if (has_post_thumbnail()) : ?>
+                                <a class="thumb-nail-post-link" href="<?php echo get_permalink(); ?>"> <?php the_post_thumbnail('large'); ?></a>
 
-                        <?php if ('post' === get_post_type()) : ?>
+                            <?php endif; ?>
 
-                            <!-- <div class="entry-meta">
+                            <?php the_title(sprintf('<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url(get_permalink())), '</a></h2>'); ?> <?php echo CFS()->get('product_price'); ?> <?php if ('post' === get_post_type()) : ?> <?php endif; ?> </article> <!-- #post-## -->
 
-                                                       
 
-                                                </div>.entry-meta -->
-                        <?php endif; ?>
-                    </header><!-- .entry-header -->
 
-                    <div class="entry-content">
-                        <?php
-                        ?>
-                    </div><!-- .entry-content -->
-                </article><!-- #post-## -->
+                    <?php endwhile; ?>
 
-            <?php endwhile; ?>
+                    <?php the_posts_navigation(); ?>
 
-            <?php the_posts_navigation(); ?>
+                <?php else : ?>
 
-        <?php else : ?>
+                    <?php get_template_part('template-parts/content', 'none'); ?>
+                    <?php echo CFS()->get('product_price'); ?>
 
-            <?php get_template_part('template-parts/content', 'none'); ?>
-            <?php echo CFS()->get('product_price'); ?>
-
-        <?php endif; ?>
-
+                <?php endif; ?>
+            </div>
+        </div><!-- .entry-content -->
 
 
     </main><!-- #main -->
