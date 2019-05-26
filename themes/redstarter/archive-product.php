@@ -59,8 +59,8 @@ get_header(); ?>
                                 <a class="thumb-nail-post-link" href="<?php echo get_permalink(); ?>"> <?php the_post_thumbnail('large'); ?></a>
 
                             <?php endif; ?>
-
-                            <?php the_title(sprintf('<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url(get_permalink())), '</a></h2>'); ?> <?php echo CFS()->get('product_price'); ?> <?php if ('post' === get_post_type()) : ?> <?php endif; ?> </article> <!-- #post-## -->
+                            <?php the_title(sprintf('<h2 class="entry-title">'), '</h2>'); ?> <p class="pricing">.................<?php echo CFS()->get('product_price'); ?></p> <?php if ('post' === get_post_type()) : ?>
+                            <?php endif; ?> </article> <!-- #post-## -->
 
 
 
@@ -71,7 +71,7 @@ get_header(); ?>
                 <?php else : ?>
 
                     <?php get_template_part('template-parts/content', 'none'); ?>
-                    <?php echo CFS()->get('product_price'); ?>
+
 
                 <?php endif; ?>
             </div>
