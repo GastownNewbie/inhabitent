@@ -700,7 +700,15 @@ h1, h2 {
   letter-spacing: 2px; }
 
 h1 {
-  font-size: 3rem; }
+  font-size: 3em; }
+
+h2 {
+  font-size: 2.2em; }
+
+p {
+  line-height: 1.75em;
+  letter-spacing: 1.5px;
+  font-family: Merriweather-light; }
 
 .home .fp-h2 {
   color: #2f1339;
@@ -711,8 +719,7 @@ h1 {
   font-weight: 400; }
 
 .home .landing-page-container {
-  background-image: url(../../images/home-hero.jpg), -webkit-gradient(linear, left top, left bottom, from(black), to(rgba(46, 44, 44, 0.6)));
-  background-image: url(../../images/home-hero.jpg), linear-gradient(to bottom, black, rgba(46, 44, 44, 0.6));
+  background-image: url(../../images/home-hero.jpg);
   height: 100vh;
   background-size: cover;
   display: -webkit-box;
@@ -1072,6 +1079,23 @@ body p, .product-template-default p {
           justify-content: center;
   width: auto;
   background-position: bottom; }
+
+.page-id-5 h1 {
+  color: white; }
+
+.page-id-5 h2 {
+  color: #2f1339; }
+
+.page-id-5 p {
+  font-size: 1.2em;
+  font-family: Merriweather;
+  font-weight: 300; }
+
+.page-id-5 .about-page-story-team-section {
+  text-align: center;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto; }
 
 /*--------------------------------------------------------------
 # Footer
