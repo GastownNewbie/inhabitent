@@ -706,9 +706,19 @@ h2 {
   font-size: 2.2em; }
 
 p {
-  line-height: 1.75em;
+  line-height: 1.5;
   letter-spacing: 1.5px;
-  font-family: Merriweather-light; }
+  font-family: Merriweather Web,serif; }
+
+.widget-archive, ul {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+  font-size: 1.4em; }
+
+.widget-archive, li, a {
+  text-decoration: none;
+  color: #248A83; }
 
 .home .fp-h2 {
   color: #2f1339;
@@ -1096,6 +1106,72 @@ body p, .product-template-default p {
   max-width: 900px;
   margin-left: auto;
   margin-right: auto; }
+
+.page-id-9 h2 {
+  color: #2f1339;
+  margin-right: 1.5rem; }
+
+.page-id-9 p {
+  font-size: 1.5em;
+  margin-right: 1.5rem;
+  margin-left: 1rem; }
+
+.page-id-9 .day-of-week {
+  font-weight: bold; }
+
+.page-id-9 .wpcf7 {
+  margin-right: 1.5rem; }
+
+.page-id-9 .entry-content {
+  margin-left: 40px; }
+
+.page-id-9 .entry-header {
+  margin-left: 40px;
+  margin-right: 50px; }
+
+.page-id-9 label {
+  color: #2f1339; }
+
+.page-id-9 .wpcf7-form-control {
+  background-color: #f4f4f4; }
+
+.page-id-9 .wpcf7-submit {
+  width: 120px;
+  height: 45px;
+  background-color: #248A83;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-radius: 0;
+  color: white;
+  font-size: .7em;
+  text-shadow: none; }
+
+.page-id-9 .site {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100vh; }
+
+.page-id-9 .site-content {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 50px; }
+
+.page-id-9 .content-area {
+  width: 70%; }
+
+.page-id-9 .widget-area {
+  width: 30%;
+  margin: 40px; }
 
 /*--------------------------------------------------------------
 # Footer
