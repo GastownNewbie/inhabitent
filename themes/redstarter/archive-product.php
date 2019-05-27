@@ -52,7 +52,8 @@ get_header(); ?>
             <div class="grid-articles">
                 <div class="entry-content">
 
-                    <?php /* Start the Loop */ ?> <?php while (have_posts()) : the_post(); ?>
+                    <?php /* Start the Loop */ ?>
+                    <?php while (have_posts()) : the_post(); ?>
                         <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
                             <div class="thumb-nail-wrap-1">
                                 <?php if (has_post_thumbnail()) : ?>

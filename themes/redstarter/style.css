@@ -227,31 +227,45 @@ th {
 --------------------------------------------------------------*/
 @font-face {
   font-family: 'Merriweather Web';
-  src: url("../assets/fonts/merriweather-light-webfont.eot");
-  src: url("../assets/fonts/merriweather-light-webfont.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/merriweather-light-webfont.woff2") format("woff2"), url("../assets/fonts/merriweather-light-webfont.woff") format("woff"), url("../assets/fonts/merriweather-light-webfont.ttf") format("truetype"), url("../assets/fonts/merriweather-light-webfont.svg#merriweatherlight") format("svg");
+  src: url("../fonts/Merriweather/fonts/merriweather-light-webfont.eot");
+  src: url("../fonts/Merriweather/fonts/merriweather-light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Merriweather/fonts/merriweather-light-webfont.woff2") format("woff2"), url("../fonts/Merriweather/fonts/merriweather-light-webfont.woff") format("woff"), url("../fonts/Merriweather/fonts/merriweather-light-webfont.ttf") format("truetype"), url("../fonts/Merriweather/fonts/merriweather-light-webfont.svg#merriweatherlight") format("svg");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: 'Merriweather Web';
-  src: url("../assets/fonts/merriweather-lightitalic-webfont.eot");
-  src: url("../assets/fonts/merriweather-lightitalic-webfont.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/merriweather-lightitalic-webfont.woff2") format("woff2"), url("../assets/fonts/merriweather-lightitalic-webfont.woff") format("woff"), url("../assets/fonts/merriweather-lightitalic-webfont.ttf") format("truetype"), url("../assets/fonts/merriweather-lightitalic-webfont.svg#merriweatherlight_italic") format("svg");
+  src: url("../fonts/Merriweather/fonts/merriweather-lightitalic-webfont.eot");
+  src: url("../fonts/Merriweather/fonts/merriweather-lightitalic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Merriweather/fonts/merriweather-lightitalic-webfont.woff2") format("woff2"), url("../fonts/Merriweather/fonts/merriweather-lightitalic-webfont.woff") format("woff"), url("../fonts/Merriweather/fonts/merriweather-lightitalic-webfont.ttf") format("truetype"), url("../fonts/Merriweather/fonts/merriweather-lightitalic-webfont.svg#merriweatherlight_italic") format("svg");
   font-weight: normal;
   font-style: italic; }
 
 @font-face {
   font-family: 'Merriweather Web';
-  src: url("../assets/fonts/merriweather-bold-webfont.eot");
-  src: url("../assets/fonts/merriweather-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/merriweather-bold-webfont.woff2") format("woff2"), url("../assets/fonts/merriweather-bold-webfont.woff") format("woff"), url("../assets/fonts/merriweather-bold-webfont.ttf") format("truetype"), url("../assets/fonts/merriweather-bold-webfont.svg#merriweatherbold") format("svg");
+  src: url("../fonts/Merriweather/fonts/merriweather-bold-webfont.eot");
+  src: url("../fonts/Merriweather/fonts/merriweather-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Merriweather/fonts/merriweather-bold-webfont.woff2") format("woff2"), url("../fonts/Merriweather/fonts/merriweather-bold-webfont.woff") format("woff"), url("../fonts/Merriweather/fonts/merriweather-bold-webfont.ttf") format("truetype"), url("../fonts/Merriweather/fonts/merriweather-bold-webfont.svg#merriweatherbold") format("svg");
   font-weight: bold;
   font-style: normal; }
 
 @font-face {
   font-family: 'Merriweather Web';
-  src: url("../assets/fonts/merriweather-bolditalic-webfont.eot");
-  src: url("../assets/fonts/merriweather-bolditalic-webfont.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/merriweather-bolditalic-webfont.woff2") format("woff2"), url("../assets/fonts/merriweather-bolditalic-webfont.woff") format("woff"), url("../assets/fonts/merriweather-bolditalic-webfont.ttf") format("truetype"), url("../assets/fonts/merriweather-bolditalic-webfont.svg#merriweatherbold_italic") format("svg");
+  src: url("../fonts/Merriweather/fonts/merriweather-bolditalic-webfont.eot");
+  src: url("../fonts/Merriweather/fonts/merriweather-bolditalic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Merriweather/fonts/merriweather-bolditalic-webfont.woff2") format("woff2"), url("../fonts/Merriweather/fonts/merriweather-bolditalic-webfont.woff") format("woff"), url("../fonts/Merriweather/fonts/merriweather-bolditalic-webfont.ttf") format("truetype"), url("../fonts/Merriweather/fonts/merriweather-bolditalic-webfont.svg#merriweatherbold_italic") format("svg");
   font-weight: bold;
   font-style: italic; }
+
+@font-face {
+  font-family: 'Novecento Sans Web';
+  src: url("../fonts/Novecento/fonts/novecentosanswide-normal-webfont.eot");
+  src: url("../fonts/Novecento/fonts/novecentosanswide-normal-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Novecento/fonts/novecentosanswide-normal-webfont.woff2") format("woff2"), url("../fonts/Novecento/fonts/novecentosanswide-normal-webfont.woff") format("woff"), url("../fonts/Novecento/fonts/novecentosanswide-normal-webfont.ttf") format("truetype"), url("../fonts/Novecento/fonts/novecentosanswide-normal-webfont.svg#novecento_sans_widenormal") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Novecento Sans Web';
+  src: url("fonts/novecentosanswide-demibold-webfont.eot");
+  src: url("fonts/novecentosanswide-demibold-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/novecentosanswide-demibold-webfont.woff2") format("woff2"), url("fonts/novecentosanswide-demibold-webfont.woff") format("woff"), url("fonts/novecentosanswide-demibold-webfont.ttf") format("truetype"), url("fonts/novecentosanswide-demibold-webfont.svg#novecento_sans_widedemibold") format("svg");
+  font-weight: bold;
+  font-style: normal; }
 
 /*--------------------------------------------------------------
 # Typography
@@ -694,6 +708,10 @@ object {
 .gallery-caption {
   display: block; }
 
+.container {
+  max-width: 1120px;
+  margin: 0 auto; }
+
 h1, h2 {
   text-transform: uppercase;
   font-family: Novecento Sans Web,sans-serif;
@@ -719,230 +737,6 @@ p {
 .widget-archive, li, a {
   text-decoration: none;
   color: #248A83; }
-
-.home .fp-h2 {
-  color: #2f1339;
-  font-family: sans-serif;
-  text-transform: uppercase;
-  font-size: 2.2em;
-  letter-spacing: 2px;
-  font-weight: 400; }
-
-.home .landing-page-container {
-  background-image: url(../../images/home-hero.jpg);
-  height: 100vh;
-  background-size: cover;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
-
-.home .site-description {
-  display: hide; }
-
-.home .wrap-container-home {
-  padding-left: 60px;
-  padding-right: 60px; }
-
-.home .main-homepage-logo {
-  position: relative; }
-
-.home .product-terms {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  text-align: center;
-  width: 100%;
-  list-style: none;
-  margin: auto; }
-
-.home .fp-products-return {
-  padding-bottom: 40px; }
-
-.home .fp-products-return img {
-  width: 70px; }
-
-.home .product-term p {
-  color: #404040; }
-
-.home .product-term {
-  border: solid 1px #e1e1e1;
-  border-top: solid 5px #e1e1e1;
-  width: 320px;
-  height: 300px;
-  padding-top: 25px; }
-
-.home .product-term-link-fp {
-  background: #248A83;
-  -webkit-text-decoration-line: none;
-          text-decoration-line: none;
-  text-transform: uppercase;
-  padding: .4em;
-  color: white; }
-
-.home .fp-products {
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center; }
-
-.home .fp-journal {
-  display: block; }
-
-.home .fp-h2 {
-  text-align: center;
-  font-size: 2.2em; }
-
-.home .fp-journal-list {
-  list-style: none; }
-
-.home .fp-journal-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 30%;
-      -ms-flex: 30%;
-          flex: 30%; }
-
-.home .fp-journal-list h2 {
-  font-size: 1.6em; }
-
-.home li, .home span.fp-date-comments {
-  font-size: .7em;
-  color: #404040; }
-
-.home .fp-journal-thumbnails {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
-
-.home .fp-journal-list img {
-  height: 400px;
-  width: 100%;
-  border-bottom: solid 5px #e1e1e1; }
-
-.home .read-more-button a li {
-  background-color: #248A83;
-  width: 40px;
-  height: 20px;
-  color: white; }
-
-.home .latest-adventure h2 {
-  text-align: center; }
-
-.home .latest-adventure {
-  padding-bottom: 20px; }
-
-.home .adventure-title {
-  display: block;
-  text-align: center; }
-
-.home .fp-adventure-h2 {
-  color: #2f1339;
-  font-family: sans-serif;
-  text-transform: uppercase;
-  font-size: 2.2em;
-  letter-spacing: 2px;
-  font-weight: 400; }
-
-.home .adventure-ul {
-  display: grid;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  width: auto;
-  grid-gap: 20px;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 200px 200px;
-  grid-template-areas: "canoe canoe lake lake" "canoe canoe mountain sky"; }
-
-.home .left-side-lake {
-  grid-area: canoe;
-  background-image: url(../../images/adventure-photos/canoe-girl.jpg);
-  height: 420px;
-  background-size: cover; }
-
-.home .beach {
-  grid-area: lake;
-  background-image: url(../../images/adventure-photos/beach-bonfire.jpg);
-  background-size: cover;
-  height: 200px;
-  background-position: center; }
-
-.home .mountain {
-  grid-area: mountain;
-  background-image: url(../../images/adventure-photos/mountain-hikers.jpg);
-  background-size: cover;
-  height: 200px; }
-
-.home .sky {
-  grid-area: sky;
-  background-image: url(../../images/adventure-photos/night-sky.jpg);
-  background-size: cover;
-  height: 200px; }
-
-.blog * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  border: 1px dashed #eee; }
-
-.blog .site {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  min-height: 100vh; }
-
-.blog .site-content {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding-top: 50px; }
-
-.blog .content-area {
-  width: 70%; }
-
-.blog .widget-area {
-  width: 30%; }
-
-.blog .entry-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 100%;
-  margin-left: 8em; }
-
-.blog h2 {
-  text-transform: uppercase;
-  background: #248A83; }
-
-.blog .entry-title {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: absolute;
-  max-width: 75%;
-  margin: 35px 0px 25px;
-  padding: 12px 24px; }
-
-.blog img {
-  width: 75%; }
 
 body .archive p {
   color: #404040; }
@@ -985,9 +779,10 @@ body p, .product-template-default p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center; }
-
-.post-type-archive-product .term-descript-prod-type {
-  padding: 50px; }
+  .post-type-archive-product .product-terms .term-descript-prod-type {
+    color: #248A83;
+    text-transform: uppercase;
+    padding: 50px; }
 
 .post-type-archive-product .entry-content {
   -webkit-box-pack: center;
@@ -1275,6 +1070,198 @@ body p, .product-template-default p {
 .page-id-9 .widget-area {
   width: 30%;
   margin: 40px; }
+
+.home .fp-h2 {
+  color: #2f1339;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  font-size: 2.2em;
+  letter-spacing: 2px;
+  font-weight: 400; }
+
+.home .landing-page-container {
+  background-image: url(../../images/home-hero.jpg);
+  height: 100vh;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.home .site-description {
+  display: hide; }
+
+.home .wrap-container-home {
+  padding-left: 60px;
+  padding-right: 60px; }
+
+.home .main-homepage-logo {
+  position: relative; }
+
+.home .product-terms {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  text-align: center;
+  width: 100%;
+  list-style: none;
+  margin: auto; }
+
+.home .fp-products-return {
+  padding-bottom: 40px; }
+
+.home .fp-products-return img {
+  width: 70px; }
+
+.home .product-term p {
+  color: #404040; }
+
+.home .product-term {
+  border: solid 1px #e1e1e1;
+  border-top: solid 5px #e1e1e1;
+  width: 320px;
+  height: 300px;
+  padding-top: 25px; }
+
+.home .product-term-link-fp {
+  background: #248A83;
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
+  text-transform: uppercase;
+  padding: .4em;
+  color: white; }
+
+.home .fp-products {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center; }
+
+.home .fp-journal {
+  display: block; }
+
+.home .fp-h2 {
+  text-align: center;
+  font-size: 2.2em; }
+
+.home .fp-journal-list {
+  list-style: none; }
+
+.home .fp-journal-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 30%;
+      -ms-flex: 30%;
+          flex: 30%; }
+
+.home .fp-journal-list h2 {
+  font-size: 1.6em; }
+
+.home li, .home span.fp-date-comments {
+  font-size: .7em;
+  color: #404040; }
+
+.home .fp-journal-thumbnails {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.home .fp-journal-list img {
+  height: 400px;
+  width: 100%;
+  border-bottom: solid 5px #e1e1e1; }
+
+.home .read-more-button a li {
+  background-color: #248A83;
+  width: 40px;
+  height: 20px;
+  color: white; }
+
+.home .latest-adventure h2 {
+  text-align: center; }
+
+.home .latest-adventure {
+  padding-bottom: 20px; }
+
+.home .adventure-title {
+  display: block;
+  text-align: center; }
+
+.home .fp-adventure-h2 {
+  color: #2f1339;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  font-size: 2.2em;
+  letter-spacing: 2px;
+  font-weight: 400; }
+
+.home .adventure-ul {
+  display: grid;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: auto;
+  grid-gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 200px 200px;
+  grid-template-areas: "canoe canoe lake lake" "canoe canoe mountain sky"; }
+
+.home .left-side-lake {
+  grid-area: canoe;
+  background-image: url(../../images/adventure-photos/canoe-girl.jpg);
+  height: 420px;
+  background-size: cover; }
+
+.home .beach {
+  grid-area: lake;
+  background-image: url(../../images/adventure-photos/beach-bonfire.jpg);
+  background-size: cover;
+  height: 200px;
+  background-position: center; }
+
+.home .mountain {
+  grid-area: mountain;
+  background-image: url(../../images/adventure-photos/mountain-hikers.jpg);
+  background-size: cover;
+  height: 200px; }
+
+.home .sky {
+  grid-area: sky;
+  background-image: url(../../images/adventure-photos/night-sky.jpg);
+  background-size: cover;
+  height: 200px; }
+
+.blog .entry-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  margin-left: 8em; }
+
+.blog h2 {
+  text-transform: uppercase;
+  background: #248A83; }
+
+.blog .entry-title {
+  position: absolute;
+  width: 40%;
+  padding: 10px; }
+  .blog .entry-title a {
+    color: white; }
+
+.blog img {
+  width: 75%; }
 
 /*--------------------------------------------------------------
 # Footer

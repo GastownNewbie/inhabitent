@@ -1,0 +1,32 @@
+// /*--------------------------------------------------------------
+// # Jounal Page Template
+// --------------------------------------------------------------*/
+
+.blog {
+    .entry-header {
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                    margin-left: 8em;
+
+                }
+    h2 {
+        text-transform: uppercase;
+        background: #248A83,
+
+    }
+    .entry-title {
+        position: absolute;
+        width:40%;
+        padding: 10px;
+        a{
+            color: white;
+        }
+    }
+
+    img {
+        width: 75%;
+   } 
+}  
+
+// end of blog

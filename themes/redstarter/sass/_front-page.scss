@@ -1,0 +1,202 @@
+// /* Front page */
+.home {
+    .fp-h2 {
+
+        color: $color_purple_brand;
+        font-family: $font__main;
+        text-transform: uppercase;
+        font-size: 2.2em;
+        letter-spacing: 2px;
+        font-weight: 400;
+
+    }
+    .landing-page-container{
+        background-image: url(../../images/home-hero.jpg);
+        height: 100vh;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    // &:before {
+    //     content: '';
+    //     position: absolute;
+    //     top: 0;
+    //     right: 0;
+    //     bottom: 0;
+    //     left: 0;
+    //     background-image: linear-gradient(to bottom right,#515455,#161515);
+    //     opacity: .4; 
+    // }
+
+    .site-description {
+        display: hide;
+    }
+    .wrap-container-home {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+
+    .main-homepage-logo {
+        position: relative;
+        
+    }
+
+        // ....Shop Stuff: Product display Front Page
+  
+        .product-terms {
+            display:flex; 
+            justify-content: space-around;
+            text-align: center; 
+            width: 100%;
+            list-style: none;
+            margin:auto;
+           
+
+        }
+        .fp-products-return{
+            padding-bottom: 40px;
+        }
+        .fp-products-return img{
+
+            width: 70px;
+        }
+        .product-term p {
+            color: $color__text-main;
+        }
+        .product-term {
+            border: solid 1px $color_solid_border;
+            border-top: solid 5px $color_solid_border;
+            width: 320px;
+            height: 300px;
+            padding-top: 25px;
+
+        }
+        .product-term-link-fp{
+            background: $color_green_brand;
+            text-decoration-line: none;
+            text-transform: uppercase;
+            padding: .4em;
+            color: white;
+        }
+    //...journal posts display Front Page
+
+    .fp-products{
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+
+    }
+    .fp-journal{
+        display:block;
+
+    }
+    .fp-h2 {
+        text-align: center;
+        font-size: 2.2em;
+    }
+    .fp-journal-list {
+
+        list-style: none;
+    }
+    .fp-journal-list {
+        display: flex;
+        flex: 30%;  
+    }
+    .fp-journal-list h2{
+        font-size: 1.6em;
+    }
+    li, span.fp-date-comments{
+        font-size: .7em;
+        color: $color__text-main;
+    }
+    .fp-journal-thumbnails {
+        display: flex;
+    }
+    .fp-journal-list img {
+        height: 400px;
+        width: 100%;
+        border-bottom: solid 5px $color_solid_border;
+    }
+    .read-more-button a li{
+        background-color: $color_green_brand;
+        width: 40px;
+        height:20px;
+        color: white;
+    }
+
+
+    // ....Adventure section Front Page
+
+    .latest-adventure{
+        h2{
+
+            text-align: center;
+        }
+    }
+    .latest-adventure{
+        padding-bottom: 20px;
+    }
+    
+    .adventure-title{
+                display: block;
+                text-align: center;
+                
+            }
+    .fp-adventure-h2{
+                    color: $color_purple_brand;
+                    font-family: $font__main;
+                    text-transform: uppercase;
+                    font-size: 2.2em;
+                    letter-spacing: 2px;
+                    font-weight: 400;
+                
+                }
+
+   
+    .adventure-ul {
+        display: grid;
+        list-style: none;
+        padding: 0;
+        margin:0;
+        width: auto;
+        grid-gap: 20px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 200px 200px;
+        grid-template-areas:
+        "canoe canoe lake lake"
+        "canoe canoe mountain sky";
+          
+    }
+   
+    .left-side-lake{
+        grid-area: canoe;
+        background-image: url(../../images/adventure-photos/canoe-girl.jpg);
+        height: 420px;
+        background-size: cover;
+        
+
+    }
+    .beach{
+        grid-area:lake;
+        background-image: url(../../images/adventure-photos/beach-bonfire.jpg);
+        background-size: cover;
+        height:200px;
+        background-position: center;
+    }
+    .mountain{
+        grid-area: mountain;
+        background-image: url(../../images/adventure-photos/mountain-hikers.jpg);
+        background-size: cover;
+        height:200px;
+    }
+    .sky{
+        grid-area: sky;
+        background-image: url(../../images/adventure-photos/night-sky.jpg);
+        background-size: cover;
+        height:200px;
+    }
+    
+
+} // end of Front Page
