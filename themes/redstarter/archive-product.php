@@ -52,15 +52,17 @@ get_header(); ?>
             <div class="grid-articles">
                 <div class="entry-content">
 
-                    <?php /* Start the Loop */ ?> <?php while (have_posts()) : the_post(); ?> <?php
-                                                                                                    ?> <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+                    <?php /* Start the Loop */ ?> <?php while (have_posts()) : the_post(); ?>
+                        <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+                            <div class="thumb-nail-wrap-1">
+                                <?php if (has_post_thumbnail()) : ?>
+                                    <a class="thumb-nail-post-link" href="<?php echo get_permalink(); ?>"> <?php the_post_thumbnail('large'); ?></a>
 
-                            <?php if (has_post_thumbnail()) : ?>
-                                <a class="thumb-nail-post-link" href="<?php echo get_permalink(); ?>"> <?php the_post_thumbnail('large'); ?></a>
-
+                                <?php endif; ?>
+                            </div>
+                            <?php the_title(sprintf('<h2 class="entry-title">'), '</h2>'); ?> <p class="pricing">......<?php echo CFS()->get('product_price'); ?></p> <?php if ('post' === get_post_type()) : ?>
                             <?php endif; ?>
-                            <?php the_title(sprintf('<h2 class="entry-title">'), '</h2>'); ?> <p class="pricing">.................<?php echo CFS()->get('product_price'); ?></p> <?php if ('post' === get_post_type()) : ?>
-                            <?php endif; ?> </article> <!-- #post-## -->
+                        </article> <!-- #post-## -->
 
 
 

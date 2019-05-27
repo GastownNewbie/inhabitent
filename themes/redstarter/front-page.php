@@ -30,9 +30,7 @@ get_header(); ?>
 							array(
 								'taxonomy' => 'product-type',
 								'hide_empty' => 0
-
 							)
-
 						);
 						?>
 						<ul class="product-terms">
@@ -40,17 +38,18 @@ get_header(); ?>
 							foreach ($terms as $term) :
 								?>
 								<li class="product-term">
-									<img src="<?php echo get_template_directory_uri() .
-													'/images/product-type-icons/' .
-													$term->slug . '.svg'
-												?>" />
+									<a href="<?php echo get_term_link($term); ?>">
+										<img src="<?php echo get_template_directory_uri() .
+														'/images/product-type-icons/' .
+														$term->slug . '.svg'
+													?>" />
 
-									<p><?php echo $term->description; ?></p>
-									<p><a href="<?php echo get_term_link($term); ?>">
+										<p><?php echo $term->description; ?></p>
+										<a class="product-term-link-fp" href="<?php echo get_term_link($term); ?>">
 											<?php echo $term->name; ?> Stuff
 										</a>
 
-								</li>
+								</li></a>
 							<?php
 						endforeach;
 						?>
@@ -58,16 +57,6 @@ get_header(); ?>
 					</div>
 				</section>
 				<!-- .product-terms --->
-
-
-
-
-
-
-
-
-
-
 
 				<!-- // Journal display section -->
 				<section class="fp-journal">
@@ -79,19 +68,19 @@ get_header(); ?>
 					$journal_posts = get_posts($args);
 
 					// returns an array of posts
-					?>
-					<?php foreach ($journal_posts as $post) : setup_postdata($post); ?>
-						<?php /* Content from your array of post results goes here */
-						?>
-						<div class="fp-journal-thumbnails">
+					?><div class="fp-journal-thumbnails">
+						<?php foreach ($journal_posts as $post) : setup_postdata($post); ?>
+							<?php /* Content from your array of post results goes here */
+							?>
+
 
 							<ul class="fp-journal-list">
 								<li>
 
 									<?php the_post_thumbnail('medium-large'); ?>
-
-									<?php echo get_the_date(); ?> /
-									<?php echo get_comments_number(); ?> Comments
+									<span class="fr-date-comments">
+										<?php echo get_the_date(); ?> /
+										<?php echo get_comments_number(); ?> Comments</span>
 
 
 									<a href="<?php the_permalink(); ?> ">
@@ -103,7 +92,7 @@ get_header(); ?>
 
 						<?php endforeach;
 					wp_reset_postdata(); ?>
-
+					</div>
 				</section> <!-- end of Journal section--->
 				<!-- Adventure section --->
 				<section class="latest-adventure">

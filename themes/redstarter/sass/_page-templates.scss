@@ -77,6 +77,44 @@ p {
             position: relative;
             
         }
+
+            // ....Shop Stuff: Product display Front Page
+      
+            .product-terms {
+                display:flex; 
+                justify-content: space-around;
+                text-align: center; 
+                width: 100%;
+                list-style: none;
+                margin:auto;
+               
+    
+            }
+            .fp-products-return{
+                padding-bottom: 40px;
+            }
+            .fp-products-return img{
+    
+                width: 70px;
+            }
+            .product-term p {
+                color: $color__text-main;
+            }
+            .product-term {
+                border: solid 1px $color_solid_border;
+                border-top: solid 5px $color_solid_border;
+                width: 320px;
+                height: 300px;
+                padding-top: 10px;
+    
+            }
+            .product-term-link-fp{
+                background: $color_green_brand;
+                text-decoration-line: none;
+                text-transform: uppercase;
+                padding: .4em;
+                color: white;
+            }
         //...journal posts display Front Page
 
         .fp-products{
@@ -87,11 +125,11 @@ p {
         }
         .fp-journal{
             display:block;
-        
 
         }
         .fp-h2 {
             text-align: center;
+            font-size: 2.2em;
         }
         .fp-journal-list {
 
@@ -99,51 +137,26 @@ p {
         }
         .fp-journal-list {
             display: flex;
-            
+            flex: 30%;  
+        }
+        .fp-journal-list h2{
+            font-size: 1.2em;
+        }
+        li,span.fp-date-comments{
+            font-size: .7em;
+            color: $color__text-main;
         }
         .fp-journal-thumbnails {
             display: flex;
-
         }
         .fp-journal-list img {
-            height: 15vw;
-            width: 26vw;
+            height: 300px;
+            width: 100%;
+            border-bottom: solid 5px $color_solid_border;
         }
     
 
-        // ....Product display Front Page
-      
-        .product-terms {
-            display:flex; 
-            justify-content: space-around;
-            text-align: center; 
-            width: 100%;
-            list-style: none;
-            margin:auto;
-           
-
-        }
-        .fp-products-return img{
-
-            width: 70px;
-        }
-        .product-term p {
-            color: $color__text-main;
-        }
-        .product-term {
-            border: solid 1px $color_solid_border;
-            border-top: solid 5px $color_solid_border;
-            max-width: 300px;
-            height: 350px;
-
-        }
-        .product-term a{
-            background: $color_green_brand;
-            text-decoration-line: none;
-            text-transform: uppercase;
-            padding: .4em;
-            color: white;
-        }
+    
         // ....Adventure section Front Page
 
         .latest-adventure{
@@ -334,7 +347,6 @@ p {
                 // product display area on Shop Page
                 .entry-content {
                     justify-content: center;
-                    align-items: center;
                     display: grid;
                     text-align: center;
                     grid-gap: 20px;
@@ -346,22 +358,38 @@ p {
                     "i j k l"
                     "m n o p";
                     padding-bottom: 100px;
+                   
+                    
+                }
+                .thumb-nail-wrap-1{
+                    display:flex;
+                    border-bottom: solid 5px $color_solid_border;
+                    object-fit: cover;
                 }
                 .wp-post-image{
                     display:flex;
                     height: 360px;
                     width: 100%;
-                    border-bottom: solid 5px $color_solid_border;
+                    object-fit: cover;
 
                 }
                 .entry-title, h2{
                     flex-wrap: wrap;
                     display: inline;
                     text-align: center;
+                    font-size: 1.4em;
+                    font-family: Merriweather Web,serif;
+                    text-transform: capitalize;
+                    color: $color_purple_brand;
+                    top: 10px;
                 }
                 .pricing, p{
                     flex-wrap: wrap;
                     display: inline;
+                    font-size: 1.4em;
+                    font-family: Merriweather Web,serif;
+                    color: $color_purple_brand;
+                    top: 10px;
                 }
                 .type-product{
                     border: solid 1px $color_solid_border;
@@ -378,13 +406,21 @@ p {
                 .page-header{
                     text-align: center;
                     margin-top: 100px;
+                    border-bottom: 1px dashed #c8c8c8;
                 }
+                .taxonomy-description{
+                    font-size: 1.2em;
+                    font-family: Merriweather Web,serif;
+                    font-weight: 300;
+                    padding-bottom: 40px;
+                    color: $color__text-main;
+                }
+              
                 .entry-content {
     
                     margin-left: 80px;
                     margin-right: 80px;
                     justify-content: center;
-                    align-items: center;
                     display: grid;
                     text-align: center;
                     grid-gap: 20px;
@@ -394,21 +430,38 @@ p {
                     "a b c d";
                     padding-bottom: 100px;
                 }
+                .thumb-nail-wrap{
+                    display:flex;
+                    border-bottom: solid 5px $color_solid_border;
+                    object-fit: cover;
+
+                }
                 .wp-post-image{
                     display:flex;
                     height: 360px;
                     width: 100%;
-                    border-bottom: solid 5px $color_solid_border;
+                    object-fit: cover;
 
                 }
                 .entry-title, h2{
                     flex-wrap: wrap;
                     display: inline;
                     text-align: center;
+                    font-size: 1.3em;
+                    font-family: Merriweather Web,serif;
+                    text-transform: capitalize;
+                    color: $color_purple_brand;
+                    position: relative;
+                    top: 10px;
                 }
                 .pricing, p{
                     flex-wrap: wrap;
                     display: inline;
+                    font-size: 1.3em;
+                    font-family: Merriweather Web,serif;
+                    color: $color_purple_brand;
+                    position: relative;
+                    top: 10px;
                 }
                 .type-product{
                     border: solid 1px $color_solid_border;

@@ -35,6 +35,7 @@ body {
                 
                 .tent-logo {
                     width: 80px;
+                   
                 }
                 
                 .masthead-tent-logo{
@@ -42,7 +43,9 @@ body {
                     border-bottom: 0px;
                 }
                 
-                
+                #primary-menu .nav-menu{
+                    text-transform: capitalize;
+                }
                 .menu-main-navigation-content {
                 
                     width: 100%;

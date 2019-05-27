@@ -56,7 +56,7 @@ function inhabitent_body_class_for_pages($classes)
 }
 add_filter('body_class', 'inhabitent_body_class_for_pages');
 
-/*  archive-product.php number of posts to show */
+/*  number of posts to show on archive product page*/
 
 function number_of_product_per_page($query)
 {

@@ -20,6 +20,7 @@ get_header(); ?>
 				?>
 			</header><!-- .page-header -->
 
+
 			<div class="grid-articles">
 				<div class="entry-content">
 					<?php /* Start the Loop */ ?>
@@ -29,14 +30,15 @@ get_header(); ?>
 						<?php
 						?>
 						<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-
-							<?php if (has_post_thumbnail()) : ?>
-								<?php the_post_thumbnail('large'); ?>
-							<?php endif; ?>
-
-							<?php the_title(sprintf('<h2 class="entry-title">'), '</h2>'); ?> <p class="pricing">.................<?php echo CFS()->get('product_price'); ?></p>
+							<div class="thumb-nail-wrap">
+								<?php if (has_post_thumbnail()) : ?>
+									<a class="thumb-nail-post-link" href="<?php echo get_permalink(); ?>"> <?php the_post_thumbnail('large'); ?></a>
+								<?php endif; ?>
+							</div>
+							<?php the_title(sprintf('<h2 class="entry-title">'), '</h2>'); ?> <p class="pricing">.....<?php echo CFS()->get('product_price'); ?></p>
 							<?php if ('post' === get_post_type()) : ?>
-							<?php endif; ?> </article><!-- #post-## -->
+							<?php endif; ?>
+						</article><!-- #post-## -->
 
 
 
@@ -50,6 +52,7 @@ get_header(); ?>
 					<?php echo CFS()->get('product_price'); ?>
 
 				<?php endif; ?>
+
 			</div>
 		</div><!-- .entry-content -->
 
