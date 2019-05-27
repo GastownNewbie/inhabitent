@@ -37,8 +37,9 @@ get_header(); ?>
 							<?php
 							foreach ($terms as $term) :
 								?>
-								<li class="product-term">
-									<a href="<?php echo get_term_link($term); ?>">
+								<a href="<?php echo get_term_link($term); ?>">
+									<li class="product-term">
+
 										<img src="<?php echo get_template_directory_uri() .
 														'/images/product-type-icons/' .
 														$term->slug . '.svg'
@@ -49,7 +50,8 @@ get_header(); ?>
 											<?php echo $term->name; ?> Stuff
 										</a>
 
-								</li></a>
+									</li>
+								</a>
 							<?php
 						endforeach;
 						?>

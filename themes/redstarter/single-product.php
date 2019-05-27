@@ -49,9 +49,15 @@ get_header(); ?>
                         'after'  => '</div>',
                     ));
                     ?>
-                </div>
-                <!-- .entry-content -->
+                    <div class="buttons-social-media">
+                        <button type="button" class="social-button-blk"><i class="fab fa-facebook-f"></i> LIKE</button>
+                        <button type="button" class="social-button-blk"><i class="fab fa-twitter"></i> PIN</button>
+                        <button type="button" class="social-button-blk"><i class="fab fa-pinterest"></i> TWEET</button>
+                    </div>
 
+
+
+                </div>
 
         </div>
 

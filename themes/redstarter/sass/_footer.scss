@@ -7,30 +7,55 @@ footer {
     background-image: repeat;
     background: url(../../images/dark-wood@2x.png);
     width: 100%;
+    height: auto;
     justify-content: space-between;
    
 
 }
-.biz-contact-container {
+footer {
+                    .biz-contact-container {
 
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin-top: 55px;
-}
-h3 {
-    color: #d99054;
-}
-p {
-    color: white;
-}
-.biz-contact-container {
-    display: flex;
-}
+                        display: flex;
+                        flex-direction: row;
+                        margin-top: 55px;
+                        min-height: 300px;
+                        margin-left: 60px;
+                        margin-right: 60px;
+                    }
+                    .business-hours, .contact-info{
+                        flex-grow: 1;
+                    }
+                    .business-hours .contact-info h3{
+                        text-transform: capitalize;
+                    }
+                    p .business-hours .contact-info p{
+                        color: white;
+                    }
+                    .contact-info{
+                        display:flex;
+                        flex-direction: column;
+                    }
+                    .business-hours{
+                        display: flex;
+                        flex-direction: column;
+                        padding-left: 30px;
+                    }
+                    .footer-block3{
+                        padding-left: 300px;
+                    }
+                    h3 {
+                        color: #d99054;
+                        text-transform: capitalize;
+                    }
+                    p {
+                        color: white;
+                    }
+                    
+                    .copyright-info {
+                        
+                        text-align: center;
+                    
+                    }
 
-.copyright-info {
-    
-    text-align: center;
 
 }

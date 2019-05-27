@@ -777,7 +777,7 @@ p {
   border-top: solid 5px #e1e1e1;
   width: 320px;
   height: 300px;
-  padding-top: 10px; }
+  padding-top: 25px; }
 
 .home .product-term-link-fp {
   background: #248A83;
@@ -811,7 +811,7 @@ p {
           flex: 30%; }
 
 .home .fp-journal-list h2 {
-  font-size: 1.2em; }
+  font-size: 1.6em; }
 
 .home li, .home span.fp-date-comments {
   font-size: .7em;
@@ -823,9 +823,15 @@ p {
   display: flex; }
 
 .home .fp-journal-list img {
-  height: 300px;
+  height: 400px;
   width: 100%;
   border-bottom: solid 5px #e1e1e1; }
+
+.home .read-more-button a li {
+  background-color: #248A83;
+  width: 40px;
+  height: 20px;
+  color: white; }
 
 .home .latest-adventure h2 {
   text-align: center; }
@@ -1113,6 +1119,12 @@ body p, .product-template-default p {
           flex-direction: column;
   min-height: 100vh; }
 
+.product-template-default .site-main {
+  padding-left: 80px;
+  padding-right: 80px;
+  padding-top: 80px;
+  padding-bottom: 80px; }
+
 .product-template-default .type-product {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
@@ -1128,6 +1140,41 @@ body p, .product-template-default p {
 .product-template-default .entry-header {
   width: 50%;
   height: 400px; }
+
+.product-template-default .entry-title {
+  font-size: larger;
+  color: #d99054;
+  margin-top: 0; }
+
+.product-template-default .entry-title h2 {
+  text-transform: capitalize; }
+
+.product-template-default .entry-content {
+  color: #404040;
+  font-size: larger;
+  margin-top: 0; }
+
+.product-template-default p, .product-template-default body .archive p, .product-template-default body p {
+  font-size: larger; }
+
+.product-template-default .entry-meta {
+  padding-left: 20px; }
+
+.product-template-default .social-button-blk {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.product-template-default button, .product-template-default .social-button-blk {
+  height: auto;
+  width: auto;
+  color: #404040;
+  background-color: white;
+  border: solid 1px #404040; }
+
+.product-template-default button, .product-template-default select {
+  text-transform: capitalize;
+  font-size: large; }
 
 .page-id-5 .about-page-banner-container {
   background-image: url(../../images/about-hero.jpg), -webkit-gradient(linear, left top, left bottom, from(black), to(rgba(46, 44, 44, 0.6)));
@@ -1243,11 +1290,12 @@ footer {
   background-image: repeat;
   background: url(../../images/dark-wood@2x.png);
   width: 100%;
+  height: auto;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between; }
 
-.biz-contact-container {
+footer .biz-contact-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1255,24 +1303,52 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  margin-top: 55px; }
+  margin-top: 55px;
+  min-height: 300px;
+  margin-left: 60px;
+  margin-right: 60px; }
 
-h3 {
-  color: #d99054; }
+footer .business-hours, footer .contact-info {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1; }
 
-p {
+footer .business-hours .contact-info h3 {
+  text-transform: capitalize; }
+
+footer p .business-hours .contact-info p {
   color: white; }
 
-.biz-contact-container {
+footer .contact-info {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
 
-.copyright-info {
+footer .business-hours {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-left: 30px; }
+
+footer .footer-block3 {
+  padding-left: 300px; }
+
+footer h3 {
+  color: #d99054;
+  text-transform: capitalize; }
+
+footer p {
+  color: white; }
+
+footer .copyright-info {
   text-align: center; }
 
 body {

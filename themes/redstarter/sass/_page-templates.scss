@@ -105,7 +105,7 @@ p {
                 border-top: solid 5px $color_solid_border;
                 width: 320px;
                 height: 300px;
-                padding-top: 10px;
+                padding-top: 25px;
     
             }
             .product-term-link-fp{
@@ -140,9 +140,9 @@ p {
             flex: 30%;  
         }
         .fp-journal-list h2{
-            font-size: 1.2em;
+            font-size: 1.6em;
         }
-        li,span.fp-date-comments{
+        li, span.fp-date-comments{
             font-size: .7em;
             color: $color__text-main;
         }
@@ -150,11 +150,16 @@ p {
             display: flex;
         }
         .fp-journal-list img {
-            height: 300px;
+            height: 400px;
             width: 100%;
             border-bottom: solid 5px $color_solid_border;
         }
-    
+        .read-more-button a li{
+            background-color: $color_green_brand;
+            width: 40px;
+            height:20px;
+            color: white;
+        }
 
     
         // ....Adventure section Front Page
@@ -408,6 +413,12 @@ p {
                     margin-top: 100px;
                     border-bottom: 1px dashed #c8c8c8;
                 }
+
+                // .term-descript-prod-type, a, ul{
+                //     text-transform: capitalize;
+                //     font-size: 2em;
+                // } //not working tried many diff things makes nav go funny on one product page
+
                 .taxonomy-description{
                     font-size: 1.2em;
                     font-family: Merriweather Web,serif;
@@ -475,29 +486,75 @@ p {
      
       .product-template-default{      
         
-           .site{
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-        }
-        
-
-        .type-product {
-            flex-grow: 1;
-            display: flex;
-            padding-top: 50px;
-        }
-                    
-                    .wp-post-image {
-                        width: 50%;
-                    }
-                    
-                    .entry-header {
-                        width:50%;
-                        height: 400px;
-                    }
+                .site{
+                    display: flex;
+                    flex-direction: column;
+                    min-height: 100vh;
+                }
+                
+                .site-main{
+                    padding-left: 80px;
+                    padding-right: 80px;
+                    padding-top: 80px;
+                    padding-bottom: 80px;
 
                 }
+                .type-product {
+                    flex-grow: 1;
+                    display: flex;
+                    padding-top: 50px;
+                }
+                            
+                .wp-post-image {
+                    width: 50%;
+                }
+                
+                .entry-header {
+                    width:50%;
+                    height: 400px;
+                }
+
+                .entry-title{
+                    font-size: larger;
+                    color: $color_orange_brand;
+                    margin-top: 0;
+                }
+                .entry-title h2{
+                    text-transform: capitalize;
+                }
+
+                .entry-content{
+                    color: $color__text-main;
+                    font-size: larger;
+                    margin-top: 0;
+                }
+                p, body .archive p, body p{
+                    font-size: larger;
+                }
+
+                .entry-meta{
+                    padding-left: 20px;
+                }
+                .social-button-blk{
+                    justify-content: space-between;
+    
+                }
+                button, .social-button-blk{
+                    height:auto;
+                    width:auto;
+                    color: $color__text-main;
+                    background-color: white;
+                    border: solid 1px $color__text-main
+
+                }
+                button, select{
+                    text-transform: capitalize;
+                    font-size: large;
+
+                }
+
+
+        } //End of single product page
 
 // About Page
 
