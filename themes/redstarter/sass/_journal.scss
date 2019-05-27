@@ -2,12 +2,47 @@
 // # Jounal Page Template
 // --------------------------------------------------------------*/
 
+.container{
+
+    max-width: 1120px;
+    margin: 0 auto;
+}
+
 .blog {
-    .entry-header {
+
+    .site {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+
+        }
+
+        .site-content {
+            flex-grow: 1;
+            display: flex;
+            padding-top: 50px;
+        }
+
+        .content-area {
+            width: 70%;
+        }
+
+        .widget-area {
+            width: 30%;
+            margin:40px;
+        }
+
+  
+    .type-post {
+
+        .entry-header{
                     display: flex;
                     flex-direction: column;
                     width: 100%;
                     margin-left: 8em;
+
+        }
+                   
 
                 }
     h2 {
@@ -23,10 +58,42 @@
             color: white;
         }
     }
+    p {
+        margin-left: 128px;
+        margin-right: 25px;
+    }
 
     img {
-        width: 75%;
+        width: 80%;
    } 
-}  
+}   // end of blog 
 
-// end of blog
+// single post blog page
+
+.single-post{
+
+    .site {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+
+    }
+
+    .site-content {
+        flex-grow: 1;
+        display: flex;
+        padding-top: 50px;
+    }
+
+    .content-area {
+        width: 70%;
+    }
+
+    .widget-area {
+        width: 30%;
+        margin:40px;
+    }
+
+
+
+}

@@ -80,10 +80,6 @@ p {
 
                     display: flex;
                 }
-
-                // .archive {
-
-                // }
                 .product-terms {
                         flex-direction: row;
                         display: flex;
@@ -97,7 +93,14 @@ p {
                             padding: 50px;
                         }
                     }
-                // product display area on Shop Page
+
+// product display area on Shop Page
+
+.post-type-archive-product{
+
+    
+}
+
                 .entry-content {
                     justify-content: center;
                     display: grid;
