@@ -8,7 +8,7 @@
         color: $color_purple_brand;
         font-family: $font__main;
         text-transform: uppercase;
-        font-size: 2.5rem;
+        font-size: 2.4rem;
         letter-spacing: 2px;
         font-weight: 400;
 
@@ -168,6 +168,17 @@
     }
     .latest-adventure{
         padding-bottom: 20px;
+
+        .read-more-btn-fp{
+            color: white;
+            font-size: 1rem;
+            text-transform: uppercase;
+            padding: 25;
+            border: solid 1px white;
+            width: 125px;
+            text-align: center;
+            position: relative;
+        }
     }
     
     .adventure-title{
@@ -179,7 +190,7 @@
                     color: $color_purple_brand;
                     font-family: $font__main;
                     text-transform: uppercase;
-                    font-size: 2.2em;
+                    font-size: 2.4rem;
                     letter-spacing: 2px;
                     font-weight: 400;
                 
@@ -206,27 +217,74 @@
         background-image: url(../../images/adventure-photos/canoe-girl.jpg);
         height: 420px;
         background-size: cover;
-        
 
+        .canoe-h3{
+    
+                font-family: Merriweather Web,serif;
+                color: white;
+                font-size: 3rem;
+                font-weight:300;
+                padding-left: 30px;
+                padding-right: 60px;
+
+        }
+    
     }
+
     .beach{
         grid-area:lake;
         background-image: url(../../images/adventure-photos/beach-bonfire.jpg);
         background-size: cover;
         height:200px;
         background-position: center;
+
+        .beach-h3{
+    
+            font-family: Merriweather Web,serif;
+            color: white;
+            font-size: 2rem;
+            font-weight:300;
+            padding-left: 30px;
+            padding-right: 60px;
+            
+
+    }
     }
     .mountain{
         grid-area: mountain;
         background-image: url(../../images/adventure-photos/mountain-hikers.jpg);
         background-size: cover;
         height:200px;
+
+        .mountain-h3{
+    
+            font-family: Merriweather Web,serif;
+            color: white;
+            font-size: 2rem;
+            font-weight:300;
+            padding-left: 30px;
+            // padding-right: 60px;
+
+    }
+
     }
     .sky{
         grid-area: sky;
         background-image: url(../../images/adventure-photos/night-sky.jpg);
         background-size: cover;
         height:200px;
+
+        .sky-h3{
+    
+            font-family: Merriweather Web,serif;
+            color: white;
+            font-size: 2rem;
+            font-weight:300;
+            padding-left: 30px;
+            padding-right: 60px;
+        
+
+    }
     }
     
 

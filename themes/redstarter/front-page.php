@@ -104,12 +104,20 @@ get_header(); ?>
 					</div>
 					<ul class="adventure-ul">
 						<li class="left-side-lake">
+							<h3 class="canoe-h3">Getting Back to Nature in a Canoe</h3>
+							<p class="read-more-btn-fp">Read more</p>
 						</li>
 						<li class="beach">
+							<h3 class="beach-h3">A Night with Friends at the Beach</h3>
+							<p class="read-more-btn-fp">Read more</p>
 						</li>
 						<li class="mountain">
+							<h3 class="mountain-h3">Taking in the View at Big Mountain</h3>
+							<p class="read-more-btn-fp">Read more</p>
 						</li>
 						<li class="sky">
+							<h3 class="sky-h3">Star-Gazing at the Night Sky</h3>
+							<p class="read-more-btn-fp">Read more</p>
 						</li>
 
 					</ul>

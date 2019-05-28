@@ -1085,7 +1085,7 @@ body p, .product-template-default p {
   color: #2f1339;
   font-family: sans-serif;
   text-transform: uppercase;
-  font-size: 2.5rem;
+  font-size: 2.4rem;
   letter-spacing: 2px;
   font-weight: 400; }
 
@@ -1217,6 +1217,15 @@ body p, .product-template-default p {
 
 .home .latest-adventure {
   padding-bottom: 20px; }
+  .home .latest-adventure .read-more-btn-fp {
+    color: white;
+    font-size: 1rem;
+    text-transform: uppercase;
+    padding: 25;
+    border: solid 1px white;
+    width: 125px;
+    text-align: center;
+    position: relative; }
 
 .home .adventure-title {
   display: block;
@@ -1226,7 +1235,7 @@ body p, .product-template-default p {
   color: #2f1339;
   font-family: sans-serif;
   text-transform: uppercase;
-  font-size: 2.2em;
+  font-size: 2.4rem;
   letter-spacing: 2px;
   font-weight: 400; }
 
@@ -1246,6 +1255,13 @@ body p, .product-template-default p {
   background-image: url(../../images/adventure-photos/canoe-girl.jpg);
   height: 420px;
   background-size: cover; }
+  .home .left-side-lake .canoe-h3 {
+    font-family: Merriweather Web,serif;
+    color: white;
+    font-size: 3rem;
+    font-weight: 300;
+    padding-left: 30px;
+    padding-right: 60px; }
 
 .home .beach {
   grid-area: lake;
@@ -1253,18 +1269,38 @@ body p, .product-template-default p {
   background-size: cover;
   height: 200px;
   background-position: center; }
+  .home .beach .beach-h3 {
+    font-family: Merriweather Web,serif;
+    color: white;
+    font-size: 2rem;
+    font-weight: 300;
+    padding-left: 30px;
+    padding-right: 60px; }
 
 .home .mountain {
   grid-area: mountain;
   background-image: url(../../images/adventure-photos/mountain-hikers.jpg);
   background-size: cover;
   height: 200px; }
+  .home .mountain .mountain-h3 {
+    font-family: Merriweather Web,serif;
+    color: white;
+    font-size: 2rem;
+    font-weight: 300;
+    padding-left: 30px; }
 
 .home .sky {
   grid-area: sky;
   background-image: url(../../images/adventure-photos/night-sky.jpg);
   background-size: cover;
   height: 200px; }
+  .home .sky .sky-h3 {
+    font-family: Merriweather Web,serif;
+    color: white;
+    font-size: 2rem;
+    font-weight: 300;
+    padding-left: 30px;
+    padding-right: 60px; }
 
 .blog .site {
   display: -webkit-box;
