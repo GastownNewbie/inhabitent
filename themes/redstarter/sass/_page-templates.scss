@@ -1,6 +1,12 @@
 // /*--------------------------------------------------------------
 // # Page Templates
 // --------------------------------------------------------------*/
+
+   // * {
+    //     box-sizing: border-box;
+    //     border: 1px dashed #eee;
+    //   }
+    
 .container{
 
     max-width: 1120px;
@@ -42,10 +48,7 @@ p {
 
     }
     
-    * {
-        box-sizing: border-box;
-        border: 1px dashed #eee;
-      }
+ 
       // Shop Page, Product Archive
 
     .post-type-archive-product{

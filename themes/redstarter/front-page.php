@@ -61,10 +61,11 @@ get_header(); ?>
 				<!-- .product-terms --->
 
 				<!-- // Journal display section -->
+
+				<div class="fp-journal-title">
+					<h3 class="fp-h2">Inhabitent Journal</h3>
+				</div>
 				<section class="fp-journal">
-					<div class="fp-journal-title">
-						<h2 class="fp-h2">Inhabitent Journal</h2>
-					</div>
 					<?php
 					$args = array('post_type' => 'post', 'posts_per_page' => '3', 'order' => 'ASC');
 					$journal_posts = get_posts($args);

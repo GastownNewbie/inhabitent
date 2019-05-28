@@ -755,11 +755,6 @@ body .archive p {
 body p, .product-template-default p {
   color: #404040; }
 
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  border: 1px dashed #eee; }
-
 .post-type-archive-product .shop-stuff-header {
   font-family: Novecento Sans Web,sans-serif;
   letter-spacing: 2px;
@@ -1083,11 +1078,14 @@ body p, .product-template-default p {
   width: 30%;
   margin: 40px; }
 
+.home p {
+  line-height: 1.75; }
+
 .home .fp-h2 {
   color: #2f1339;
   font-family: sans-serif;
   text-transform: uppercase;
-  font-size: 2.2em;
+  font-size: 2.5rem;
   letter-spacing: 2px;
   font-weight: 400; }
 
@@ -1133,19 +1131,24 @@ body p, .product-template-default p {
   width: 70px; }
 
 .home .product-term p {
-  color: #404040; }
+  color: #404040;
+  font-size: 1rem; }
 
 .home .product-term {
   border: solid 1px #e1e1e1;
   border-top: solid 5px #e1e1e1;
-  width: 320px;
-  height: 300px;
+  width: 250px;
+  height: 270px;
   padding-top: 25px; }
+  .home .product-term a {
+    -webkit-text-decoration-line: none;
+            text-decoration-line: none; }
 
 .home .product-term-link-fp {
   background: #248A83;
-  -webkit-text-decoration-line: none;
-          text-decoration-line: none;
+  font-family: Novecento Sans Web,sans-serif;
+  font-size: 1rem;
+  line-height: 1.75;
   text-transform: uppercase;
   padding: .4em;
   color: white; }
@@ -1159,11 +1162,25 @@ body p, .product-template-default p {
   display: block; }
 
 .home .fp-h2 {
-  text-align: center;
-  font-size: 2.2em; }
+  text-align: center; }
 
 .home .fp-journal-list {
-  list-style: none; }
+  font-size: 1.3rem;
+  font-family: Novecento Sans Web,sans-serif;
+  letter-spacing: 2px;
+  line-height: 1.25;
+  list-style: none;
+  margin-left: 0; }
+  .home .fp-journal-list a {
+    -webkit-text-decoration-line: none;
+            text-decoration-line: none;
+    color: #248A83; }
+  .home .fp-journal-list .read-more-button {
+    font-size: 1rem;
+    border: solid 1px black;
+    color: black;
+    text-transform: uppercase;
+    padding: 2px; }
 
 .home .fp-journal-list {
   display: -webkit-box;
@@ -1173,12 +1190,11 @@ body p, .product-template-default p {
       -ms-flex: 30%;
           flex: 30%; }
 
-.home .fp-journal-list h2 {
-  font-size: 1.6em; }
-
 .home li, .home span.fp-date-comments {
-  font-size: .7em;
-  color: #404040; }
+  font-size: .7rem;
+  color: #404040;
+  font-family: Merriweather Web,serif;
+  border: solid 1px #e1e1e1; }
 
 .home .fp-journal-thumbnails {
   display: -webkit-box;
@@ -1186,8 +1202,8 @@ body p, .product-template-default p {
   display: flex; }
 
 .home .fp-journal-list img {
-  height: 400px;
-  width: 100%;
+  max-height: 250px;
+  max-width: 100%;
   border-bottom: solid 5px #e1e1e1; }
 
 .home .read-more-button a li {
