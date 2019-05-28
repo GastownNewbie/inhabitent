@@ -15,6 +15,12 @@ body {
                     display: flex;
                     justify-content: flex-end;
                 }
+                .main-navigation a{
+                    text-transform: uppercase;
+                    font-family: Novecento Web,serif;
+                    font-size: 1rem;
+                    color: $color_green_brand;
+                }
                 
                 .menu-main-navigation-content {
                     display: flex;
@@ -70,7 +76,16 @@ body {
 }
 
 
+.page-id-5{
+    .main-navigation a{
+        
+        color: white;
+    }
+    .tent-logo{
+        display:none;
 
+}
+}
 
 
 

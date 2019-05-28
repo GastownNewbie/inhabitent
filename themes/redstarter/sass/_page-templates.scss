@@ -24,19 +24,6 @@ p {
     letter-spacing: 1.5px;
     font-family: Merriweather Web,serif;
 }
-.widget-archive, ul{
-    list-style: none;
-    margin-left: 0;
-    padding-left: 0;
-    font-size: 1.4em;
-    
-}
-.widget-archive, li, a{
-
-    text-decoration: none;
-    color: $color_green_brand;
-    
-    }
 
 
     // Shop Archive Pages
@@ -96,23 +83,15 @@ p {
 
 // product display area on Shop Page
 
-.post-type-archive-product{
 
-    
-}
 
                 .entry-content {
+                   @extend .container;
                     justify-content: center;
                     display: grid;
                     text-align: center;
                     grid-gap: 20px;
-                    grid-template-columns: repeat(4, 350px);
-                    grid-template-rows: repeat(4,450px);
-                    grid-template-areas:
-                    "a b c d"
-                    "e f g h"
-                    "i j k l"
-                    "m n o p";
+                    grid-template-columns: repeat(4, 1fr);
                     padding-bottom: 100px;
                    
                     
@@ -124,7 +103,7 @@ p {
                 }
                 .wp-post-image{
                     display:flex;
-                    height: 360px;
+                    height: 280px;
                     width: 100%;
                     object-fit: cover;
 
@@ -133,24 +112,29 @@ p {
                     flex-wrap: wrap;
                     display: inline;
                     text-align: center;
-                    font-size: 1.4em;
+                    font-size: 1em;
                     font-family: Merriweather Web,serif;
                     text-transform: capitalize;
-                    color: $color_purple_brand;
+                    color: $color__text-main;
                     top: 10px;
+                }
+                 .product .entry-title,  .pricing, .post-type-archive-product h2, .post-type-archive-product p{
+                    font-weight: 300;
                 }
                 .pricing, p{
                     flex-wrap: wrap;
                     display: inline;
-                    font-size: 1.4em;
+                    font-size: 1em;
                     font-family: Merriweather Web,serif;
-                    color: $color_purple_brand;
+                    color: $color__text-main;
                     top: 10px;
                 }
                 .type-product{
                     border: solid 1px $color_solid_border;
                     
                 }
+
+
                
 
 } // End of Shop Page
@@ -165,10 +149,6 @@ p {
                     border-bottom: 1px dashed #c8c8c8;
                 }
 
-                // .term-descript-prod-type, a, ul{
-                //     text-transform: capitalize;
-                //     font-size: 2em;
-                // } //not working tried many diff things makes nav go funny on one product page
 
                 .taxonomy-description{
                     font-size: 1.2em;
@@ -186,10 +166,7 @@ p {
                     display: grid;
                     text-align: center;
                     grid-gap: 20px;
-                    grid-template-columns: repeat(1, 350px);
-                    grid-template-rows: repeat(1,450px);
-                    grid-template-areas:
-                    "a b c d";
+                    grid-template-columns: repeat(4, 1fr);
                     padding-bottom: 100px;
                 }
                 .thumb-nail-wrap{
@@ -200,7 +177,7 @@ p {
                 }
                 .wp-post-image{
                     display:flex;
-                    height: 360px;
+                    height: 280px;
                     width: 100%;
                     object-fit: cover;
 
@@ -209,21 +186,23 @@ p {
                     flex-wrap: wrap;
                     display: inline;
                     text-align: center;
-                    font-size: 1.3em;
+                    font-size: 1em;
+                    font-weight:400;
                     font-family: Merriweather Web,serif;
                     text-transform: capitalize;
-                    color: $color_purple_brand;
+                    color: $color__text-main;
                     position: relative;
-                    top: 10px;
+                    
                 }
                 .pricing, p{
                     flex-wrap: wrap;
                     display: inline;
-                    font-size: 1.3em;
+                    font-size: 1em;
+                    font-weight:400;
                     font-family: Merriweather Web,serif;
-                    color: $color_purple_brand;
+                    color: $color__text-main;
                     position: relative;
-                    top: 10px;
+                 
                 }
                 .type-product{
                     border: solid 1px $color_solid_border;
@@ -334,9 +313,10 @@ p {
                     color: $color_purple_brand;
                 }
                 p{
-                    font-size: 1.2em;
-                    font-family: Merriweather;
+                    font-size: 1rem;
+                    font-family: Merriweather Web, serif;
                     font-weight: 300;
+                    line-height: 1.75;
                 }
                 .about-page-story-team-section{
 
@@ -358,9 +338,10 @@ p {
                 margin-right: 1.5rem;
                }
                p{
-                   font-size: 1.5em;
-                   margin-right: 1.5rem;
-                   margin-left: 1rem;
+                font-size: 1rem;
+                font-family: Merriweather Web, serif;
+                font-weight: 300;
+                line-height: 1.75;
                }
                .day-of-week{
                    font-weight: bold;

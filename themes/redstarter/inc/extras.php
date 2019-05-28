@@ -67,3 +67,19 @@ function number_of_product_per_page($query)
 }
 
 add_action('pre_get_posts', 'number_of_product_per_page');
+
+/* remove label eat sleep wear do archives */
+function my_theme_archive_title($title)
+{
+	if (is_category()) {
+		$title = single_cat_title('', false);
+	} elseif (is_tag()) {
+		$title = single_tag_title('', false);
+	} elseif (is_post_type_archive()) {
+		$title = post_type_archive_title('', false);
+	} elseif (is_tax()) {
+		$title = single_term_title('', false);
+	}
+	return $title;
+}
+add_filter('get_the_archive_title', 'my_theme_archive_title');
