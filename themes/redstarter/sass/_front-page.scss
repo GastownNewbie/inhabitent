@@ -63,14 +63,21 @@
         .product-term {
             border: solid 1px $color_solid_border;
             border-top: solid 5px $color_solid_border;
-            width: 260px;
-            height: 300px;
-            padding-top: 25px;
 
             a{
             text-decoration-line: none;
             }
+            &:hover{
+                border:solid 1px $color_orange_brand;
+                border-top: solid 5px $color_orange_brand;
+            }
 
+        }
+
+        .product-term {
+            width: 260px;
+            height: 300px;
+            padding-top: 25px;
         }
         .product-term-link-fp{
             background: $color_green_brand;
@@ -105,20 +112,35 @@
         line-height: 1.25;
         list-style: none;
         margin-left:0;
-        a{
-            text-decoration-line: none;
-            color: $color_green_brand;
-         
-            }
+       
         .read-more-button {
                 font-size: 1rem;
                 border: solid 1px black;
-                color: black;
                 text-transform: uppercase;
                 padding: 1px;
             }  
         
     
+    }
+        .read-more-button {
+            a {
+            color: black;
+            }
+            &:hover{
+                color:$color_green_brand
+        }
+    }
+
+    .fp-journal-list{
+        a{
+            text-decoration-line: none;
+            color: $color_green_brand;
+         
+            }
+            &:hover{
+               color: $color_green_brand;
+            }
+
     }
 
     

@@ -144,6 +144,7 @@
             text-transform: uppercase;
             background: #248A83;
             color: white;
+            font-size: 2rem;
     
         }
                    
@@ -192,6 +193,7 @@
 
            .tags-links{
                padding-left: 10px;
+               padding-right: 10px;
            }
        }
 
@@ -206,13 +208,16 @@
         font-family: Novecento Sans Web,sans-serif;
         text-transform: uppercase;
 
-       }
+       } // end article selection style
      
-       .post-navigation{
-           .nav-next{
-               display: none;
+    
+        .nav-next{
+            display: none;
            }
-       }
+        .nav-previous{
+            display:none;
+        }
+    
     
         .comment-reply-title{
                font-family:  Novecento Sans Web,sans-serif;
@@ -220,7 +225,69 @@
                letter-spacing: 2;
                font-size: 2rem;
            }
+
+        button, .social-button-blk{
+            height:auto;
+            width:auto;
+            color: $color__text-main;
+            background-color: white;
+            border: solid 1px $color__text-main;
+            border-radius: 0;
+
+        }
+        button, select{
+            text-transform: capitalize;
+            font-size: large;
+
+        }
+        .buttons-social-media{
+            padding-top: 30px;
+        }
     
+
+            label{
+                color: $color_purple_brand;
+                text-transform: capitalize;
+                font-family:  Novecento Sans Web,sans-serif;
+                font-weight: 300;
+                padding: 20px;
+    
+               }
+    
+            .form-control{
+                   background-color: #f4f4f4;
+               }
+    
+            .submit{
+                   width: 100px;
+                   height: 40px;
+                   background-color: $color_green_brand;
+                   border: none;
+                   box-shadow: none;
+                   border-radius: 0;
+                   color: white;
+                   font-size: .7em;
+                   text-shadow: none;
+
+            }
+
+            #comment{
+                background-color: #f4f4f4;
+            }
+        .wordpress-comment-cookies-consent{
+
+            label{
+                display: none;
+            }
+            
+        }
+
+        .content-area{
+            padding-bottom: 30px;
+        }
+
+
+           
 }
 
 .post-template-default .type-post h1{

@@ -1,9 +1,12 @@
-(function($){
+(function ($) {
 
-
-// all of your code goes here
-
-$('body').append('hello world');
-
+    $('.search-submit').on('click', function (event) {
+        event.preventDefault();
+        $('.search-field').toggle().focus();
+    })
+    $('.search-field').on('blur', function (event) {
+        event.preventDefault();
+        $('.search-field').hide();
+    })
 
 })(jQuery); // end of js file

@@ -979,7 +979,8 @@ body p, .product-template-default p {
   width: auto;
   color: #404040;
   background-color: white;
-  border: solid 1px #404040; }
+  border: solid 1px #404040;
+  border-radius: 0; }
 
 .product-template-default button, .product-template-default select {
   text-transform: capitalize;
@@ -1006,7 +1007,8 @@ body p, .product-template-default p {
   color: white; }
 
 .page-id-5 h2 {
-  color: #2f1339; }
+  color: #2f1339;
+  text-align: center; }
 
 .page-id-5 p {
   font-size: 1rem;
@@ -1015,8 +1017,8 @@ body p, .product-template-default p {
   line-height: 1.75; }
 
 .page-id-5 .about-page-story-team-section {
-  text-align: center;
-  max-width: 900px;
+  text-align: left;
+  max-width: 800px;
   margin-left: auto;
   margin-right: auto; }
 
@@ -1060,6 +1062,8 @@ body p, .product-template-default p {
   color: white;
   font-size: .7em;
   text-shadow: none; }
+  .page-id-9 .wpcf7-submit:hover {
+    background-color: #24473f; }
 
 .page-id-9 .site {
   display: -webkit-box;
@@ -1146,13 +1150,18 @@ body p, .product-template-default p {
 
 .home .product-term {
   border: solid 1px #e1e1e1;
-  border-top: solid 5px #e1e1e1;
-  width: 260px;
-  height: 300px;
-  padding-top: 25px; }
+  border-top: solid 5px #e1e1e1; }
   .home .product-term a {
     -webkit-text-decoration-line: none;
             text-decoration-line: none; }
+  .home .product-term:hover {
+    border: solid 1px #d99054;
+    border-top: solid 5px #d99054; }
+
+.home .product-term {
+  width: 260px;
+  height: 300px;
+  padding-top: 25px; }
 
 .home .product-term-link-fp {
   background: #248A83;
@@ -1181,16 +1190,25 @@ body p, .product-template-default p {
   line-height: 1.25;
   list-style: none;
   margin-left: 0; }
-  .home .fp-journal-list a {
-    -webkit-text-decoration-line: none;
-            text-decoration-line: none;
-    color: #248A83; }
   .home .fp-journal-list .read-more-button {
     font-size: 1rem;
     border: solid 1px black;
-    color: black;
     text-transform: uppercase;
     padding: 1px; }
+
+.home .read-more-button a {
+  color: black; }
+
+.home .read-more-button:hover {
+  color: #248A83; }
+
+.home .fp-journal-list a {
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
+  color: #248A83; }
+
+.home .fp-journal-list:hover {
+  color: #248A83; }
 
 .home .fp-journal-list {
   display: -webkit-box;
@@ -1438,7 +1456,8 @@ body p, .product-template-default p {
 .post-template-default .type-post h1 {
   text-transform: uppercase;
   background: #248A83;
-  color: white; }
+  color: white;
+  font-size: 2rem; }
 
 .post-template-default .entry-title {
   position: absolute;
@@ -1473,7 +1492,8 @@ body p, .product-template-default p {
     color: #248A83; }
 
 .post-template-default article .tags-links {
-  padding-left: 10px; }
+  padding-left: 10px;
+  padding-right: 10px; }
 
 .post-template-default .entry-content {
   padding-bottom: 30px; }
@@ -1486,7 +1506,10 @@ body p, .product-template-default p {
   font-family: Novecento Sans Web,sans-serif;
   text-transform: uppercase; }
 
-.post-template-default .post-navigation .nav-next {
+.post-template-default .nav-next {
+  display: none; }
+
+.post-template-default .nav-previous {
   display: none; }
 
 .post-template-default .comment-reply-title {
@@ -1494,6 +1517,52 @@ body p, .product-template-default p {
   text-transform: uppercase;
   letter-spacing: 2;
   font-size: 2rem; }
+
+.post-template-default button, .post-template-default .social-button-blk {
+  height: auto;
+  width: auto;
+  color: #404040;
+  background-color: white;
+  border: solid 1px #404040;
+  border-radius: 0; }
+
+.post-template-default button, .post-template-default select {
+  text-transform: capitalize;
+  font-size: large; }
+
+.post-template-default .buttons-social-media {
+  padding-top: 30px; }
+
+.post-template-default label {
+  color: #2f1339;
+  text-transform: capitalize;
+  font-family: Novecento Sans Web,sans-serif;
+  font-weight: 300;
+  padding: 20px; }
+
+.post-template-default .form-control {
+  background-color: #f4f4f4; }
+
+.post-template-default .submit {
+  width: 100px;
+  height: 40px;
+  background-color: #248A83;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-radius: 0;
+  color: white;
+  font-size: .7em;
+  text-shadow: none; }
+
+.post-template-default #comment {
+  background-color: #f4f4f4; }
+
+.post-template-default .wordpress-comment-cookies-consent label {
+  display: none; }
+
+.post-template-default .content-area {
+  padding-bottom: 30px; }
 
 .post-template-default .type-post h1 {
   color: white; }
@@ -1644,6 +1713,9 @@ body {
 
 .site-header #site-navigation {
   text-align: right; }
+
+.site-header .search-field {
+  display: none; }
 
 .page-id-5 .main-navigation a {
   color: white; }

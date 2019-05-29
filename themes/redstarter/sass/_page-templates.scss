@@ -287,7 +287,8 @@ p {
                     width:auto;
                     color: $color__text-main;
                     background-color: white;
-                    border: solid 1px $color__text-main
+                    border: solid 1px $color__text-main;
+                    border-radius: 0;
 
                 }
                 button, select{
@@ -320,6 +321,7 @@ p {
                 }
                 h2{
                     color: $color_purple_brand;
+                    text-align: center;
                 }
                 p{
                     font-size: 1rem;
@@ -329,8 +331,8 @@ p {
                 }
                 .about-page-story-team-section{
 
-                    text-align: center;
-                    max-width: 900px;
+                    text-align: left;
+                    max-width: 800px;
                     margin-left: auto;
                     margin-right: auto;
                 }
@@ -382,6 +384,10 @@ p {
                    color: white;
                    font-size: .7em;
                    text-shadow: none;
+
+                    &:hover{
+                        background-color:#24473f;
+                    }
 
                }
                 .site {
