@@ -68,6 +68,7 @@
         border: solid 1px $color__text-main;
         color: $color__text-main;
         padding: 5px;
+        text-decoration-line: none;
     }
     p {
         margin-right: 25px;
@@ -177,6 +178,49 @@
         img {
             width: 100%;
        } 
+
+       article{
+           footer{
+               display:block;
+               background: white;
+               text-transform: uppercase;
+
+               a {color: $color_green_brand;
+               }
+               
+           }
+
+           .tags-links{
+               padding-left: 10px;
+           }
+       }
+
+        .entry-content{
+                padding-bottom: 30px;
+       }
+       .link-tags{
+           font-family: Novecento Sans Web,sans-serif;
+           text-transform: uppercase;
+       }
+       .cat-links{
+        font-family: Novecento Sans Web,sans-serif;
+        text-transform: uppercase;
+
+       }
+     
+       .post-navigation{
+           .nav-next{
+               display: none;
+           }
+       }
+    
+        .comment-reply-title{
+               font-family:  Novecento Sans Web,sans-serif;
+               text-transform: uppercase;
+               letter-spacing: 2;
+               font-size: 2rem;
+           }
+    
 }
 
 .post-template-default .type-post h1{

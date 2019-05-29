@@ -222,7 +222,7 @@ td,
 th {
   padding: 0; }
 
-.container, .post-type-archive-product .entry-content, .blog .site-content, .post-template-default .site-content {
+.container, .archive .entry-content, .blog .site-content, .post-template-default .site-content {
   max-width: 1120px;
   margin: 0 auto; }
 
@@ -231,43 +231,43 @@ th {
 --------------------------------------------------------------*/
 @font-face {
   font-family: 'Merriweather Web';
-  src: url("../../fonts/Merriweather/fonts/merriweather-light-webfont.eot");
-  src: url("../../fonts/Merriweather/fonts/merriweather-light-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/Merriweather/fonts/merriweather-light-webfont.woff2") format("woff2"), url("../../fonts/Merriweather/fonts/merriweather-light-webfont.woff") format("woff"), url("../../fonts/Merriweather/fonts/merriweather-light-webfont.ttf") format("truetype"), url("../../fonts/Merriweather/fonts/merriweather-light-webfont.svg#merriweatherlight") format("svg");
+  src: url("../../fonts/merriweather-light-webfont.eot");
+  src: url("../../fonts/merriweather-light-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/merriweather-light-webfont.woff2") format("woff2"), url("../../fonts/merriweather-light-webfont.woff") format("woff"), url("../../fonts/merriweather-light-webfont.ttf") format("truetype"), url("../../fonts/merriweather-light-webfont.light") format("svg");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: 'Merriweather Web';
-  src: url("../../fonts/Merriweather/fonts/merriweather-lightitalic-webfont.eot");
-  src: url("../../fonts/Merriweather/fonts/merriweather-lightitalic-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/Merriweather/fonts/merriweather-lightitalic-webfont.woff2") format("woff2"), url("../../fonts/Merriweather/fonts/merriweather-lightitalic-webfont.woff") format("woff"), url("../../fonts/Merriweather/fonts/merriweather-lightitalic-webfont.ttf") format("truetype"), url("../../fonts/Merriweather/fonts/merriweather-lightitalic-webfont.svg#merriweatherlight_italic") format("svg");
+  src: url("../../fonts/merriweather-lightitalic-webfont.eot");
+  src: url("../../fonts/merriweather-lightitalic-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/merriweather-lightitalic-webfont.woff2") format("woff2"), url("../../fonts/merriweather-lightitalic-webfont.woff") format("woff"), url("../../fonts/merriweather-lightitalic-webfont.ttf") format("truetype"), url("../../fonts/merriweather-lightitalic-webfont.light_italic") format("svg");
   font-weight: normal;
   font-style: italic; }
 
 @font-face {
   font-family: 'Merriweather Web';
-  src: url("../../fonts/Merriweather/fonts/merriweather-bold-webfont.eot");
-  src: url("../../fonts/Merriweather/fonts/merriweather-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/Merriweather/fonts/merriweather-bold-webfont.woff2") format("woff2"), url("../../fonts/Merriweather/fonts/merriweather-bold-webfont.woff") format("woff"), url("../../fonts/Merriweather/fonts/merriweather-bold-webfont.ttf") format("truetype"), url("../../fonts/Merriweather/fonts/merriweather-bold-webfont.svg#merriweatherbold") format("svg");
+  src: url("../../fonts/merriweather-bold-webfont.eot");
+  src: url("../../fonts/merriweather-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/merriweather-bold-webfont.woff2") format("woff2"), url("../../fonts/merriweather-bold-webfont.woff") format("woff"), url("../../fonts/merriweather-bold-webfont.ttf") format("truetype"), url("../../fonts/merriweather-bold-webfont.bold") format("svg");
   font-weight: bold;
   font-style: normal; }
 
 @font-face {
   font-family: 'Merriweather Web';
-  src: url("../../fonts/Merriweather/fonts/merriweather-bolditalic-webfont.eot");
-  src: url("../../fonts/Merriweather/fonts/merriweather-bolditalic-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/Merriweather/fonts/merriweather-bolditalic-webfont.woff2") format("woff2"), url("../../fonts/Merriweather/fonts/merriweather-bolditalic-webfont.woff") format("woff"), url("../../fonts/Merriweather/fonts/merriweather-bolditalic-webfont.ttf") format("truetype"), url("../../fonts/Merriweather/fonts/merriweather-bolditalic-webfont.svg#merriweatherbold_italic") format("svg");
+  src: url("../../fonts/merriweather-bolditalic-webfont.eot");
+  src: url("../../fonts/merriweather-bolditalic-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/merriweather-bolditalic-webfont.woff2") format("woff2"), url("../../fonts/merriweather-bolditalic-webfont.woff") format("woff"), url("../../fonts/merriweather-bolditalic-webfont.ttf") format("truetype"), url("../../fonts/merriweather-bolditalic-webfont.bold_italic") format("svg");
   font-weight: bold;
   font-style: italic; }
 
 @font-face {
   font-family: 'Novecento Sans Web';
-  src: url("../../fonts/Novecento/fonts/novecentosanswide-normal-webfont.eot");
-  src: url("../../fonts/Novecento/fonts/novecentosanswide-normal-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/Novecento/fonts/novecentosanswide-normal-webfont.woff2") format("woff2"), url("../../fonts/Novecento/fonts/novecentosanswide-normal-webfont.woff") format("woff"), url("../../fonts/Novecento/fonts/novecentosanswide-normal-webfont.ttf") format("truetype"), url("../../fonts/Novecento/fonts/novecentosanswide-normal-webfont.svg#novecento_sans_widenormal") format("svg");
+  src: url("../../fonts/novecentosanswide-normal-webfont.eot");
+  src: url("../../fonts/novecentosanswide-normal-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/novecentosanswide-normal-webfont.woff2") format("woff2"), url("../../fonts/novecentosanswide-normal-webfont.woff") format("woff"), url("../../fonts/novecentosanswide-normal-webfont.ttf") format("truetype"), url("../../fonts/novecentosanswide-normal-webfont.normal") format("svg");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: 'Novecento Sans Web';
-  src: url("../../fonts/Novecento/fonts/novecentosanswide-demibold-webfont.eot");
-  src: url("../../fonts/Novecento/fonts/novecentosanswide-demibold-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/Novecento/fonts/novecentosanswide-demibold-webfont.woff2") format("woff2"), url("../../fonts/Novecento/fonts/novecentosanswide-demibold-webfont.woff") format("woff"), url("../../fonts/Novecento/fonts/novecentosanswide-demibold-webfont.ttf") format("truetype"), url("../../fonts/Novecento/fonts/novecentosanswide-demibold-webfont.svg#novecento_sans_widedemibold") format("svg");
+  src: url("../../fonts/novecentosanswide-demibold-webfont.eot");
+  src: url("../../fonts/novecentosanswide-demibold-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/novecentosanswide-demibold-webfont.woff2") format("woff2"), url("../../fonts/novecentosanswide-demibold-webfont.woff") format("woff"), url("../..fonts/novecentosanswide-demibold-webfont.ttf") format("truetype"), url("../../fonts/novecentosanswide-demibold-webfont.bold") format("svg");
   font-weight: bold;
   font-style: normal; }
 
@@ -729,7 +729,7 @@ object {
 .gallery-caption {
   display: block; }
 
-.container, .post-type-archive-product .entry-content, .blog .site-content, .post-template-default .site-content {
+.container, .archive .entry-content, .blog .site-content, .post-template-default .site-content {
   max-width: 1120px;
   margin: 0 auto; }
 
@@ -755,23 +755,28 @@ body .archive p {
 body p, .product-template-default p {
   color: #404040; }
 
-.post-type-archive-product .shop-stuff-header {
+.archive .shop-stuff-header {
   font-family: Novecento Sans Web,sans-serif;
   letter-spacing: 2px;
   text-transform: uppercase;
   text-align: center;
-  margin-bottom: 0;
+  margin-bottom: 0; }
+
+.archive .site-header {
+  top: 50px; }
+
+.archive .site-content {
   margin-top: 100px; }
 
-.post-type-archive-product .entry-title {
+.archive .entry-title {
   margin-top: 0; }
 
-.post-type-archive-product .fp-products-return {
+.archive .fp-products-return {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
 
-.post-type-archive-product .product-terms {
+.archive .product-terms {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -785,12 +790,16 @@ body p, .product-template-default p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center; }
-  .post-type-archive-product .product-terms .term-descript-prod-type {
+  .archive .product-terms .term-descript-prod-type {
     color: #248A83;
     text-transform: uppercase;
-    padding: 50px; }
+    padding: 50px;
+    font-family: Novecento Sans Web,sans-serif;
+    -webkit-text-decoration-line: none;
+            text-decoration-line: none;
+    font-size: 1.3rem; }
 
-.post-type-archive-product .entry-content {
+.archive .entry-content {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -800,7 +809,7 @@ body p, .product-template-default p {
   grid-template-columns: repeat(4, 1fr);
   padding-bottom: 100px; }
 
-.post-type-archive-product .thumb-nail-wrap-1 {
+.archive .thumb-nail-wrap-1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -808,7 +817,7 @@ body p, .product-template-default p {
   -o-object-fit: cover;
      object-fit: cover; }
 
-.post-type-archive-product .wp-post-image {
+.archive .wp-post-image {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -817,7 +826,7 @@ body p, .product-template-default p {
   -o-object-fit: cover;
      object-fit: cover; }
 
-.post-type-archive-product .entry-title, .post-type-archive-product h2 {
+.archive .entry-title, .archive h2 {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   display: inline;
@@ -828,10 +837,10 @@ body p, .product-template-default p {
   color: #404040;
   top: 10px; }
 
-.post-type-archive-product .product .entry-title, .post-type-archive-product .pricing, .post-type-archive-product .post-type-archive-product h2, .post-type-archive-product .post-type-archive-product p {
+.archive .product .entry-title, .archive .pricing, .archive .post-type-archive-product h2, .archive .post-type-archive-product p {
   font-weight: 300; }
 
-.post-type-archive-product .pricing, .post-type-archive-product p {
+.archive .pricing, .archive p {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   display: inline;
@@ -840,7 +849,7 @@ body p, .product-template-default p {
   color: #404040;
   top: 10px; }
 
-.post-type-archive-product .type-product {
+.archive .type-product {
   border: solid 1px #e1e1e1; }
 
 .tax-product-type .page-header {
@@ -977,8 +986,8 @@ body p, .product-template-default p {
   font-size: large; }
 
 .page-id-5 .about-page-banner-container {
-  background-image: url(../../images/about-hero.jpg), -webkit-gradient(linear, left top, left bottom, from(black), to(rgba(46, 44, 44, 0.6)));
-  background-image: url(../../images/about-hero.jpg), linear-gradient(to bottom, black, rgba(46, 44, 44, 0.6));
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../../images/about-hero.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../images/about-hero.jpg);
   height: 100vh;
   background-size: cover;
   display: -webkit-box;
@@ -1090,7 +1099,8 @@ body p, .product-template-default p {
   font-weight: 400; }
 
 .home .landing-page-container {
-  background-image: url(../../images/home-hero.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../../images/home-hero.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../images/home-hero.jpg);
   height: 100vh;
   background-size: cover;
   display: -webkit-box;
@@ -1137,8 +1147,8 @@ body p, .product-template-default p {
 .home .product-term {
   border: solid 1px #e1e1e1;
   border-top: solid 5px #e1e1e1;
-  width: 250px;
-  height: 270px;
+  width: 260px;
+  height: 300px;
   padding-top: 25px; }
   .home .product-term a {
     -webkit-text-decoration-line: none;
@@ -1180,7 +1190,7 @@ body p, .product-template-default p {
     border: solid 1px black;
     color: black;
     text-transform: uppercase;
-    padding: 2px; }
+    padding: 1px; }
 
 .home .fp-journal-list {
   display: -webkit-box;
@@ -1209,7 +1219,7 @@ body p, .product-template-default p {
 .home .read-more-button a li {
   background-color: #248A83;
   width: 40px;
-  height: 20px;
+  height: 18px;
   color: white; }
 
 .home .latest-adventure h2 {
@@ -1285,7 +1295,7 @@ body p, .product-template-default p {
   .home .mountain .mountain-h3 {
     font-family: Merriweather Web,serif;
     color: white;
-    font-size: 2rem;
+    font-size: 1.7rem;
     font-weight: 300;
     padding-left: 30px; }
 
@@ -1297,7 +1307,7 @@ body p, .product-template-default p {
   .home .sky .sky-h3 {
     font-family: Merriweather Web,serif;
     color: white;
-    font-size: 2rem;
+    font-size: 1.7rem;
     font-weight: 300;
     padding-left: 30px;
     padding-right: 60px; }
@@ -1361,7 +1371,9 @@ body p, .product-template-default p {
 .blog .wp-post-link-journal {
   border: solid 1px #404040;
   color: #404040;
-  padding: 5px; }
+  padding: 5px;
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none; }
 
 .blog p {
   margin-right: 25px;
@@ -1452,6 +1464,36 @@ body p, .product-template-default p {
 
 .post-template-default img {
   width: 100%; }
+
+.post-template-default article footer {
+  display: block;
+  background: white;
+  text-transform: uppercase; }
+  .post-template-default article footer a {
+    color: #248A83; }
+
+.post-template-default article .tags-links {
+  padding-left: 10px; }
+
+.post-template-default .entry-content {
+  padding-bottom: 30px; }
+
+.post-template-default .link-tags {
+  font-family: Novecento Sans Web,sans-serif;
+  text-transform: uppercase; }
+
+.post-template-default .cat-links {
+  font-family: Novecento Sans Web,sans-serif;
+  text-transform: uppercase; }
+
+.post-template-default .post-navigation .nav-next {
+  display: none; }
+
+.post-template-default .comment-reply-title {
+  font-family: Novecento Sans Web,sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2;
+  font-size: 2rem; }
 
 .post-template-default .type-post h1 {
   color: white; }

@@ -14,7 +14,7 @@
 
     }
     .landing-page-container{
-        background-image: url(../../images/home-hero.jpg);
+        background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../../images/home-hero.jpg);
         height: 100vh;
         background-size: cover;
         display: flex;
@@ -22,16 +22,7 @@
         justify-content: center;
         
     }
-    // &:before {
-    //     content: '';
-    //     position: absolute;
-    //     top: 0;
-    //     right: 0;
-    //     bottom: 0;
-    //     left: 0;
-    //     background-image: linear-gradient(to bottom right,#515455,#161515);
-    //     opacity: .4; 
-    // }
+
 
     .site-description {
         display: hide;
@@ -72,8 +63,8 @@
         .product-term {
             border: solid 1px $color_solid_border;
             border-top: solid 5px $color_solid_border;
-            width: 250px;
-            height: 270px;
+            width: 260px;
+            height: 300px;
             padding-top: 25px;
 
             a{
@@ -124,7 +115,7 @@
                 border: solid 1px black;
                 color: black;
                 text-transform: uppercase;
-                padding: 2px;
+                padding: 1px;
             }  
         
     
@@ -153,7 +144,7 @@
     .read-more-button a li{
         background-color: $color_green_brand;
         width: 40px;
-        height:20px;
+        height:18px;
         color: white;
     }
 
@@ -260,7 +251,7 @@
     
             font-family: Merriweather Web,serif;
             color: white;
-            font-size: 2rem;
+            font-size: 1.7rem;
             font-weight:300;
             padding-left: 30px;
             // padding-right: 60px;
@@ -278,7 +269,7 @@
     
             font-family: Merriweather Web,serif;
             color: white;
-            font-size: 2rem;
+            font-size: 1.7rem;
             font-weight:300;
             padding-left: 30px;
             padding-right: 60px;
