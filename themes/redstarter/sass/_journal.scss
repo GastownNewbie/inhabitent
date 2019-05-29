@@ -26,6 +26,7 @@
         .widget-area {
             width: 30%;
             margin:40px;
+           
         }
 
   
@@ -43,6 +44,7 @@
             background: #248A83,
     
         }
+        
                    
                 }
     
@@ -50,9 +52,15 @@
         position: absolute;
         width:70%;
         padding: 10px;
+    }
+    .entry-title {
+
         a{
             color: white;
             text-decoration: none;
+        }
+        &:hover{
+            color: $color__background-ins;
         }
     }
     .entry-meta{
@@ -70,6 +78,7 @@
         padding: 5px;
         text-decoration-line: none;
     }
+   
     p {
         margin-right: 25px;
         margin-top: 0;
@@ -96,6 +105,8 @@
 
     .journal-wp-post-container{
         padding-bottom: 40px;
+        padding-right: 30px;
+        border-right: 1px solid #c8c8c8;
     }
 
 
@@ -286,7 +297,11 @@
             padding-bottom: 30px;
         }
 
-
+        .journal-wp-post-container{
+            padding-bottom: 40px;
+            padding-right: 30px;
+            border-right: 1px solid #c8c8c8;
+        }
            
 }
 

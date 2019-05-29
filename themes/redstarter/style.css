@@ -776,6 +776,9 @@ body p, .product-template-default p {
   display: -ms-flexbox;
   display: flex; }
 
+.archive .grid-articles {
+  padding-top: 20px; }
+
 .archive .product-terms {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
@@ -789,7 +792,8 @@ body p, .product-template-default p {
   padding-left: 0;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
-          justify-content: center; }
+          justify-content: center;
+  border-bottom: 1px dashed #c8c8c8; }
   .archive .product-terms .term-descript-prod-type {
     color: #248A83;
     text-transform: uppercase;
@@ -831,7 +835,7 @@ body p, .product-template-default p {
       flex-wrap: wrap;
   display: inline;
   text-align: center;
-  font-size: 1em;
+  font-size: .9rem;
   font-family: Merriweather Web,serif;
   text-transform: capitalize;
   color: #404040;
@@ -844,7 +848,7 @@ body p, .product-template-default p {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   display: inline;
-  font-size: 1em;
+  font-size: .9rem;
   font-family: Merriweather Web,serif;
   color: #404040;
   top: 10px; }
@@ -854,8 +858,7 @@ body p, .product-template-default p {
 
 .tax-product-type .page-header {
   text-align: center;
-  margin-top: 100px;
-  border-bottom: 1px dashed #c8c8c8; }
+  margin-top: 100px; }
 
 .tax-product-type .taxonomy-description {
   font-size: 1.2em;
@@ -917,6 +920,10 @@ body p, .product-template-default p {
 
 .tax-product-type .type-product {
   border: solid 1px #e1e1e1; }
+
+.tax-product-type .grid-articles {
+  padding-top: 20px;
+  border-top: 1px dashed #c8c8c8; }
 
 .product-template-default .site {
   display: -webkit-box;
@@ -1194,21 +1201,22 @@ body p, .product-template-default p {
     font-size: 1rem;
     border: solid 1px black;
     text-transform: uppercase;
-    padding: 1px; }
+    padding: 1px;
+    color: black; }
+  .home .fp-journal-list h2 {
+    color: #248A83; }
+    .home .fp-journal-list h2:hover {
+      color: midnightblue; }
+  .home .fp-journal-list .read-more-button a {
+    color: black; }
+  .home .fp-journal-list .read-more-button:hover {
+    color: white;
+    background-color: #248A83;
+    border: solid 1px #248A83; }
 
-.home .read-more-button a {
-  color: black; }
-
-.home .read-more-button:hover {
-  color: #248A83; }
-
-.home .fp-journal-list a {
+.home a {
   -webkit-text-decoration-line: none;
-          text-decoration-line: none;
-  color: #248A83; }
-
-.home .fp-journal-list:hover {
-  color: #248A83; }
+          text-decoration-line: none; }
 
 .home .fp-journal-list {
   display: -webkit-box;
@@ -1375,9 +1383,13 @@ body p, .product-template-default p {
   position: absolute;
   width: 70%;
   padding: 10px; }
-  .blog .entry-title a {
-    color: white;
-    text-decoration: none; }
+
+.blog .entry-title a {
+  color: white;
+  text-decoration: none; }
+
+.blog .entry-title:hover {
+  color: #fff9c0; }
 
 .blog .entry-meta {
   position: absolute;
@@ -1414,7 +1426,9 @@ body p, .product-template-default p {
   padding-top: 50px; }
 
 .blog .journal-wp-post-container {
-  padding-bottom: 40px; }
+  padding-bottom: 40px;
+  padding-right: 30px;
+  border-right: 1px solid #c8c8c8; }
 
 .post-template-default .site {
   display: -webkit-box;
@@ -1564,6 +1578,11 @@ body p, .product-template-default p {
 .post-template-default .content-area {
   padding-bottom: 30px; }
 
+.post-template-default .journal-wp-post-container {
+  padding-bottom: 40px;
+  padding-right: 30px;
+  border-right: 1px solid #c8c8c8; }
+
 .post-template-default .type-post h1 {
   color: white; }
 
@@ -1654,68 +1673,59 @@ body {
   position: fixed;
   width: 100%; }
 
-.site-header .main-navigation {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end; }
-
-.site-header .main-navigation a {
-  text-transform: uppercase;
-  font-family: Novecento Web,serif;
-  font-size: 1rem;
-  color: #248A83; }
-
-.site-header .menu-main-navigation-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  display: fixed; }
-
-.site-header .main-navigation li {
-  padding-right: 40px; }
-
-.site-header .main-homepage-logo img {
-  height: auto;
-  max-width: 100%;
-  position: relative;
-  top: 10em;
-  left: 36em;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, 0.2));
-  background: linear-gradient(0.2 0 0 0.8); }
-
-.site-header .tent-logo {
-  width: 80px; }
-
-.site-header .masthead-tent-logo {
-  padding-left: 80px;
-  border-bottom: 0px; }
-
-.site-header #primary-menu .nav-menu {
-  text-transform: capitalize; }
-
-.site-header .menu-main-navigation-content {
-  width: 100%;
-  -webkit-box-pack: right;
-      -ms-flex-pack: right;
-          justify-content: right; }
-
-.site-header h1.entry-title {
-  display: hide; }
-
-.site-header #site-branding {
-  display: none; }
-
-.site-header .site-description {
-  display: none; }
-
-.site-header #site-navigation {
-  text-align: right; }
-
-.site-header .search-field {
-  display: none; }
+.site-header {
+  border-bottom: 1px solid #c8c8c8;
+  background-color: rgba(255, 255, 255, 0.85);
+  z-index: 3; }
+  .site-header .main-navigation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end; }
+  .site-header .main-navigation a {
+    text-transform: uppercase;
+    font-family: Novecento Web,serif;
+    font-size: 1rem;
+    color: #248A83; }
+  .site-header .menu-main-navigation-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    display: fixed; }
+  .site-header .main-navigation li {
+    padding-right: 40px; }
+  .site-header .main-homepage-logo img {
+    height: auto;
+    max-width: 100%;
+    position: relative;
+    top: 10em;
+    left: 36em;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0, 0.2));
+    background: linear-gradient(0.2 0 0 0.8); }
+  .site-header .tent-logo {
+    width: 80px; }
+  .site-header .masthead-tent-logo {
+    padding-left: 80px;
+    border-bottom: 0px; }
+  .site-header #primary-menu .nav-menu {
+    text-transform: capitalize; }
+  .site-header .menu-main-navigation-content {
+    width: 100%;
+    -webkit-box-pack: right;
+        -ms-flex-pack: right;
+            justify-content: right; }
+  .site-header h1.entry-title {
+    display: hide; }
+  .site-header #site-branding {
+    display: none; }
+  .site-header .site-description {
+    display: none; }
+  .site-header #site-navigation {
+    text-align: right; }
+  .site-header .search-field {
+    display: none; }
 
 .page-id-5 .main-navigation a {
   color: white; }

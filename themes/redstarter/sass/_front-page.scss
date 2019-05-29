@@ -104,6 +104,8 @@
         text-align: center;
         
     }
+
+
     
     .fp-journal-list {
         font-size: 1.3rem;
@@ -118,31 +120,36 @@
                 border: solid 1px black;
                 text-transform: uppercase;
                 padding: 1px;
+                color: black;
             }  
+
+        h2  { color: $color_green_brand;
+        &:hover{
+            color: $color__link-hover;
+        }
+     
+    }
         
     
-    }
+    
         .read-more-button {
             a {
             color: black;
             }
             &:hover{
-                color:$color_green_brand
+                color: white;
+                background-color: $color_green_brand;
+                border: solid 1px $color_green_brand
         }
     }
 
-    .fp-journal-list{
-        a{
-            text-decoration-line: none;
-            color: $color_green_brand;
-         
-            }
-            &:hover{
-               color: $color_green_brand;
-            }
+           
 
     }
-
+    
+    a {
+        text-decoration-line: none;
+    }
     
     .fp-journal-list {
         display: flex;

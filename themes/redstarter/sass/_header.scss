@@ -11,9 +11,15 @@ body {
    
 }
 .site-header{
+
+        border-bottom: 1px solid #c8c8c8;
+        background-color: hsla(0,0%,100%,.85);
+        z-index: 3;
+
                 .main-navigation {
                     display: flex;
                     justify-content: flex-end;
+                    
                 }
                 .main-navigation a{
                     text-transform: uppercase;
@@ -74,6 +80,7 @@ body {
                 .search-field{
                     display: none;
                 }  
+                
 
 
 }
