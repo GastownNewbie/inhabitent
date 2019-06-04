@@ -1032,6 +1032,10 @@ body .archive p {
   width: auto;
   background-position: bottom; }
 
+.page-id-5 .site-header {
+  background-color: transparent;
+  border: none; }
+
 .page-id-5 h1 {
   color: white; }
 

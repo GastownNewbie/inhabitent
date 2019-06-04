@@ -301,7 +301,10 @@ body .archive {
     width: auto;
     background-position: bottom;
   }
-
+  .site-header {
+    background-color: transparent;
+    border: none;
+  }
   h1 {
     color: white;
   }
