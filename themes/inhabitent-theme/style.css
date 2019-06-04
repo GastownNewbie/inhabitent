@@ -1055,6 +1055,12 @@ body .archive p {
   color: #2f1339;
   margin-right: 1.5rem; }
 
+.page-id-9 figure {
+  margin: 0; }
+
+.page-id-9 iframe {
+  border: none; }
+
 .page-id-9 p {
   font-size: 1rem;
   font-family: Merriweather Web, serif;
@@ -1090,9 +1096,13 @@ body .archive p {
   border-radius: 0;
   color: white;
   font-size: 0.7em;
-  text-shadow: none; }
+  text-shadow: none;
+  font-family: Novecento Sans Web, sans-serif; }
   .page-id-9 .wpcf7-submit:hover {
-    background-color: #24473f; }
+    background-color: #24473f;
+    text-shadow: none;
+    -webkit-box-shadow: none;
+            box-shadow: none; }
 
 .page-id-9 .site {
   display: -webkit-box;
@@ -1114,7 +1124,9 @@ body .archive p {
   padding-top: 50px; }
 
 .page-id-9 .content-area {
-  width: 70%; }
+  width: 70%;
+  padding-left: 50px;
+  border-right: solid 1px #e1e1e1; }
 
 .page-id-9 .widget-area {
   width: 30%;

@@ -330,6 +330,12 @@ body .archive {
     color: $color_purple_brand;
     margin-right: 1.5rem;
   }
+  figure {
+    margin: 0;
+  }
+  iframe {
+    border: none;
+  }
   p {
     font-size: 1rem;
     font-family: $font__main;
@@ -365,9 +371,12 @@ body .archive {
     color: white;
     font-size: 0.7em;
     text-shadow: none;
+    font-family: $font__header;
 
     &:hover {
       background-color: #24473f;
+      text-shadow: none;
+      box-shadow: none;
     }
   }
   .site {
@@ -384,6 +393,8 @@ body .archive {
 
   .content-area {
     width: 70%;
+    padding-left: 50px;
+    border-right: solid 1px $color_solid_border;
   }
 
   .widget-area {
