@@ -1106,7 +1106,7 @@ body .archive p {
 
 .home .fp-h2 {
   color: #2f1339;
-  font-family: Merriweather Web, serif;
+  font-family: Novecento Sans Web, sans-serif;
   text-transform: uppercase;
   font-size: 2.4rem;
   font-weight: 400; }
@@ -1225,7 +1225,8 @@ body .archive p {
   display: flex;
   -webkit-box-flex: 30%;
       -ms-flex: 30%;
-          flex: 30%; }
+          flex: 30%;
+  padding-bottom: 40px; }
 
 .home li,
 .home span.fp-date-comments {
@@ -1244,6 +1245,10 @@ body .archive p {
   max-width: 100%;
   border-bottom: solid 5px #e1e1e1; }
 
+.home .read-more-button {
+  font-family: Novecento Sans Web, sans-serif;
+  font-weight: 300; }
+
 .home .read-more-button a li {
   background-color: #248a83;
   width: 40px;
@@ -1251,6 +1256,7 @@ body .archive p {
   color: white; }
 
 .home .latest-adventure h2 {
+  font-family: Novecento Sans Web, sans-serif;
   text-align: center; }
 
 .home .latest-adventure {
@@ -1259,6 +1265,7 @@ body .archive p {
     color: white;
     font-size: 1rem;
     text-transform: uppercase;
+    font-family: Novecento Sans Web, sans-serif;
     padding: 25;
     border: solid 1px white;
     width: 125px;
