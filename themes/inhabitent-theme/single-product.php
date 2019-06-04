@@ -33,48 +33,49 @@ get_header(); ?>
                                 <?php endif; ?>
 
 
+                                <div class="product-only-descr">
+                                    <?php the_title('<h1 class="entry-title">', '</h1>'); ?>
 
-                                <?php the_title('<h1 class="entry-title">', '</h1>'); ?>
-
-                                <?php echo CFS()->get('product_price'); ?>
-
-
+                                    <p class="product-price"><?php echo CFS()->get('product_price'); ?></p>
 
 
 
 
 
-                                <?php the_content(); ?>
-                                <?php
-                                wp_link_pages(array(
-                                    'before' => '<div class="page-links">' . esc_html('Pages:'),
-                                    'after'  => '</div>',
-                                ));
-                                ?>
+
+
+                                    <?php the_content(); ?>
+                                    <?php
+                                    wp_link_pages(array(
+                                        'before' => '<div class="page-links">' . esc_html('Pages:'),
+                                        'after'  => '</div>',
+                                    ));
+                                    ?>
+
                             </article>
                             <div class="buttons-social-media">
                                 <button type="button" class="social-button-blk"><i class="fab fa-facebook-f"></i> LIKE</button>
                                 <button type="button" class="social-button-blk"><i class="fab fa-twitter"></i> PIN</button>
                                 <button type="button" class="social-button-blk"><i class="fab fa-pinterest"></i> TWEET</button>
                             </div>
+                        </div>
 
 
+                    </div><!-- .entry-meta -->
 
-                        </div><!-- .entry-meta -->
-
-                    </div>
+        </div>
 
 
-                <?php endwhile; ?>
+    <?php endwhile; ?>
 
-                <?php the_posts_navigation(); ?>
+    <?php the_posts_navigation(); ?>
 
-            <?php else : ?>
+<?php else : ?>
 
-                <?php get_template_part('template-parts/content', 'none'); ?>
+    <?php get_template_part('template-parts/content', 'none'); ?>
 
-            <?php endif; ?>
+<?php endif; ?>
 
-    </main><!-- #main -->
+</main><!-- #main -->
 </div><!-- #primary -->
 <?php get_footer(); ?>

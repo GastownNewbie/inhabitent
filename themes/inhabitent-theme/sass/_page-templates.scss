@@ -32,15 +32,6 @@ body .archive {
   }
 }
 
-// Single Product Page Archive
-
-body,
-.product-template-default {
-  p {
-    color: $color__text-main;
-  }
-}
-
 // Shop Page, Product Archive
 
 .archive {
@@ -210,7 +201,7 @@ body,
 
 // Individual Product Page Archive
 
-.product-template-default {
+.product-template-default .content-area {
   .site {
     display: flex;
     flex-direction: column;
@@ -233,48 +224,67 @@ body,
     width: 50%;
   }
 
-  .entry-header {
+  .product-only-descr {
     width: 50%;
     height: 400px;
+    margin-bottom: 0;
+    margin-left: 30px;
+    #text {
+      font-size: 1.8rem;
+      font-family: $font__header;
+    }
   }
 
   .entry-title {
-    font-size: larger;
+    font-size: 1.8rem;
     color: $color_orange_brand;
     margin-top: 0;
-  }
-  .entry-title h2 {
-    text-transform: capitalize;
   }
 
   .entry-content {
     color: $color__text-main;
-    font-size: larger;
+    font-size: 1rem;
     margin-top: 0;
   }
-  .pricing p {
-    font-size: larger;
+  .product-price {
+    font-family: $font__header;
+    font-size: 1.8rem;
   }
 
   .entry-meta {
     padding-left: 20px;
   }
+  .buttons-social-media {
+    padding-right: 330px;
+    text-align: right;
+  }
   .social-button-blk {
     justify-content: space-between;
+    text-align: right;
   }
   button,
   .social-button-blk {
     height: auto;
     width: auto;
     color: $color__text-main;
-    background-color: white;
+    background-color: transparent;
     border: solid 1px $color__text-main;
     border-radius: 0;
+    font-family: $font__header;
+    box-shadow: none;
+    text-shadow: none;
+
+    &:hover {
+      color: white;
+      background-color: $color_green_brand;
+      border: none;
+    }
   }
+
   button,
   select {
     text-transform: capitalize;
-    font-size: large;
+    font-size: 0.9rem;
   }
 } //End of single product page
 

@@ -753,10 +753,6 @@ p {
 body .archive p {
   color: #404040; }
 
-body p,
-.product-template-default p {
-  color: #404040; }
-
 .archive .shop-stuff-header {
   font-family: Novecento Sans Web, sans-serif;
   letter-spacing: 2px;
@@ -932,7 +928,7 @@ body p,
   padding-top: 20px;
   border-top: 1px dashed #c8c8c8; }
 
-.product-template-default .site {
+.product-template-default .content-area .site {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -942,13 +938,13 @@ body p,
           flex-direction: column;
   min-height: 100vh; }
 
-.product-template-default .site-main {
+.product-template-default .content-area .site-main {
   padding-left: 80px;
   padding-right: 80px;
   padding-top: 80px;
   padding-bottom: 80px; }
 
-.product-template-default .type-product {
+.product-template-default .content-area .type-product {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
@@ -957,50 +953,67 @@ body p,
   display: flex;
   padding-top: 50px; }
 
-.product-template-default .wp-post-image {
+.product-template-default .content-area .wp-post-image {
   width: 50%; }
 
-.product-template-default .entry-header {
+.product-template-default .content-area .product-only-descr {
   width: 50%;
-  height: 400px; }
+  height: 400px;
+  margin-bottom: 0;
+  margin-left: 30px; }
+  .product-template-default .content-area .product-only-descr #text {
+    font-size: 1.8rem;
+    font-family: Novecento Sans Web, sans-serif; }
 
-.product-template-default .entry-title {
-  font-size: larger;
+.product-template-default .content-area .entry-title {
+  font-size: 1.8rem;
   color: #d99054;
   margin-top: 0; }
 
-.product-template-default .entry-title h2 {
-  text-transform: capitalize; }
-
-.product-template-default .entry-content {
+.product-template-default .content-area .entry-content {
   color: #404040;
-  font-size: larger;
+  font-size: 1rem;
   margin-top: 0; }
 
-.product-template-default .pricing p {
-  font-size: larger; }
+.product-template-default .content-area .product-price {
+  font-family: Novecento Sans Web, sans-serif;
+  font-size: 1.8rem; }
 
-.product-template-default .entry-meta {
+.product-template-default .content-area .entry-meta {
   padding-left: 20px; }
 
-.product-template-default .social-button-blk {
+.product-template-default .content-area .buttons-social-media {
+  padding-right: 330px;
+  text-align: right; }
+
+.product-template-default .content-area .social-button-blk {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-          justify-content: space-between; }
+          justify-content: space-between;
+  text-align: right; }
 
-.product-template-default button,
-.product-template-default .social-button-blk {
+.product-template-default .content-area button,
+.product-template-default .content-area .social-button-blk {
   height: auto;
   width: auto;
   color: #404040;
-  background-color: white;
+  background-color: transparent;
   border: solid 1px #404040;
-  border-radius: 0; }
+  border-radius: 0;
+  font-family: Novecento Sans Web, sans-serif;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  text-shadow: none; }
+  .product-template-default .content-area button:hover,
+  .product-template-default .content-area .social-button-blk:hover {
+    color: white;
+    background-color: #248a83;
+    border: none; }
 
-.product-template-default button,
-.product-template-default select {
+.product-template-default .content-area button,
+.product-template-default .content-area select {
   text-transform: capitalize;
-  font-size: large; }
+  font-size: 0.9rem; }
 
 .page-id-5 .about-page-banner-container {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../../images/about-hero.jpg);
