@@ -3,308 +3,275 @@
 // --------------------------------------------------------------*/
 
 .blog {
-    
-    .site {
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
+  .site {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
 
-        }
-
-        .site-content {
-            flex-grow: 1;
-            display: flex;
-            padding-top: 50px;
-            @extend .container;
-    
-        }
-
-        .content-area {
-            width: 70%;
-        }
-
-        .widget-area {
-            width: 30%;
-            margin:40px;
-           
-        }
-
-  
-    .type-post {
-
-        .entry-header{
-                    display: flex;
-                    flex-direction: column;
-                    width: 100%;
-                    position: relative;
-
-        }
-        h2 {
-            text-transform: uppercase;
-            background: #248A83,
-    
-        }
-        
-                   
-                }
-    
-    .entry-title {
-        position: absolute;
-        width:70%;
-        padding: 10px;
-    }
-    .entry-title {
-
-        a{
-            color: white;
-            text-decoration: none;
-        }
-        &:hover{
-            color: $color__background-ins;
-        }
-    }
-    .entry-meta{
-
-        position: absolute;
-        bottom: 0;
-        right: 0;
-        color: white;
-        background-color: $color_green_brand;
-
-    }
-    .wp-post-link-journal{
-        border: solid 1px $color__text-main;
-        color: $color__text-main;
-        padding: 5px;
-        text-decoration-line: none;
-    }
-   
-    p {
-        margin-right: 25px;
-        margin-top: 0;
-        margin-bottom: 0;
-    }
-
-
-    img {
-        width: 100%;
-   } 
-
-   .post-27{
-       padding-top: 50px;
-   }
-   .post-32{
+  .site-content {
+    flex-grow: 1;
+    display: flex;
     padding-top: 50px;
+    @extend .container;
+  }
+
+  .content-area {
+    width: 70%;
+  }
+
+  .widget-area {
+    width: 30%;
+    margin: 40px;
+  }
+
+  .type-post {
+    .entry-header {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      position: relative;
     }
-    .post-35{
-        padding-top: 50px;
+    h2 {
+      text-transform: uppercase;
+      background: #248a83;
     }
-    .post-38{
-        padding-top: 50px;
+  }
+
+  .entry-title {
+    position: absolute;
+    width: 70%;
+    padding: 10px;
+  }
+  .entry-title {
+    a {
+      color: white;
+      text-decoration: none;
     }
-
-    .journal-wp-post-container{
-        padding-bottom: 40px;
-        padding-right: 30px;
-        border-right: 1px solid #c8c8c8;
+    &:hover {
+      color: $color__background-ins;
     }
+  }
+  .entry-meta {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: white;
+    background-color: $color_green_brand;
+  }
+  .wp-post-link-journal {
+    border: solid 1px $color__text-main;
+    color: $color__text-main;
+    padding: 5px;
+    text-decoration-line: none;
+    &:hover {
+      background-color: $color_green_brand;
+      border: none;
+      color: white;
+    }
+  }
 
+  p {
+    margin-right: 25px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
 
+  img {
+    width: 100%;
+  }
 
+  .post-27 {
+    padding-top: 50px;
+  }
+  .post-32 {
+    padding-top: 50px;
+  }
+  .post-35 {
+    padding-top: 50px;
+  }
+  .post-38 {
+    padding-top: 50px;
+  }
 
-
-   
-}   // end of blog 
+  .journal-wp-post-container {
+    padding-bottom: 40px;
+    padding-right: 30px;
+    border-right: 1px solid #c8c8c8;
+  }
+} // end of blog
 
 // single post blog page
 
-.post-template-default{
+.post-template-default {
+  .site {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
 
-    .site {
-        display: flex;
-        flex-direction: column;
-        min-height: 100vh;
+  .site-content {
+    flex-grow: 1;
+    display: flex;
+    padding-top: 50px;
+    @extend .container;
+  }
 
+  .content-area {
+    width: 70%;
+  }
+
+  .widget-area {
+    width: 30%;
+    margin: 40px;
+  }
+  .type-post {
+    .entry-header {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      position: relative;
+    }
+    h1 {
+      text-transform: uppercase;
+      background: #248a83;
+      color: white;
+      font-size: 2rem;
+    }
+  }
+
+  .entry-title {
+    position: absolute;
+    width: 70%;
+    padding: 10px;
+  }
+  .entry-meta {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: white;
+    background-color: $color_green_brand;
+  }
+  .wp-post-link-journal {
+    border: solid 1px $color__text-main;
+    color: $color__text-main;
+    padding: 5px;
+  }
+  p {
+    margin-right: 25px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  article {
+    footer {
+      display: block;
+      background: white;
+      text-transform: uppercase;
+
+      a {
+        color: $color_green_brand;
+      }
     }
 
-    .site-content {
-        flex-grow: 1;
-        display: flex;
-        padding-top: 50px;
-        @extend .container;
+    .tags-links {
+      padding-left: 10px;
+      padding-right: 10px;
     }
+  }
 
-    .content-area {
-        width: 70%;
+  .entry-content {
+    padding-bottom: 30px;
+  }
+  .link-tags {
+    font-family: Novecento Sans Web, sans-serif;
+    text-transform: uppercase;
+  }
+  .cat-links {
+    font-family: Novecento Sans Web, sans-serif;
+    text-transform: uppercase;
+  } // end article selection style
+
+  .nav-next {
+    display: none;
+  }
+  .nav-previous {
+    display: none;
+  }
+
+  .comment-reply-title {
+    font-family: Novecento Sans Web, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2;
+    font-size: 2rem;
+  }
+
+  button,
+  .social-button-blk {
+    height: auto;
+    width: auto;
+    color: $color__text-main;
+    background-color: white;
+    border: solid 1px $color__text-main;
+    border-radius: 0;
+  }
+  button,
+  select {
+    text-transform: capitalize;
+    font-size: large;
+  }
+  .buttons-social-media {
+    padding-top: 30px;
+  }
+
+  label {
+    color: $color_purple_brand;
+    text-transform: capitalize;
+    font-family: Novecento Sans Web, sans-serif;
+    font-weight: 300;
+    padding: 20px;
+  }
+
+  .form-control {
+    background-color: #f4f4f4;
+  }
+
+  .submit {
+    width: 100px;
+    height: 40px;
+    background-color: $color_green_brand;
+    border: none;
+    box-shadow: none;
+    border-radius: 0;
+    color: white;
+    font-size: 0.7em;
+    text-shadow: none;
+  }
+
+  #comment {
+    background-color: #f4f4f4;
+  }
+  .wordpress-comment-cookies-consent {
+    label {
+      display: none;
     }
+  }
 
-    .widget-area {
-        width: 30%;
-        margin:40px;
-    }
-    .type-post {
+  .content-area {
+    padding-bottom: 30px;
+  }
 
-        .entry-header{
-                    display: flex;
-                    flex-direction: column;
-                    width: 100%;
-                    position: relative;
-
-        }
-        h1 {
-            text-transform: uppercase;
-            background: #248A83;
-            color: white;
-            font-size: 2rem;
-    
-        }
-                   
-                }
-    
-    .entry-title {
-        position: absolute;
-        width:70%;
-        padding: 10px;
-    }
-    .entry-meta{
-
-        position: absolute;
-        bottom: 0;
-        right: 0;
-        color: white;
-        background-color: $color_green_brand;
-
-    }
-        .wp-post-link-journal{
-            border: solid 1px $color__text-main;
-            color: $color__text-main;
-            padding: 5px;
-        }
-        p {
-            margin-right: 25px;
-            margin-top: 0;
-            margin-bottom: 0;
-        }
-    
-    
-        img {
-            width: 100%;
-       } 
-
-       article{
-           footer{
-               display:block;
-               background: white;
-               text-transform: uppercase;
-
-               a {color: $color_green_brand;
-               }
-               
-           }
-
-           .tags-links{
-               padding-left: 10px;
-               padding-right: 10px;
-           }
-       }
-
-        .entry-content{
-                padding-bottom: 30px;
-       }
-       .link-tags{
-           font-family: Novecento Sans Web,sans-serif;
-           text-transform: uppercase;
-       }
-       .cat-links{
-        font-family: Novecento Sans Web,sans-serif;
-        text-transform: uppercase;
-
-       } // end article selection style
-     
-    
-        .nav-next{
-            display: none;
-           }
-        .nav-previous{
-            display:none;
-        }
-    
-    
-        .comment-reply-title{
-               font-family:  Novecento Sans Web,sans-serif;
-               text-transform: uppercase;
-               letter-spacing: 2;
-               font-size: 2rem;
-           }
-
-        button, .social-button-blk{
-            height:auto;
-            width:auto;
-            color: $color__text-main;
-            background-color: white;
-            border: solid 1px $color__text-main;
-            border-radius: 0;
-
-        }
-        button, select{
-            text-transform: capitalize;
-            font-size: large;
-
-        }
-        .buttons-social-media{
-            padding-top: 30px;
-        }
-    
-
-            label{
-                color: $color_purple_brand;
-                text-transform: capitalize;
-                font-family:  Novecento Sans Web,sans-serif;
-                font-weight: 300;
-                padding: 20px;
-    
-               }
-    
-            .form-control{
-                   background-color: #f4f4f4;
-               }
-    
-            .submit{
-                   width: 100px;
-                   height: 40px;
-                   background-color: $color_green_brand;
-                   border: none;
-                   box-shadow: none;
-                   border-radius: 0;
-                   color: white;
-                   font-size: .7em;
-                   text-shadow: none;
-
-            }
-
-            #comment{
-                background-color: #f4f4f4;
-            }
-        .wordpress-comment-cookies-consent{
-
-            label{
-                display: none;
-            }
-            
-        }
-
-        .content-area{
-            padding-bottom: 30px;
-        }
-
-        .journal-wp-post-container{
-            padding-bottom: 40px;
-            padding-right: 30px;
-            border-right: 1px solid #c8c8c8;
-        }
-           
+  .journal-wp-post-container {
+    padding-bottom: 40px;
+    padding-right: 30px;
+    border-right: 1px solid #c8c8c8;
+  }
 }
 
-.post-template-default .type-post h1{
-    color: white;
+.post-template-default .type-post h1 {
+  color: white;
 }

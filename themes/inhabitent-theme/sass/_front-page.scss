@@ -1,5 +1,12 @@
 // /* Front page */
 .home {
+  .site-header {
+    background-color: transparent;
+    border: none;
+    .w-tent-logo {
+      display: none;
+    }
+  }
   p {
     line-height: 1.75;
   }

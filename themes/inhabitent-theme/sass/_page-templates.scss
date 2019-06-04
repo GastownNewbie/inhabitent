@@ -11,7 +11,6 @@ h1,
 h2 {
   text-transform: uppercase;
   font-family: Novecento Sans Web, sans-serif;
-  letter-spacing: 2px;
 }
 h1 {
   font-size: 3em;
@@ -21,7 +20,7 @@ h2 {
 }
 p {
   line-height: $font__line-height-body;
-  letter-spacing: 1.5px;
+
   font-family: Merriweather Web, serif;
 }
 
@@ -287,44 +286,6 @@ body .archive {
     font-size: 0.9rem;
   }
 } //End of single product page
-
-// About Page
-
-.page-id-5 {
-  .about-page-banner-container {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../images/about-hero.jpg);
-    height: 100vh;
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: auto;
-    background-position: bottom;
-  }
-  .site-header {
-    background-color: transparent;
-    border: none;
-  }
-  h1 {
-    color: white;
-  }
-  h2 {
-    color: $color_purple_brand;
-    text-align: center;
-  }
-  p {
-    font-size: 1rem;
-    font-family: $font__main;
-    font-weight: 300;
-    line-height: 1.75;
-  }
-  .about-page-story-team-section {
-    text-align: left;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-} //End About Page
 
 // Find Us Page
 

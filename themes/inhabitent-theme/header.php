@@ -29,6 +29,9 @@
 				<div class="masthead-tent-logo">
 					<a href="<?php echo get_home_url(); ?>"><img class="tent-logo" src="<?php echo get_template_directory_uri(); ?>/images/logos/inhabitent-logo-tent.svg" alt="small tent logo"></a>
 				</div>
+				<div class="masthead-tent-logo2">
+					<a href="<?php echo get_home_url(); ?>"><img class="w-tent-logo" src="<?php echo get_template_directory_uri(); ?>/images/logos/inhabitent-logo-tent-white.svg" alt="small tent logo white"></a>
+				</div>
 
 			</div><!-- .site-branding -->
 

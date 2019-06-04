@@ -41,13 +41,15 @@ body {
     background: linear-gradient(0.2 0 0 0.8);
   }
 
-  .tent-logo {
-    width: 80px;
-  }
-
   .masthead-tent-logo {
     padding-left: 80px;
     border-bottom: 0px;
+    width: 60%;
+  }
+  .masthead-tent-logo2 {
+    padding-left: 80px;
+    border-bottom: 0px;
+    width: 60%;
   }
 
   #primary-menu .nav-menu {
@@ -56,6 +58,9 @@ body {
   .menu-main-navigation-content {
     width: 100%;
     justify-content: right;
+  }
+  .menu-item {
+    border: none;
   }
 
   h1.entry-title {
@@ -82,5 +87,16 @@ body {
   }
   .tent-logo {
     display: none;
+  }
+}
+.blog,
+.archive,
+.page-id-9,
+.single-post,
+.archive-product {
+  .site-header {
+    .w-tent-logo {
+      display: none;
+    }
   }
 }

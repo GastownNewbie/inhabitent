@@ -1,0 +1,45 @@
+// About Page
+.page-about {
+  .entry-header {
+    height: 100vh;
+
+    .w-tent-logo {
+      width: 80px;
+    }
+    .masthead-tent-logo {
+      padding-left: 80px;
+      border-bottom: 0px;
+    }
+  }
+
+  .entry-content {
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+  .about-page-banner-container {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../images/about-hero.jpg);
+    background-size: cover;
+  }
+  .about-page-story-team-section {
+    width: 800px;
+    margin: 0 auto;
+    h2 {
+      color: $color_purple_brand;
+      text-align: center;
+    }
+    p {
+      font-size: 1rem;
+      font-family: $font__main;
+      font-weight: 300;
+      line-height: 1.75;
+    }
+  }
+  .site-header {
+    background-color: transparent;
+    border: none;
+  }
+
+  h1 {
+    color: white;
+  }
+} //End About Page
