@@ -11,11 +11,9 @@ plugins/*
 !plugins/business-hours-widget/
 # Ignore everything in "themes" except the active theme. #
 themes/*
-!themes/inhabitent/
-!themes/redstarter/
+!themes/inhabitent-theme/
 # Ignore packages #
-themes/inhabitent/node_modules/
-themes/redstarter/node_modules/
+themes/inhabitent-theme/node_modules/
 
 # Ignore OS files #
 .DS_Store

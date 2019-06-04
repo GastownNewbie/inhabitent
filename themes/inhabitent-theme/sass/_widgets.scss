@@ -1,0 +1,40 @@
+/*--------------------------------------------------------------
+# Widgets
+--------------------------------------------------------------*/
+
+.widget {
+	margin: 0 0 $base__space-unit;
+
+	/* Make sure select elements fit in widgets. */
+	select {
+		max-width: 100%;
+	}
+}
+
+/* Search widget. */
+.widget_search .search-submit {
+	display: none;
+}
+.widget-area{
+	.widget_text{
+		color:$color__text-main;
+	}
+	h2{
+		margin-top: 0;
+		font-size: 1.5rem;
+	}
+	.widget-archive, ul{
+		list-style: none;
+		margin-left: 0;
+		padding-left: 0;
+		font-size: 1em;
+		
+	}
+	.widget-archive, li, a{
+	
+		text-decoration: none;
+		color: $color_green_brand;
+		
+		}
+
+}

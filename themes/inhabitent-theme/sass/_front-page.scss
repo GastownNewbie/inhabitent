@@ -1,0 +1,270 @@
+// /* Front page */
+.home {
+  p {
+    line-height: 1.75;
+  }
+  .fp-h2 {
+    color: $color_purple_brand;
+    font-family: $font__main;
+    text-transform: uppercase;
+    font-size: 2.4rem;
+    font-weight: 400;
+  }
+  .landing-page-container {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../images/home-hero.jpg);
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .site-description {
+    display: hide;
+  }
+  .wrap-container-home {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  .main-homepage-logo {
+    position: relative;
+  }
+
+  // ....Shop Stuff: Product display Front Page
+
+  .product-terms {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    width: 100%;
+    list-style: none;
+    margin: auto;
+  }
+  .fp-products-return {
+    padding-bottom: 40px;
+  }
+  .fp-products-return img {
+    width: 70px;
+  }
+  .product-term p {
+    color: $color__text-main;
+    font-size: 1rem;
+  }
+  .product-term {
+    border: solid 1px $color_solid_border;
+    border-top: solid 5px $color_solid_border;
+
+    a {
+      text-decoration-line: none;
+    }
+    &:hover {
+      border: solid 1px $color_orange_brand;
+      border-top: solid 5px $color_orange_brand;
+    }
+  }
+
+  .product-term {
+    width: 260px;
+    height: 300px;
+    padding-top: 25px;
+  }
+  .product-term-link-fp {
+    background: $color_green_brand;
+    font-family: Novecento Sans Web, sans-serif;
+    font-size: 1rem;
+    line-height: 1.75;
+    text-transform: uppercase;
+    padding: 0.4em;
+    color: white;
+  }
+  //...journal posts display Front Page
+
+  .fp-products {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  .fp-journal {
+    display: block;
+  }
+  .fp-h2 {
+    text-align: center;
+  }
+
+  .fp-journal-list {
+    font-size: 1.3rem;
+    font-family: Novecento Sans Web, sans-serif;
+    line-height: 1.25;
+    list-style: none;
+    margin-left: 0;
+
+    .read-more-button {
+      font-size: 1rem;
+      border: solid 1px black;
+      text-transform: uppercase;
+      padding: 1px;
+      color: black;
+    }
+
+    h2 {
+      color: $color_green_brand;
+      &:hover {
+        color: $color__link-hover;
+      }
+    }
+
+    .read-more-button {
+      a {
+        color: black;
+      }
+      &:hover {
+        color: white;
+        background-color: $color_green_brand;
+        border: solid 1px $color_green_brand;
+      }
+    }
+  }
+
+  a {
+    text-decoration-line: none;
+  }
+
+  .fp-journal-list {
+    display: flex;
+    flex: 30%;
+  }
+
+  li,
+  span.fp-date-comments {
+    font-size: 0.7rem;
+    color: $color__text-main;
+    font-family: Merriweather Web, serif;
+    border: solid 1px $color_solid_border;
+  }
+  .fp-journal-thumbnails {
+    display: flex;
+  }
+  .fp-journal-list img {
+    max-height: 250px;
+    max-width: 100%;
+    border-bottom: solid 5px $color_solid_border;
+  }
+  .read-more-button a li {
+    background-color: $color_green_brand;
+    width: 40px;
+    height: 18px;
+    color: white;
+  }
+
+  // ....Adventure section Front Page
+
+  .latest-adventure {
+    h2 {
+      text-align: center;
+    }
+  }
+  .latest-adventure {
+    padding-bottom: 20px;
+
+    .read-more-btn-fp {
+      color: white;
+      font-size: 1rem;
+      text-transform: uppercase;
+      padding: 25;
+      border: solid 1px white;
+      width: 125px;
+      text-align: center;
+      position: relative;
+    }
+  }
+
+  .adventure-title {
+    display: block;
+    text-align: center;
+  }
+  .fp-adventure-h2 {
+    color: $color_purple_brand;
+    font-family: $font__main;
+    text-transform: uppercase;
+    font-size: 2.4rem;
+    font-weight: 400;
+  }
+
+  .adventure-ul {
+    display: grid;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: auto;
+    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 200px 200px;
+    grid-template-areas:
+      "canoe canoe lake lake"
+      "canoe canoe mountain sky";
+  }
+
+  .left-side-lake {
+    grid-area: canoe;
+    background-image: url(../../images/adventure-photos/canoe-girl.jpg);
+    height: 420px;
+    background-size: cover;
+
+    .canoe-h3 {
+      font-family: Merriweather Web, serif;
+      color: white;
+      font-size: 3rem;
+      font-weight: 300;
+      padding-left: 30px;
+      padding-right: 60px;
+    }
+  }
+
+  .beach {
+    grid-area: lake;
+    background-image: url(../../images/adventure-photos/beach-bonfire.jpg);
+    background-size: cover;
+    height: 200px;
+    background-position: center;
+
+    .beach-h3 {
+      font-family: Merriweather Web, serif;
+      color: white;
+      font-size: 2rem;
+      font-weight: 300;
+      padding-left: 30px;
+      padding-right: 60px;
+    }
+  }
+  .mountain {
+    grid-area: mountain;
+    background-image: url(../../images/adventure-photos/mountain-hikers.jpg);
+    background-size: cover;
+    height: 200px;
+
+    .mountain-h3 {
+      font-family: Merriweather Web, serif;
+      color: white;
+      font-size: 1.7rem;
+      font-weight: 300;
+      padding-left: 30px;
+      // padding-right: 60px;
+    }
+  }
+  .sky {
+    grid-area: sky;
+    background-image: url(../../images/adventure-photos/night-sky.jpg);
+    background-size: cover;
+    height: 200px;
+
+    .sky-h3 {
+      font-family: Merriweather Web, serif;
+      color: white;
+      font-size: 1.7rem;
+      font-weight: 300;
+      padding-left: 30px;
+      padding-right: 60px;
+    }
+  }
+} // end of Front Page
