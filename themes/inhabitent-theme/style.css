@@ -222,7 +222,7 @@ td,
 th {
   padding: 0; }
 
-.container, .page .site-content, .archive .site-content .entry-content, .blog .site-content, .post-template-default .site-content, .error404 .site-content, .search .site-content {
+.container, .page .site-content, .archive .site-content .entry-content, .tax-product-type .site-content .entry-content, .blog .site-content, .post-template-default .site-content, .error404 .site-content, .search .site-content {
   max-width: 1120px;
   margin: 0 auto; }
 
@@ -733,7 +733,7 @@ object {
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
 
-.container, .page .site-content, .archive .site-content .entry-content, .blog .site-content, .post-template-default .site-content, .error404 .site-content, .search .site-content {
+.container, .page .site-content, .archive .site-content .entry-content, .tax-product-type .site-content .entry-content, .blog .site-content, .post-template-default .site-content, .error404 .site-content, .search .site-content {
   max-width: 1120px;
   margin: 0 auto; }
 
@@ -876,8 +876,6 @@ body .archive p {
   color: #404040; }
 
 .tax-product-type .site-content .entry-content {
-  margin-left: 80px;
-  margin-right: 80px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1934,18 +1932,40 @@ body {
   .search a:hover {
     color: #2f1339; }
 
-.search .search-submit {
+.blog .search-submit,
+.archive .search-submit,
+.page-id-9 .search-submit,
+.single-post .search-submit,
+.archive-product .search-submit,
+.search .search-submit,
+.error404 .search-submit {
   border: none;
   background: transparent;
   -webkit-box-shadow: none;
-          box-shadow: none; }
-
-.search .search-submit {
-  color: white; }
-
-.search .search-submit {
+          box-shadow: none;
+  outline: none;
   color: #248a83; }
 
-.search label {
-  display: none;
-  text-transform: uppercase; }
+.blog .search-field,
+.archive .search-field,
+.page-id-9 .search-field,
+.single-post .search-field,
+.archive-product .search-field,
+.search .search-field,
+.error404 .search-field {
+  outline: none;
+  border: none; }
+
+.page-id-5 .search-submit,
+.home .search-submit {
+  border: none;
+  background: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: none;
+  color: white; }
+
+.page-id-5 .search-field,
+.home .search-field {
+  outline: none;
+  border: none; }

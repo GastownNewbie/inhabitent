@@ -164,8 +164,7 @@ body .archive {
   }
 
   .entry-content {
-    margin-left: 80px;
-    margin-right: 80px;
+    @extend .container;
     justify-content: center;
     display: grid;
     text-align: center;

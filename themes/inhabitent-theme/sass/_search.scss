@@ -38,20 +38,39 @@
       color: $color_purple_brand;
     }
   }
+}
+
+.blog,
+.archive,
+.page-id-9,
+.single-post,
+.archive-product,
+.search,
+.error404 {
   .search-submit {
     border: none;
     background: transparent;
     box-shadow: none;
     outline: none;
-  }
-  .search-submit {
-    color: white;
-  }
-  .search-submit {
     color: $color_green_brand;
   }
-  label {
-    display: none;
-    text-transform: uppercase;
+  .search-field {
+    outline: none;
+    border: none;
+  }
+}
+
+.page-id-5,
+.home {
+  .search-submit {
+    border: none;
+    background: transparent;
+    box-shadow: none;
+    outline: none;
+    color: white;
+  }
+  .search-field {
+    outline: none;
+    border: none;
   }
 }
