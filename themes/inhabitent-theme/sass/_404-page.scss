@@ -1,0 +1,47 @@
+.error404 {
+  .site {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  .site-content {
+    flex-grow: 1;
+    display: flex;
+    padding-top: 50px;
+    @extend .container;
+  }
+
+  .content-area {
+    width: 70%;
+  }
+
+  .widget-area {
+    width: 30%;
+    margin: 40px;
+  }
+  .content-area {
+    padding-bottom: 40px;
+    padding-right: 30px;
+    border-right: 1px solid #c8c8c8;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  h1 {
+    font-size: 2.4rem;
+  }
+  ul {
+    list-style: none;
+    font-size: 1rem;
+    padding: 0;
+    margin: 0;
+  }
+  a {
+    text-decoration-line: none;
+    color: $color_green_brand;
+    &:hover {
+      color: $color_purple_brand;
+    }
+  }
+}

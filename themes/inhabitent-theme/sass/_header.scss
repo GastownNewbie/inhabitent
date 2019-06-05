@@ -22,6 +22,9 @@ body {
     font-family: Novecento Sans Web, sans-serif;
     font-size: 1rem;
     color: $color_green_brand;
+    &:hover {
+      color: $color__background-ins;
+    }
   }
 
   .menu-main-navigation-content {
@@ -80,7 +83,14 @@ body {
     display: none;
   }
 }
-
+.home {
+  .main-navigation a {
+    color: white;
+  }
+  .tent-logo {
+    display: none;
+  }
+}
 .page-id-5 {
   .main-navigation a {
     color: white;
@@ -93,10 +103,22 @@ body {
 .archive,
 .page-id-9,
 .single-post,
-.archive-product {
+.archive-product,
+.error404 {
   .site-header {
     .w-tent-logo {
       display: none;
+    }
+  }
+}
+.blog,
+.archive,
+.page-id-9,
+.single-post,
+.archive-product {
+  .main-navigation a {
+    &:hover {
+      color: $color_purple_brand;
     }
   }
 }

@@ -222,7 +222,7 @@ td,
 th {
   padding: 0; }
 
-.container, .archive .site-content .entry-content, .blog .site-content, .post-template-default .site-content {
+.container, .page .site-content, .archive .site-content .entry-content, .blog .site-content, .post-template-default .site-content, .error404 .site-content {
   max-width: 1120px;
   margin: 0 auto; }
 
@@ -729,9 +729,19 @@ object {
 .gallery-caption {
   display: block; }
 
-.container, .archive .site-content .entry-content, .blog .site-content, .post-template-default .site-content {
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+.container, .page .site-content, .archive .site-content .entry-content, .blog .site-content, .post-template-default .site-content, .error404 .site-content {
   max-width: 1120px;
   margin: 0 auto; }
+
+.home .site-content,
+.page-about .site-content {
+  max-width: none;
+  width: 100%;
+  margin: 0; }
 
 h1,
 h2 {
@@ -1036,7 +1046,7 @@ body .archive p {
   margin-right: 1.5rem; }
 
 .page-id-9 .entry-content {
-  margin-left: 40px; }
+  padding: 10px; }
 
 .page-id-9 .entry-header {
   margin-left: 40px;
@@ -1098,8 +1108,6 @@ body .archive p {
 .home .site-header {
   background-color: transparent;
   border: none; }
-  .home .site-header .w-tent-logo {
-    display: none; }
 
 .home p {
   line-height: 1.75; }
@@ -1411,7 +1419,8 @@ body .archive p {
   color: #404040;
   padding: 5px;
   -webkit-text-decoration-line: none;
-          text-decoration-line: none; }
+          text-decoration-line: none;
+  font-family: Novecento Sans Web, sans-serif; }
   .blog .wp-post-link-journal:hover {
     background-color: #248a83;
     border: none;
@@ -1552,11 +1561,23 @@ body .archive p {
   background-color: white;
   border: solid 1px #404040;
   border-radius: 0; }
+  .post-template-default button:hover,
+  .post-template-default .social-button-blk:hover {
+    background-color: #248a83;
+    border: none;
+    color: white;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    text-shadow: none; }
 
 .post-template-default button,
 .post-template-default select {
   text-transform: capitalize;
-  font-size: large; }
+  font-size: large;
+  background-color: transparent;
+  font-family: Novecento Sans Web, sans-serif;
+  font-size: 0.9rem;
+  padding: 0.75rem 1.5rem; }
 
 .post-template-default .buttons-social-media {
   padding-top: 30px; }
@@ -1703,6 +1724,8 @@ body {
     font-family: Novecento Sans Web, sans-serif;
     font-size: 1rem;
     color: #248a83; }
+    .site-header .main-navigation a:hover {
+      color: #fff9c0; }
   .site-header .menu-main-navigation-content {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1746,6 +1769,12 @@ body {
   .site-header .search-field {
     display: none; }
 
+.home .main-navigation a {
+  color: white; }
+
+.home .tent-logo {
+  display: none; }
+
 .page-id-5 .main-navigation a {
   color: white; }
 
@@ -1756,8 +1785,16 @@ body {
 .archive .site-header .w-tent-logo,
 .page-id-9 .site-header .w-tent-logo,
 .single-post .site-header .w-tent-logo,
-.archive-product .site-header .w-tent-logo {
+.archive-product .site-header .w-tent-logo,
+.error404 .site-header .w-tent-logo {
   display: none; }
+
+.blog .main-navigation a:hover,
+.archive .main-navigation a:hover,
+.page-id-9 .main-navigation a:hover,
+.single-post .main-navigation a:hover,
+.archive-product .main-navigation a:hover {
+  color: #2f1339; }
 
 /*--------------------------------------------------------------
 # Side-bar page template
@@ -1801,3 +1838,53 @@ body {
 
 .page-about h1 {
   color: white; }
+
+.error404 .site {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100vh; }
+
+.error404 .site-content {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 50px; }
+
+.error404 .content-area {
+  width: 70%; }
+
+.error404 .widget-area {
+  width: 30%;
+  margin: 40px; }
+
+.error404 .content-area {
+  padding-bottom: 40px;
+  padding-right: 30px;
+  border-right: 1px solid #c8c8c8; }
+
+.error404 h2 {
+  font-size: 1.5rem; }
+
+.error404 h1 {
+  font-size: 2.4rem; }
+
+.error404 ul {
+  list-style: none;
+  font-size: 1rem;
+  padding: 0;
+  margin: 0; }
+
+.error404 a {
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
+  color: #248a83; }
+  .error404 a:hover {
+    color: #2f1339; }

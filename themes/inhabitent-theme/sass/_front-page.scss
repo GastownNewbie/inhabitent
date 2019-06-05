@@ -3,9 +3,6 @@
   .site-header {
     background-color: transparent;
     border: none;
-    .w-tent-logo {
-      display: none;
-    }
   }
   p {
     line-height: 1.75;
@@ -164,7 +161,6 @@
   }
   .read-more-button a li {
     background-color: $color_green_brand;
-
     width: 40px;
     height: 18px;
     color: white;

@@ -64,6 +64,8 @@
     color: $color__text-main;
     padding: 5px;
     text-decoration-line: none;
+    font-family: $font__header;
+
     &:hover {
       background-color: $color_green_brand;
       border: none;
@@ -218,11 +220,22 @@
     background-color: white;
     border: solid 1px $color__text-main;
     border-radius: 0;
+    &:hover {
+      background-color: $color_green_brand;
+      border: none;
+      color: white;
+      box-shadow: none;
+      text-shadow: none;
+    }
   }
   button,
   select {
     text-transform: capitalize;
     font-size: large;
+    background-color: transparent;
+    font-family: Novecento Sans Web, sans-serif;
+    font-size: 0.9rem;
+    padding: 0.75rem 1.5rem;
   }
   .buttons-social-media {
     padding-top: 30px;
