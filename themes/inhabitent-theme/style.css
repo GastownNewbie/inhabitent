@@ -1599,8 +1599,9 @@ body .archive p {
           box-shadow: none;
   border-radius: 0;
   color: white;
-  font-size: 0.7em;
-  text-shadow: none; }
+  font-size: 1em;
+  text-shadow: none;
+  font-family: Novecento Sans Web, sans-serif; }
 
 .post-template-default #comment {
   background-color: #f4f4f4; }
@@ -1785,6 +1786,7 @@ body {
 .single-post .site-header .w-tent-logo,
 .archive-product .site-header .w-tent-logo,
 .search .site-header .w-tent-logo,
+.product-template-default .site-header .w-tent-logo,
 .error404 .site-header .w-tent-logo {
   display: none; }
 
@@ -1938,6 +1940,7 @@ body {
 .single-post .search-submit,
 .archive-product .search-submit,
 .search .search-submit,
+.product-template-default .search-submit,
 .error404 .search-submit {
   border: none;
   background: transparent;
@@ -1952,6 +1955,7 @@ body {
 .single-post .search-field,
 .archive-product .search-field,
 .search .search-field,
+.product-template-default .search-field,
 .error404 .search-field {
   outline: none;
   border: none; }

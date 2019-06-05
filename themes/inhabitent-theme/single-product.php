@@ -51,7 +51,7 @@ get_header(); ?>
                                         'after'  => '</div>',
                                     ));
                                     ?>
-
+                                </div>
                             </article>
                             <div class="buttons-social-media">
                                 <button type="button" class="social-button-blk"><i class="fab fa-facebook-f"></i> LIKE</button>
@@ -63,19 +63,20 @@ get_header(); ?>
 
                     </div><!-- .entry-meta -->
 
-        </div>
 
 
-    <?php endwhile; ?>
 
-    <?php the_posts_navigation(); ?>
+                <?php endwhile; ?>
 
-<?php else : ?>
+                <?php the_posts_navigation(); ?>
 
-    <?php get_template_part('template-parts/content', 'none'); ?>
+            <?php else : ?>
 
-<?php endif; ?>
+                <?php get_template_part('template-parts/content', 'none'); ?>
 
-</main><!-- #main -->
-</div><!-- #primary -->
-<?php get_footer(); ?>
+            <?php endif; ?>
+
+    </main><!-- #main -->
+
+
+    <?php get_footer(); ?>
