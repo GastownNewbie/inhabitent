@@ -1,12 +1,12 @@
 (function ($) {
 
-    $(function ($) {
+    $(function () {
 
-        $('.search-submit').on('click', function (event) {
+        $('.icon-search').on('click', function (event) {
             event.preventDefault();
             $('.search-field').toggle().focus();
         })
-        $('.search-field').on('blur', function (event) {
+        $('.icon-search').on('blur', function (event) {
             event.preventDefault();
             $('.search-field').hide();
         })
