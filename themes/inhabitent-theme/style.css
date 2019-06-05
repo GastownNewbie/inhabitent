@@ -1933,3 +1933,19 @@ body {
   color: #248a83; }
   .search a:hover {
     color: #2f1339; }
+
+.search .search-submit {
+  border: none;
+  background: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none; }
+
+.search .search-submit {
+  color: white; }
+
+.search .search-submit {
+  color: #248a83; }
+
+.search label {
+  display: none;
+  text-transform: uppercase; }

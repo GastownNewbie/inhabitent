@@ -38,4 +38,20 @@
       color: $color_purple_brand;
     }
   }
+  .search-submit {
+    border: none;
+    background: transparent;
+    box-shadow: none;
+    outline: none;
+  }
+  .search-submit {
+    color: white;
+  }
+  .search-submit {
+    color: $color_green_brand;
+  }
+  label {
+    display: none;
+    text-transform: uppercase;
+  }
 }
