@@ -80,19 +80,21 @@ get_header(); ?>
 
 
 							<ul class="fp-journal-list">
-								<li>
+								<a href="<?php the_permalink(); ?> ">
+									<li>
 
-									<?php the_post_thumbnail('medium-large'); ?>
-									<span class="fr-date-comments">
-										<?php echo get_the_date(); ?> /
-										<?php echo get_comments_number(); ?> Comments</span>
+										<?php the_post_thumbnail('medium-large'); ?>
+										<span class="fr-date-comments">
+											<?php echo get_the_date(); ?> /
+											<?php echo get_comments_number(); ?> Comments</span>
 
 
-									<a href="<?php the_permalink(); ?> ">
+
 										<h2><?php the_title(); ?></h2>
-									</a>
-									<a class="read-more-button" href="<?php echo get_the_permalink(); ?>">Read Entry</a>
-								</li>
+
+										<a class="read-more-button" href="<?php echo get_the_permalink(); ?>">Read Entry</a>
+									</li>
+								</a>
 							</ul>
 
 						<?php endforeach;

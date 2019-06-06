@@ -102,6 +102,9 @@
     line-height: 1.25;
     list-style: none;
     margin-left: 0;
+    li {
+      padding: 10px;
+    }
 
     .read-more-button {
       font-size: 1rem;

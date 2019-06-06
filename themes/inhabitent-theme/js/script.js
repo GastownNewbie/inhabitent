@@ -2,13 +2,17 @@
 
     $(function () {
 
-        $('.icon-search').on('click', function (event) {
+        const iconSearch = $('.icon-search');
+        const searchField = $('.search-field')
+
+        iconSearch.on('click', function (event) {
             event.preventDefault();
-            $('.search-field').toggle().focus();
+            searchField.toggle().focus();
         })
-        $('.icon-search').on('blur', function (event) {
+
+        iconSearch.on('blur', function (event) {
             event.preventDefault();
-            $('.search-field').hide();
+            searchField.hide();
         })
 
     }); //end of doc ready

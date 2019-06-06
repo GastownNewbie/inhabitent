@@ -246,7 +246,7 @@
     text-transform: capitalize;
     font-family: Novecento Sans Web, sans-serif;
     font-weight: 300;
-    padding: 20px;
+    padding: 10px;
   }
 
   .form-control {
@@ -255,7 +255,7 @@
 
   .submit {
     width: 100px;
-    height: 40px;
+    height: 30px;
     background-color: $color_green_brand;
     border: none;
     box-shadow: none;
@@ -266,17 +266,34 @@
     font-family: Novecento Sans Web, sans-serif;
   }
 
-  #comment {
+  #comment,
+  #author,
+  #email,
+  #url {
     background-color: #f4f4f4;
   }
-  .wordpress-comment-cookies-consent {
-    label {
-      display: none;
-    }
+  .comment-form-cookies-consent {
+    display: none;
   }
 
   .content-area {
     padding-bottom: 30px;
+  }
+  .comment-form {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .comment-form-author {
+    width: 50%;
+    margin: 0;
+  }
+  .comment-form-email {
+    width: 50%;
+    margin: 0;
+  }
+  .comment-form-url {
+    width: 100%;
+    margin: 0;
   }
 
   .journal-wp-post-container {

@@ -1204,6 +1204,8 @@ body .archive p {
   line-height: 1.25;
   list-style: none;
   margin-left: 0; }
+  .home .fp-journal-list li {
+    padding: 10px; }
   .home .fp-journal-list .read-more-button {
     font-size: 1rem;
     border: solid 1px black;
@@ -1585,14 +1587,14 @@ body .archive p {
   text-transform: capitalize;
   font-family: Novecento Sans Web, sans-serif;
   font-weight: 300;
-  padding: 20px; }
+  padding: 10px; }
 
 .post-template-default .form-control {
   background-color: #f4f4f4; }
 
 .post-template-default .submit {
   width: 100px;
-  height: 40px;
+  height: 30px;
   background-color: #248a83;
   border: none;
   -webkit-box-shadow: none;
@@ -1603,14 +1605,36 @@ body .archive p {
   text-shadow: none;
   font-family: Novecento Sans Web, sans-serif; }
 
-.post-template-default #comment {
+.post-template-default #comment,
+.post-template-default #author,
+.post-template-default #email,
+.post-template-default #url {
   background-color: #f4f4f4; }
 
-.post-template-default .wordpress-comment-cookies-consent label {
+.post-template-default .comment-form-cookies-consent {
   display: none; }
 
 .post-template-default .content-area {
   padding-bottom: 30px; }
+
+.post-template-default .comment-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.post-template-default .comment-form-author {
+  width: 50%;
+  margin: 0; }
+
+.post-template-default .comment-form-email {
+  width: 50%;
+  margin: 0; }
+
+.post-template-default .comment-form-url {
+  width: 100%;
+  margin: 0; }
 
 .post-template-default .journal-wp-post-container {
   padding-bottom: 40px;

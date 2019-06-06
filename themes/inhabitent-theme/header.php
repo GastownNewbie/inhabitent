@@ -39,7 +39,7 @@
 
 				<nav id="site-navigation" class="main-navigation" role="navigation">
 					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php echo esc_html('Primary Menu'); ?></button>
-					<span class="menu"><?php wp_nav_menu(array('theme_location' => 'primary', 'menu_id' => 'primary-menu')); ?></span>
+					<div class="menu"><?php wp_nav_menu(array('theme_location' => 'primary', 'menu_id' => 'primary-menu')); ?></div>
 					<div class="header-search">
 						<?php get_search_form(); ?>
 
